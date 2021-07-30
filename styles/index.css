@@ -1,0 +1,158 @@
+/*          INDEX          */
+
+/* grid section */
+
+.grid--index{
+  grid-template-rows: 5rem 54rem 36rem 0.5fr;
+  grid-template-areas:  "header header header header header"
+                        ". main main main ."
+                        ". section section section ."
+                        "footer footer footer footer footer";
+
+}
+
+.header--grid{
+  grid-area: header;
+}
+
+.main--grid{
+  grid-area: main;
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: 5rem 2fr;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "title . ." "slideshow slideshow contactForm";
+}
+
+.main--grid .main__title--grid {
+  grid-area: title;
+  justify-items: flex-start;
+}
+
+.main--grid .homedoptionSection--grid{
+  grid-area: slideshow;
+}
+
+.main--grid .homeContactUs--grid{
+  grid-area: contactForm;
+}
+
+.homeAdoptedSection--grid {
+  grid-area: section;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer--grid {
+  grid-area: footer;
+  height: 5em;
+}
+
+.main--grid .main__title--grid{
+  height: 5rem;
+}
+
+/*    MAIN     */
+
+/* SLIDESHOW */
+
+.slideshow{
+  width: 100rem;
+  height: 35rem;
+  overflow: auto;
+  margin-top: 3rem;
+}
+
+.slideshow__scrollBox{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.slideshow__scrollBox div h3{
+  margin-top: 1rem;
+}
+
+.slideshow__scrollBox img{
+  height: 25rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+
+}
+
+/* CONTACT US SECTION */
+
+.homeContactUs{
+  margin-top: 7.5rem;
+}
+
+.card--Indexmod{
+  padding-top: 2rem;
+  height: 30rem;
+  width: 32rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form__buttomBox{
+  margin-top: 2rem;
+}
+
+
+/* ARTICLES SECTION */
+
+.homeAdoptedSection{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homeAdoptedSection h2{
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.homeAdoptedSection .links--indexMod{
+  margin-top: 2rem;
+}
+
+/* ARTICLES */
+.articleContainer{
+  display: flex;
+  gap: 3rem;
+}
+
+.card--articleMod{
+  width: 70.5rem;
+  height: 22rem;
+  text-align: center;
+}
+
+.articleContainer article {
+  display: flex;
+  align-items: center;
+}
+
+.articleContainer article div{
+  text-align: center;
+}
+
+.articleContainer article img{
+  height: 22rem;
+  border-radius: 1rem;
+}
+
+.articleContainer article div p{
+  margin-top: 1rem;
+  height: 20rem;
+  width: 27rem;
+  text-align: justify;
+}
+
+
+
+
+
+
+

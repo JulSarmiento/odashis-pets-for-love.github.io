@@ -1,0 +1,56 @@
+/*          ADOPTIONS          */
+
+.dogsSection h2, .catSection h2{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.dogsSection__container, .catSection__container{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.dogsSection__petCard, .catsSection__petCard{
+  height: 45rem;
+}
+
+.dogsSection__petCard img, .catsSection__petCard img{
+  height: 19rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.table {
+  text-align: center;
+}
+
+.table tbody{
+  color: #9F5F80;
+}
+
+.table tbody tr td{
+  border: 1px solid #ff847400;
+  border-radius: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background: #fce6e3;
+}
+
+.table tbody tr td a{
+margin-top: 3rem;
+}
+
+.table tbody tr th{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-right: 1rem;
+}
+
+
+
+

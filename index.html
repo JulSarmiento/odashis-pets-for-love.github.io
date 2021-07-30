@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--This are the meta tags for the document. -->
+  <meta charset="UTF-8">
+  <meta name="description" content="First Challenge for Web Development, Coder House.">
+  <meta name="keywords" content="HTML">
+  <meta name="author" content="Julieth Sarmiento <julhsarmiento@gmail.com>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--This is the link for use the icons aviables in Font Awesome. -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!-- This are the fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lemonada:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- This is the CSS File    -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <!--This is the tittle of the page. -->
+  <title>Odashi's Pet For Love</title>
+</head>
+
+<body>
+
+  <!-- 
+    GRID CONTANER
+   -->
+  <div class="grid grid--index">
+    <!-- 
+      HEADER SECTION
+      Header block, with the logo and the nav bar  
+    -->
+    <header class="header header--grid">
+      <div class="header__wrapper wrapper">
+        <a href="../index.html"><img class="header__logo" loading="lazy" src="./assets/img/ODASHI-LOGO.png" alt="Logo version icono de la fundacion."></a>
+        <nav>
+          <ul class="list">
+            <li ><a class="links" href="./index.html">HOME</a></li> 
+            <li ><a class="links" href="./adopciones/index.html">ADOPTA</a></li>
+            <li ><a class="links" href="./adoptados/index.html">ADOPTADOS</a></li>
+            <li ><a class="links" href="./padrinos/index.html">PADRINOS</a></li>
+            <li ><a class="links" href="./eventos/index.html">EVENTOS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- This is the main content for the page. It's important for the SEO.-->
+    <main class="main--grid">
+      <!-- This is the titlte of the page. -->
+      <h1 class="title main__title--grid ">Odashi's Pets For Love <i class="fas fa-paw"></i></h1>
+      <!-- IN ADOPTCION SECTION -->
+      <!-- This section contains the principal information of the page. The title with a <h1> will help the SEO to find the place. -->
+      <section class="homedoptionSection homedoptionSection--grid">
+
+        <h2 class= "subtitle">En adopción <i class="fas fa-heart"></i></h2>
+        <!-- This sections contains the slideshow with the pet's picture. -->
+        <div class="slideshow">
+          <!-- This is the container for the pictures of the avaible pets. -->
+          <div class="slideshow__scrollBox">
+
+            <div class="card">
+              <a href="./adopciones/index.html"><img loading="lazy" src="./assets/img/cane-meticcio.jpg" alt="Foto del primer perro."></a>
+              <h3 class="secction__title">Nombre de la mascota</h3>
+            </div>
+            
+            <div class="card">
+              <a href="./adopciones/index.html"><img loading="lazy" src="./assets/img/easset_upload_file32027_708883_e.jpg" alt="Foto del segundo perro."></a>
+              <h3 class="secction__title">Nombre de la mascota</h3>
+            </div>
+            
+            <div class="card">
+              <a href="./adopciones/index.html"><img loading="lazy" src="./assets/img/ed7408e2-cac3-4e9e-8067-cf346fde4501.600x429.jpg" alt="Foto del tercer perro."></a>
+              <h3 class="secction__title">Nombre de la mascota</h3>
+            </div>
+            
+            <div class="card">
+              <a href="./adopciones/index.html"><img loading="lazy" src="./assets/img/images.jfif" alt="Foto del cuarto perro."></a>
+              <h3 class="secction__title">Nombre de la mascota</h3>
+            </div>
+            
+            <div class="card">
+              <a href="./adopciones/index.html"><img loading="lazy" src="./assets/img/cat-1.jpg" alt="Foto del primer gato."></a>
+              <h3 class="secction__title">Nombre de la mascota</h3>
+            </div>
+
+            <div class="card">
+              <a href="./adopciones/index.html"><img loading="lazy" src="./assets/img/cat-2.png" alt="Foto del segundo gato."></a>
+              <h3 class="secction__title">Nombre de la mascota</h3>
+            </div>
+
+            <div class="card">
+              <a href="./adopciones/index.html"><img loading="lazy" src="./assets/img/cat-3.jpg" alt="Foto del tercer gato."></a>
+              <h3 class="secction__title">Nombre de la mascota</h3>
+            </div>
+             
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- This is the form container. -->
+      <section class="homeContactUs homeContactUs--grid card card--Indexmod ">
+        <h2 class="subtitle">Te contáctamos <i class="fas fa-heart"></i></h2>
+
+        <!-- This is the form for the Foundation contact the users. ESTA COSA NOS LLEVA AL MENSAJE DE AGRADECIMIENTO DE FORMULARIO DE CONTACTO-->
+        <form class="formHomeContactUs form " action="./contacto/gracias.html">
+
+          <div class="form__inputBox">
+            <label  class="labelDecoration" for="user-name">Nombre Completo: </label>
+            <input type="text" name="user-name" id="user-name" placeholder="Mario Alberto Rojas Perez">
+          </div>
+
+          <div class="form__inputBox">
+            <label for="phone">Teléfono: </label>
+            <input type="number" name="phone" id="phone" placeholder="3502215598">
+          </div>
+
+          <div class="form__inputBox">
+            <label for="email">Correo Electronico:</label>
+            <input type="email" name="email" id="email" placeholder="mariorojas@gmail.com">
+          </div>
+          
+          <div class="form__radioBox form__radioBox--mod">
+            <p class="text ">Estas interesado en...:</p>
+            <div>
+              <input type="radio" name="interest" id="dogs" value="dogs">
+              <label for="dogs">Perrito</label>
+            </div>
+            
+            <div>
+              <input type="radio" name="interest" id="cats" value="cats">
+              <label for="cats">Gatitos</label>
+            </div>
+          </div>
+          
+          <div class="form__buttomBox">
+            <button class="btn" type="submit">Enviar</button>
+            <button class="btn" type="reset">Limpiar</button>
+          </div>
+
+        </form>
+      </section>
+    </main>
+
+    <!-- 
+      ADOPTIONS SECTIONS 
+      his block is for successful adopction process  
+    -->
+    <section class="homeAdoptedSection homeAdoptedSection--grid ">
+
+      <h2 class= "subtitle">Familias felices <i class="fas fa-heart"></i> </h2>
+
+      <div class="articleContainer">
+        <article class="homeAdoptedSection__articleOne card card--articleMod">
+         <div>
+            <h3 class= "secction__title">Nombre de la Mascota</h3>
+            <p class= "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus autem facilis tenetur, eaque placeat velit doloremque obcaecati illo reiciendis aliquid in quam enim cumque neque animi possimus ipsum dicta corrupti facere aut sit. Est quasi aut, maxime, autem quos earum unde quae id, fugiat odio quisquam? Iusto et totam eligendi.</p> 
+         </div>
+          <img loading="lazy" src="./assets/img/cane-meticcio.jpg" alt="Foto del perro felizmente adoptado.">
+          
+        </article>
+  
+        <article class="homeAdoptedSection__articleTwo card card--articleMod">
+          <div>
+            <h3 class= "secction__title">Nombre de la Mascota</h3>
+            <p class= "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus autem facilis tenetur, eaque placeat velit doloremque obcaecati illo reiciendis aliquid in quam enim cumque neque animi possimus ipsum dicta corrupti facere aut sit. Est quasi aut, maxime, autem quos earum unde quae id, fugiat odio quisquam? Iusto et totam eligendi.</p> 
+         </div>
+          <img loading="lazy" src="./assets/img/cat-5.png" alt="Foto del gato felizmente adoptado.">
+          
+        </article>
+      </div>
+
+      <a class= "links links--indexMod" href="./adoptados/index.html">Ver más</a>
+    </section>
+
+    <!-- 
+      FOOTER SECTION
+      This block is the footer, with the links to social media and contact links.
+    -->
+    <footer class="footer footer--grid">
+      <div class="footer__wrapper wrapper">
+        <ul class="footer__list">
+          <li><a class= "links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+          <li><a class= "links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a class= "links" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a class= "links" href="https://www.paypal.com/" target="_blank"><i class="fab fa-paypal"></i></a></li>
+        </ul>
+    
+        <div class="footer__links">
+          <a class= "links" href="./contacto/index.html"><small>CONTÁCTANOS</small></a>
+          <a class= "links" href="https://www.google.com/maps/place/Central+Park/@11.0192697,-74.8247305,19.5z/data=!4m13!1m7!3m6!1s0x8ef42d44d12ae605:0x2633844581b917b2!2sBarranquilla,+Atl%C3%A1ntico!3b1!8m2!3d11.0041072!4d-74.8069813!3m4!1s0x8ef42db4ee16d1f7:0x351e0ba0b20c4562!8m2!3d11.019519!4d-74.8251848?hl=es" target="_blank"><small>VISITÁNOS</small></a>
+        </div>
+      </div>
+    </footer>
+ 
+  </div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,244 @@
+/*    GENERAL   */
+
+/*  ROOT  */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: linear-gradient(180deg, rgba(255,255,255,0.6783088235294117) 3%, rgba(255,132,116,0.15730042016806722) 100%);
+}
+
+.wrapper{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 0.39fr 1fr 1fr 1fr 0.39fr;
+}
+
+/*  FONTS */
+
+.title{
+  font-family: 'Lemonada', cursive;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #FF8474;
+}
+
+.title i {
+  font-size: 3rem;
+  color: #FF8474;
+}
+
+.subtitle{
+  font-family: 'Lemonada', cursive;
+  font-weight: 400;
+  color: #9F5F80;
+}
+
+.secction__title{
+  font-family: 'Lemonada', cursive;
+  font-weight: 400;
+  color: #FF8474;
+}
+
+.links{
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #583D72;  
+  font-family: 'Lemonada', cursive;
+}
+
+.links:hover{  
+  font-weight: 400;
+  color: #FF8474;
+  text-decoration: underline wavy;  
+  font-size: 1.5rem;
+}
+
+.text, label{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+
+/*  CARDS  */
+
+.card{
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 8px 18px -1px #ff847471;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/*  FORMs  */
+
+.main--mod{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form fieldset legend.subtitle--mod{
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 0 0.5rem;
+}
+
+.form__inputBox{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: justify;
+  padding: 0.5rem;
+}
+
+.text--mod{
+  font-size: 1.3rem;
+}
+
+.form__radioBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+input::placeholders{
+  text-align: center;
+  color: #a57acad3 ;
+}
+
+/*    BUTTOMS */
+
+.btn{
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #FF8474;
+  box-shadow: 0px 8px 18px -1px #ff847471;
+  height: 3rem;
+  width: 13rem;
+}
+
+.btn:hover{
+  background-color: #ff847493;
+  box-shadow: 0px 8px 18px -1px #ffffff;
+}
+
+
+
+.form__img{
+  height: 75rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 18px -1px #ff847448;
+  margin-bottom: 1rem;
+}
+
+/*    THANKS MESSAGE  */
+
+.main--mod .card--mod{
+  width: 70rem ;
+  height: 20rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.subtitle--mod{
+  font-size: 2.5rem;
+}
+
+.text--mod{
+  font-size: 2rem;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.links--mod{
+  font-size: 2rem;
+}
+
+
+/*  HEADER  */
+
+.header{
+  border-top: 0.5rem solid #FF8474; 
+  background-color: white;
+  position: sticky;
+  top: 0;
+  height: 5rem;
+}
+
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+
+.header__logo{
+  height: 4rem;
+}
+
+.header__logo:hover{
+  height: 4.2rem;
+}
+
+.list{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 0.7rem;
+}
+
+
+/*  FOOTER  */
+
+.footer{
+  background-color: white;
+  border-bottom: 0.5rem solid #FF8474;
+}
+
+.footer__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__list{
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__list li a{
+  font-size: 2rem;
+}
+
+.footer__links{
+  display: flex;
+  gap: 1.5rem;
+}
+
+/*  BODY  */
+
+/* aqui va el grid */
+
+
+
+
+
+
+

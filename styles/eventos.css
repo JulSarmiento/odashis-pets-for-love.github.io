@@ -1,0 +1,39 @@
+/*          EVENTOS        */
+
+.pastEvents .pastEvents__customes {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 8px 18px -1px #ff847471;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  width: 30rem;
+  text-align: center;
+}
+
+.pastEvents .pastEvents__customes img{
+  height: 20rem;
+}
+
+.pastEvents .pastEvents__customes p{
+  text-align: justify;
+}
+
+.futureEvents{
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 8px 18px -1px #ff847471;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  width: 60rem;
+  text-align: center;
+}
+
+.futureEvents img{
+  height: 50rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.futureEvents p{
+  text-align: justify;
+}

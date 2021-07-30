@@ -1,0 +1,13 @@
+/*          GODFATHERS          */
+
+/* Card UL genral */
+
+.extravaganttPlan__bonus, .elegantPlan__bonus, .fancyPlan__bonus {
+  list-style-type: "\1F43E";
+  list-style-position:inside;
+
+}
+
+.extravaganttPlan__bonus li, .elegantPlan__bonus li, .fancyPlan__bonus li{
+  line-height: 2rem;
+}
