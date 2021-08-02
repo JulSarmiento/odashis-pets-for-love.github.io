@@ -1,5 +1,31 @@
 /*          ADOPTIONS          */
 
+/* GRID for ADOPTIONS, ADOPTIONS'S FORM and THANKS ADOPTION'S FORM */
+
+.grid--adoptions{
+    grid-template-rows: 5rem 3fr 0.5fr;
+    grid-template-areas:  "header header header header header"
+                          ". main main main ."
+                          ". main main main ."
+                          "footer footer footer footer footer";
+  
+}
+
+.header__adoptions--grid{
+  grid-area: header;
+}
+
+.main__adoptions--grid{
+  grid-area: main;
+  margin: 2rem 0;
+}
+
+.footer__adoptions--grid{
+  grid-area: footer;
+}
+
+/* MAIN SECTION ADOPTIONS PAGE */
+
 .dogsSection h2, .catSection h2{
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -11,15 +37,7 @@
   flex-flow: row wrap;
 }
 
-.dogsSection__petCard, .catsSection__petCard{
-  height: 45rem;
-}
-
-.dogsSection__petCard img, .catsSection__petCard img{
-  height: 19rem;
-  border-radius: 0.5rem;
-  margin-bottom: 2rem;
-}
+/* Table section Adoptions page */
 
 .table {
   text-align: center;

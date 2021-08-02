@@ -87,9 +87,10 @@ body{
 /*  FORMs  */
 
 .main--mod{
-  margin-top: 3rem;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .form fieldset legend.subtitle--mod{
@@ -123,6 +124,15 @@ input::placeholders{
 }
 
 /*    BUTTOMS */
+
+.form__btnBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+}
 
 .btn{
   background-color: #ffffff;
@@ -168,6 +178,27 @@ input::placeholders{
 
 .links--mod{
   font-size: 2rem;
+}
+
+/* PICTURES CONTAINERS FORM ZOOM TRANSITION */
+
+.pictureContainer{
+  margin:auto auto;
+  overflow: hidden;
+  width: 25rem;
+  border-radius: 1rem;
+}
+
+.pictureContainer img{
+  height: 25rem;
+  width: auto;
+  border-radius: 1rem;
+  transition: transform 1s;
+  object-fit: cover;
+}
+
+.pictureContainer img:hover{
+  transform: scale(1.2);
 }
 
 
