@@ -2,7 +2,7 @@
 
 /* GRID for ADOPTED */
 
-.grid--adoptied{
+.grid--adopted{
   grid-template-rows: 5rem 56rem 1fr 5rem;
   grid-template-areas:  "header header header header header"
                         ". main main main ."
@@ -73,8 +73,10 @@
 }
 
 .otherCases h2{
-  margin-bottom: 1rem;
+  margin-top: 2rem ;
 }
+
+
 
 .otherCases__imageBox{
   width: 125rem;
@@ -83,7 +85,6 @@
   grid-template-rows: 30rem 30rem;
   margin: 0;
   margin: 0 auto;
-
 }
 
 .otherCases__imageBox .pictureContainer img{

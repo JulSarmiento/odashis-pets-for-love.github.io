@@ -56,13 +56,12 @@ body{
   text-decoration: none;
   color: #583D72;  
   font-family: 'Lemonada', cursive;
+  transition: 1s;
 }
 
 .links:hover{  
-  font-weight: 400;
   color: #FF8474;
   text-decoration: underline wavy;  
-  font-size: 1.5rem;
 }
 
 .text, label{
@@ -141,14 +140,13 @@ input::placeholders{
   box-shadow: 0px 8px 18px -1px #ff847471;
   height: 3rem;
   width: 13rem;
+  transition: 1s;
 }
 
 .btn:hover{
   background-color: #ff847493;
   box-shadow: 0px 8px 18px -1px #ffffff;
 }
-
-
 
 .form__img{
   height: 75rem;
@@ -201,7 +199,6 @@ input::placeholders{
   transform: scale(1.2);
 }
 
-
 /*  HEADER  */
 
 .header{
@@ -218,12 +215,13 @@ input::placeholders{
   padding-top: 0.5rem;
 }
 
-.header__logo{
+.header__logo, i{
   height: 4rem;
+  transition: transform 2s ease-in-out;
 }
 
-.header__logo:hover{
-  height: 4.2rem;
+.header__logo:hover, i:hover{
+  transform:rotate(360deg);
 }
 
 .list{
