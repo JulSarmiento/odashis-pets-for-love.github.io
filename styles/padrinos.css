@@ -36,17 +36,22 @@
   margin: 3rem 0;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
 }
 
 .godfatherTexBox{
   width: 80%;
-  text-align: justify;
   margin: 0 auto;
 }
 
+.godfatherTexBox p{
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+/* quede por aqui. No logro acomodar las imagenes. no se que toque. */
 
 
 .godfatherTexBox .requirementsList{
