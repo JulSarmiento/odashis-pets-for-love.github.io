@@ -18,86 +18,104 @@
 
   <!-- This is the CSS File    -->
   <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/eventos.css">
 
   <!--This is the tittle of the page. -->
   <title>Odashi's Pet For Love | Eventos</title>
 </head>
 <body>
 
-  <!-- 
-    HEADER SECTION
-    Header block, with the logo and the nav bar  
-  -->
-  <header class="header">
-    <div class="header__wrapper wrapper">
-      <a href="../index.html"><img class="header__logo" loading="lazy" src="../assets/img/ODASHI-LOGO.png" alt="Logo version icono de la fundacion."></a>
-      <nav>
-        <ul class="list">
-          <li ><a class="links" href="../index.html">HOME</a></li> 
-          <li ><a class="links" href="../adopciones/index.html">ADOPTA</a></li>
-          <li ><a class="links" href="../adoptados/index.html">ADOPTADOS</a></li>
-          <li ><a class="links" href="../padrinos/index.html">PADRINOS</a></li>
-          <li ><a class="links" href="../eventos/index.html">EVENTOS</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- 
-    MAIN SECTION
-    This section contains the event's information 
-  -->
-  <main class="main wrapper events">
-    <h1 class="title ">EVENTOS! <i class="fas fa-paw"></i></h1>
-
-      <!-- This is past events section -->
-    <section class="pastEvents">
-      <h2 class="pastEvents__subtitle">Eventos Pasados!</h2>
-      <div>
-        <div class="pastEvents__customes">
-          <img loading="lazy" src="../assets/img/evento-pasado-1.webp" alt="Foto de un gatito en el evento de disfraces.">
-          <h3 class= "secction__title">Evento de Disfraces</h3>
-          <p class= "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae provident officiis? Vel sint architecto voluptatibus incidunt nihil nesciunt pariatur beatae. Tenetur voluptatem architecto, saepe earum cupiditate facere quidem maiores.</p>
-        </div>
-
-        <div class="pastEvents__customes">
-          <img loading="lazy" src="../assets/img/evento-pasado-2.jpg" alt="Foto de un gatito en el evento de disfraces.">
-          <h3 class= "secction__title">Picnic en Familia!</h3>
-          <p class= "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae provident officiis? Vel sint architecto voluptatibus incidunt nihil nesciunt pariatur beatae. Tenetur voluptatem architecto, saepe earum cupiditate facere quidem maiores.</p>
-        </div>
+  <div class="grid grid--events">
+      <!-- 
+      HEADER SECTION
+      Header block, with the logo and the nav bar  
+    -->
+    <header class="header header__event--grid">
+      <div class="header__wrapper wrapper">
+        <a href="../index.html"><img class="header__logo" loading="lazy" src="../assets/img/ODASHI-LOGO.png" alt="Logo version icono de la fundacion."></a>
+        <nav>
+          <ul class="list">
+            <li ><a class="links" href="../index.html">HOME</a></li> 
+            <li ><a class="links" href="../adopciones/index.html">ADOPTA</a></li>
+            <li ><a class="links" href="../adoptados/index.html">ADOPTADOS</a></li>
+            <li ><a class="links" href="../padrinos/index.html">PADRINOS</a></li>
+            <li ><a class="links" href="../eventos/index.html">EVENTOS</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <!-- This is next events section -->
-    <section class="futureEvents futureEvents--modified">
-      <h2 class= "subtitle">Proximo Evento!</h2>
-      <img loading="lazy" src="../assets/img/imagen-eventos.jpg" alt="Imagen del evento proximo, caminata canina.">
-      <h3 class= "secction__title">Caminata canina!</h3>
-      <p class= "text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      <a class= "links" href="./formulario.html">Inscribirse!</a>
-    </section>
-  </main>
+    <!-- 
+      MAIN SECTION
+      This section contains the event's information 
+    -->
+    <main class="main__event--grid">
+      <h1 class="title ">EVENTOS! <i class="fas fa-paw"></i></h1>
 
+      <div class="events">
 
-  <!-- 
-    FOOTER SECTION
-    This block is the footer, with the links to social media and contact links.
-  -->
-  <footer class="footer">
-    <div class="footer__wrapper wrapper">
-      <ul class="footer__list">
-        <li><a class= "links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-        <li><a class= "links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-        <li><a class= "links" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a class= "links" href="https://www.paypal.com/" target="_blank"><i class="fab fa-paypal"></i></a></li>
-      </ul>
+        <section class="events__past">
+          <h2 class="subtitle">Eventos Pasados!</h2>
   
-      <div class="footer__links">
-        <a class= "links" href="./contacto/index.html"><small>CONTÁCTANOS</small></a>
-        <a class= "links" href="https://www.google.com/maps/place/Central+Park/@11.0192697,-74.8247305,19.5z/data=!4m13!1m7!3m6!1s0x8ef42d44d12ae605:0x2633844581b917b2!2sBarranquilla,+Atl%C3%A1ntico!3b1!8m2!3d11.0041072!4d-74.8069813!3m4!1s0x8ef42db4ee16d1f7:0x351e0ba0b20c4562!8m2!3d11.019519!4d-74.8251848?hl=es" target="_blank"><small>VISITÁNOS</small></a>
+          <div class="event__past">
+            <div class="card card--events">
+              <div class="pictureContainer">
+                <img loading="lazy" src="../assets/img/evento-pasado-1.webp" alt="Foto de un gatito en el evento de disfraces.">
+              </div>
+              
+              <h3 class= "secction__title">Evento de Disfraces</h3>
+              <p class= "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae provident officiis? Vel sint architecto voluptatibus incidunt nihil nesciunt pariatur beatae. Tenetur voluptatem architecto, saepe earum cupiditate facere quidem maiores.</p>
+            </div>
+  
+            <div class="card card--events">
+              <div class="pictureContainer">
+                <img loading="lazy" src="../assets/img/evento-pasado-2.jpg" alt="Foto de un gatito en el evento de disfraces.">
+              </div>
+              
+              <h3 class= "secction__title">Picnic en Familia!</h3>
+              <p class= "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae provident officiis? Vel sint architecto voluptatibus incidunt nihil nesciunt pariatur beatae. Tenetur voluptatem architecto, saepe earum cupiditate facere quidem maiores.</p>
+            </div>
+          </div>
+        </section>
+  
+        <!-- This is next events section -->
+        <section class="card card--eventsFuture events__future">
+          <h2 class= "subtitle">Proximo Evento!</h2>
+
+          <div class="pictureContainer pictureContainer--event">
+            <img loading="lazy" src="../assets/img/imagen-eventos.jpg" alt="Imagen del evento proximo, caminata canina.">
+          </div>
+          <div class="events__futureTextBox">
+            <h3 class= "secction__title">Caminata canina!</h3>
+            <p class= "text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+          <a class= "links" href="./formulario.html">Inscribirse!</a>
+        </section>
       </div>
-    </div>
-  </footer>
+
+    </main>
+
+
+    <!-- 
+      FOOTER SECTION
+      This block is the footer, with the links to social media and contact links.
+    -->
+    <footer class="footer footer__event--grid">
+      <div class="footer__wrapper wrapper">
+        <ul class="footer__list">
+          <li><a class= "links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+          <li><a class= "links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a class= "links" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a class= "links" href="https://www.paypal.com/" target="_blank"><i class="fab fa-paypal"></i></a></li>
+        </ul>
+    
+        <div class="footer__links">
+          <a class= "links" href="../contacto/index.html"><small>CONTÁCTANOS</small></a>
+          <a class= "links" href="https://www.google.com/maps/place/Central+Park/@11.0192697,-74.8247305,19.5z/data=!4m13!1m7!3m6!1s0x8ef42d44d12ae605:0x2633844581b917b2!2sBarranquilla,+Atl%C3%A1ntico!3b1!8m2!3d11.0041072!4d-74.8069813!3m4!1s0x8ef42db4ee16d1f7:0x351e0ba0b20c4562!8m2!3d11.019519!4d-74.8251848?hl=es" target="_blank"><small>VISITÁNOS</small></a>
+        </div>
+      </div>
+    </footer>
+  </div>
  
 </body>
 </html>

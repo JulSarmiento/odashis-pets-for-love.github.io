@@ -129,7 +129,7 @@ input::placeholders{
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
 }
 
@@ -207,6 +207,7 @@ input::placeholders{
   position: sticky;
   top: 0;
   height: 5rem;
+  z-index: 5;
 }
 
 .header__wrapper{

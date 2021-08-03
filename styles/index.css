@@ -17,11 +17,7 @@
 
 .main--grid{
   grid-area: main;
-  display: grid;
-  gap: 2rem;
-  grid-template-rows: 5rem 2fr;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "title . ." "slideshow slideshow contactForm";
+
 }
 
 .main--grid .main__title--grid {
@@ -31,6 +27,8 @@
 
 .main--grid .homedoptionSection--grid{
   grid-area: slideshow;
+  display: flex;
+  flex-direction: row;
 }
 
 .main--grid .homeContactUs--grid{
@@ -40,7 +38,7 @@
 .homeAdoptedSection--grid {
   grid-area: section;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 
 .footer--grid {
@@ -57,28 +55,75 @@
 /* SLIDESHOW */
 
 .slideshow{
-  width: 100rem;
-  height: 35rem;
-  overflow: auto;
-  margin-top: 3rem;
-}
-
-.slideshow__scrollBox{
+  border: 1px solid black;
+  width: 50rem;
+  height: 50rem;
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.slideshow__scrollBox div h3{
-  margin-top: 1rem;
+.slider-container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
 }
 
-.slideshow__scrollBox img{
+.menu {
+  z-index: 900;
+  align-self: center;
+}
+
+.menu label {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 .2em 1em;
+  transition: 1s;
+}
+
+.menu label:hover {
+  background: #FF8474;
+}
+
+.slide {
+  width: 25rem;
   height: 25rem;
-  border-radius: 1rem;
-  margin-left: 1rem;
-
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s;
 }
+
+[id^="slide"]:checked + .slide {
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+/* .slide-1 {
+  background-image: url("../assets/img/cane-meticcio.jpg");
+}
+.slide-2 {
+  background-image: url("../assets/img/cat-1.jpg");
+}
+.slide-3 {
+  background-image: url("../assets/img/perromestizo.jpg");
+}
+.slide-4 {
+  background-image: url("../assets/img/cat-2.png");
+}
+.slide-5 {
+  background-image: url("../assets/img/perri.jpg");
+} */
+
 
 /* CONTACT US SECTION */
 

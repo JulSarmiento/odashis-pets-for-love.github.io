@@ -1,39 +1,95 @@
 /*          EVENTOS        */
 
-.pastEvents .pastEvents__customes {
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  box-shadow: 0px 8px 18px -1px #ff847471;
-  padding: 3rem;
-  margin-bottom: 2rem;
-  width: 30rem;
-  text-align: center;
+/* GRID for EVENTS, EVENT'S FORM and THANKS MESSANGE */
+
+.grid--events{
+  grid-template-rows: 5rem 2fr 5rem;
+  grid-template-areas:  "header header header header header"
+                        ". main main main ."
+                        ". main main main."
+                        "footer footer footer footer footer";
 }
 
-.pastEvents .pastEvents__customes img{
-  height: 20rem;
+.header__event--grid{
+  grid-area: header;
 }
 
-.pastEvents .pastEvents__customes p{
+.main__event--grid{
+  grid-area: main;
+  margin: 1rem 0;
+}
+
+.footer__event--grid{
+  grid-area: footer;
+}
+
+/* MAIN INDEX EVENTOS */
+
+/* Past Events Section */
+
+.events{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.events .event__past{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.card--events{
+  width: 40rem;
+}
+
+.card--events p{
+  width: 80%;
+  align-self: center;
   text-align: justify;
 }
 
-.futureEvents{
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  box-shadow: 0px 8px 18px -1px #ff847471;
-  padding: 3rem;
-  margin-bottom: 2rem;
-  width: 60rem;
-  text-align: center;
+/*  Future Eventes Section */
+
+.card--eventsFuture{
+  width: 55rem;
+  height: 75rem;
+  align-self: center;
 }
 
-.futureEvents img{
+.pictureContainer--event{
   height: 50rem;
-  border-radius: 0.5rem;
-  margin: 1rem;
+  width: 50rem;
 }
 
-.futureEvents p{
+.pictureContainer--event img{
+  height: 50rem;
+}
+
+.events__futureTextBox{
+  width: 90%;
+  margin-bottom: 1rem;
+  align-self: center;
+  height: 15rem;
+}
+
+.events__futureTextBox p{
   text-align: justify;
+  margin-top: 1rem;
+}
+
+/*  EVENT'S FORM SECTION */
+
+/*  form section */
+
+.mainEventForm{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.main__form--event{
+  margin-top: -20rem;
 }
