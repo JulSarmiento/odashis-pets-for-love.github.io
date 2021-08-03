@@ -39,6 +39,7 @@
   grid-area: section;
   display: flex;
   flex-flow: row wrap;
+
 }
 
 .footer--grid {
@@ -54,15 +55,21 @@
 
 /* SLIDESHOW */
 
-.slideshow{
-  border: 1px solid black;
-  width: 50rem;
-  height: 50rem;
+.adoptionAndContact{
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   align-items: center;
+  margin-top: 2rem;
 
 }
+
+.slideshow{
+  width: 90rem;
+  height: 45rem;
+}
+
+/* slideshow part */
 
 .slider-container{
   height: 100%;
@@ -70,78 +77,69 @@
   position: relative;
   overflow: hidden; 
   text-align: center;
+  padding: 0;
 }
 
 .menu {
+  position: absolute;
+  left: 0;
   z-index: 900;
-  align-self: center;
+  width: 100%;
+  bottom: 0;
 }
 
 .menu label {
   cursor: pointer;
+  display: inline-block;
   width: 16px;
   height: 16px;
   background: #fff;
   border-radius: 50px;
   margin: 0 .2em 1em;
-  transition: 1s;
 }
 
 .menu label:hover {
-  background: #FF8474;
+  background: red;
 }
 
 .slide {
-  width: 25rem;
-  height: 25rem;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
+  left: 100%;
   z-index: 10;
-  padding: 8em 1em 0;
   background-size: cover;
   background-position: 50% 50%;
-  transition: left 0s .75s;
+  transition: left 0s 1s;
 }
 
 [id^="slide"]:checked + .slide {
+  left: 0;
   z-index: 100;
   transition: left .65s ease-out;
 }
 
-/* .slide-1 {
-  background-image: url("../assets/img/cane-meticcio.jpg");
-}
-.slide-2 {
-  background-image: url("../assets/img/cat-1.jpg");
-}
-.slide-3 {
-  background-image: url("../assets/img/perromestizo.jpg");
-}
-.slide-4 {
-  background-image: url("../assets/img/cat-2.png");
-}
-.slide-5 {
-  background-image: url("../assets/img/perri.jpg");
-} */
 
+.pictureContainer--slidershow{
+  height: 100%;
+  width: 100%;
+}
+
+.pictureContainer--slidershow img{
+  height: 45rem;
+  width: 90rem;
+  object-fit: contain;
+
+}
 
 /* CONTACT US SECTION */
 
-.homeContactUs{
-  margin-top: 7.5rem;
-}
-
 .card--Indexmod{
   padding-top: 2rem;
-  height: 30rem;
   width: 32rem;
-  display: flex;
   align-items: center;
   gap: 2rem;
-}
-
-.form__buttomBox{
-  margin-top: 2rem;
 }
 
 
@@ -163,6 +161,7 @@
 }
 
 /* ARTICLES */
+
 .articleContainer{
   display: flex;
   gap: 3rem;

@@ -56,96 +56,115 @@
       <h1 class="title main__title--grid ">Odashi's Pets For Love <i class="fas fa-paw"></i></h1>
       <!-- IN ADOPTCION SECTION -->
       <!-- This section contains the principal information of the page. The title with a <h1> will help the SEO to find the place. -->
-      <section class="homedoptionSection homedoptionSection--grid">
+      
+      <div class="adoptionAndContact">
 
-        <h2 class= "subtitle">En adopción <i class="fas fa-heart"></i></h2>
-        <!-- This sections contains the slideshow with the pet's picture. -->
-        <div class="slideshow">
-          <!-- This is the container for the pictures of the avaible pets. -->
+        <div class="homedoptionSection">
+          <!-- This sections contains the slideshow with the pet's picture. -->
+          <div class="slideshow">
+            <!-- This is the container for the pictures of the avaible pets. -->
+            <div class="slider-container">
+              <div class="menu">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+                <label for="slide-dot-4"></label>
+                <label for="slide-dot-5"></label>
+                <label for="slide-dot-6"></label>
+              </div>
+              
+              <input id="slide-dot-1" type="radio" name="slides" checked>
+                <div class="slide slide-1">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <img src="assets/img/cat-1.jpg" alt="">
+                  </div>
+                </div>
+              
+              <input id="slide-dot-2" type="radio" name="slides">
+                <div class="slide slide-2">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <img src="assets/img/cat-2.png" alt="">
+                  </div>
+                </div>
+              
+              <input id="slide-dot-3" type="radio" name="slides">
+                <div class="slide slide-3">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <img src="assets/img/cat-3.jpg" alt="">
+                  </div>
+                </div>
 
-          <div class="slider-container">
-            <div class="menu">
-              <label for="slide-dot-1"></label>
-              <label for="slide-dot-2"></label>
-              <label for="slide-dot-3"></label>
-              <label for="slide-dot-4"></label>
-              <label for="slide-dot-5"></label>
-              <label for="slide-dot-6"></label>
+              <input id="slide-dot-4" type="radio" name="slides">
+                <div class="slide slide-4">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <img src="assets/img/cat-4.jpg" alt="">
+                  </div>
+                </div>
+
+              <input id="slide-dot-5" type="radio" name="slides">
+                <div class="slide slide-5">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <img src="assets/img/cat-5.png" alt="">
+                  </div>
+                </div>
+
+              <input id="slide-dot-6" type="radio" name="slides">
+                <div class="slide slide-6">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <img src="assets/img/cat-6.jpg" alt="">
+                  </div>
+                </div>
             </div>
-            
-            <input id="slide-dot-1" type="radio" name="slides" checked>
-              <div class="slide slide-1">
-                <div class="pictureContainer">
-                  <img src="assets/img/cat-3.jpg" alt="">
-                </div>
-                
-              </div>
-            
-            <input id="slide-dot-2" type="radio" name="slides">
-              <div class="slide slide-2">
-                <div class="pictureContainer">
-                  <img src="assets/img/cat-1.jpg" alt="">
-                </div>
-              </div>
-            
-            <input id="slide-dot-3" type="radio" name="slides">
-              <div class="slide slide-3"></div>
-
-            <input id="slide-dot-4" type="radio" name="slides">
-              <div class="slide slide-4"></div>
-            
-            <input id="slide-dot-5" type="radio" name="slides">
-              <div class="slide slide-5"></div>
+  
           </div>
-          
+  
         </div>
-
-
-      </section>
-
-
-      <!-- This is the form container. -->
-      <section class="homeContactUs homeContactUs--grid card card--Indexmod ">
-        <h2 class="subtitle">Te contáctamos <i class="fas fa-heart"></i></h2>
-
-        <!-- This is the form for the Foundation contact the users. ESTA COSA NOS LLEVA AL MENSAJE DE AGRADECIMIENTO DE FORMULARIO DE CONTACTO-->
-        <form class="formHomeContactUs form " action="./contacto/gracias.html">
-
-          <div class="form__inputBox">
-            <label  class="labelDecoration" for="user-name">Nombre Completo: </label>
-            <input type="text" name="user-name" id="user-name" placeholder="Mario Alberto Rojas Perez">
-          </div>
-
-          <div class="form__inputBox">
-            <label for="phone">Teléfono: </label>
-            <input type="number" name="phone" id="phone" placeholder="3502215598">
-          </div>
-
-          <div class="form__inputBox">
-            <label for="email">Correo Electronico:</label>
-            <input type="email" name="email" id="email" placeholder="mariorojas@gmail.com">
-          </div>
-          
-          <div class="form__radioBox form__radioBox--mod">
-            <p class="text ">Estas interesado en...:</p>
-            <div>
-              <input type="radio" name="interest" id="dogs" value="dogs">
-              <label for="dogs">Perrito</label>
+  
+        <!-- This is the form container. -->
+        <section class="homeContactUs homeContactUs--grid card card--Indexmod ">
+          <h2 class="subtitle">Te contáctamos <i class="fas fa-heart"></i></h2>
+  
+          <!-- This is the form for the Foundation contact the users. ESTA COSA NOS LLEVA AL MENSAJE DE AGRADECIMIENTO DE FORMULARIO DE CONTACTO-->
+          <form class="formHomeContactUs form " action="./contacto/gracias.html">
+  
+            <div class="form__inputBox">
+              <label  class="labelDecoration" for="user-name">Nombre Completo: </label>
+              <input type="text" name="user-name" id="user-name" placeholder="Mario Alberto Rojas Perez">
+            </div>
+  
+            <div class="form__inputBox">
+              <label for="phone">Teléfono: </label>
+              <input type="number" name="phone" id="phone" placeholder="3502215598">
+            </div>
+  
+            <div class="form__inputBox">
+              <label for="email">Correo Electronico:</label>
+              <input type="email" name="email" id="email" placeholder="mariorojas@gmail.com">
             </div>
             
-            <div>
-              <input type="radio" name="interest" id="cats" value="cats">
-              <label for="cats">Gatitos</label>
+            <div class="form__radioBox form__radioBox--mod">
+              <p class="text ">Estas interesado en...:</p>
+              <div>
+                <input type="radio" name="interest" id="dogs" value="dogs">
+                <label for="dogs">Perrito</label>
+              </div>
+              
+              <div>
+                <input type="radio" name="interest" id="cats" value="cats">
+                <label for="cats">Gatitos</label>
+              </div>
             </div>
-          </div>
-          
-          <div class="form__buttomBox">
-            <button class="btn" type="submit">Enviar</button>
-            <button class="btn" type="reset">Limpiar</button>
-          </div>
-
-        </form>
-      </section>
+            
+            <div class="form__btnBox">
+              <button class="btn" type="submit">Enviar</button>
+              <button class="btn" type="reset">Limpiar</button>
+            </div>
+  
+          </form>
+        </section>
+      </div>
+      
+     
     </main>
 
     <!-- 
