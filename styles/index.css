@@ -3,7 +3,7 @@
 /* grid section */
 
 .grid--index{
-  grid-template-rows: 5rem 54rem 36rem 0.5fr;
+  grid-template-rows: 5rem 54rem 39rem 0.5fr;
   grid-template-areas:  "header header header header header"
                         ". main main main ."
                         ". section section section ."
@@ -17,7 +17,6 @@
 
 .main--grid{
   grid-area: main;
-
 }
 
 .main--grid .main__title--grid {
@@ -61,13 +60,14 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 2rem;
-
 }
 
 .slideshow{
   width: 90rem;
   height: 45rem;
 }
+
+
 
 /* slideshow part */
 
@@ -120,7 +120,6 @@
   transition: left .65s ease-out;
 }
 
-
 .pictureContainer--slidershow{
   height: 100%;
   width: 100%;
@@ -129,7 +128,8 @@
 .pictureContainer--slidershow img{
   height: 45rem;
   width: 90rem;
-  object-fit: contain;
+  /* Revisar si conseguimos imagenes que encajen, rectangulares */
+  /* object-fit: contain; */
 
 }
 
@@ -139,26 +139,28 @@
   padding-top: 2rem;
   width: 32rem;
   align-items: center;
-  gap: 2rem;
+  margin-right: 10rem;
 }
 
 
-/* ARTICLES SECTION */
+/* SMALL ADOPTED SECTION */
 
 .homeAdoptedSection{
   display: flex;
   align-items: center;
+  justify-self: center;
+  flex-direction: column;
   gap: 1rem;
 }
 
 .homeAdoptedSection h2{
   align-self: flex-start;
-  justify-self: flex-start;
 }
 
 .homeAdoptedSection .links--indexMod{
-  margin-top: 2rem;
+  margin: 1rem 0;
 }
+
 
 /* ARTICLES */
 
@@ -168,7 +170,7 @@
 }
 
 .card--articleMod{
-  width: 70.5rem;
+  width: 65rem;
   height: 22rem;
   text-align: center;
 }
@@ -190,7 +192,7 @@
 .articleContainer article div p{
   margin-top: 1rem;
   height: 20rem;
-  width: 27rem;
+  width: 30rem;
   text-align: justify;
 }
 
