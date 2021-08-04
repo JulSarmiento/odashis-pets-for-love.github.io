@@ -207,7 +207,8 @@ input::placeholders{
   position: sticky;
   top: 0;
   height: 5rem;
-  z-index: 5;
+  /* Debido al Zidex del slider */
+  z-index: 100000000; 
 }
 
 .header__wrapper{

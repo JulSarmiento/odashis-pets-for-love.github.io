@@ -3,7 +3,7 @@
 /* grid section */
 
 .grid--index{
-  grid-template-rows: 5rem 54rem 39rem 0.5fr;
+  grid-template-rows: 5rem 54rem 41rem 0.5fr;
   grid-template-areas:  "header header header header header"
                         ". main main main ."
                         ". section section section ."
@@ -67,8 +67,6 @@
   height: 45rem;
 }
 
-
-
 /* slideshow part */
 
 .slider-container{
@@ -96,10 +94,11 @@
   background: #fff;
   border-radius: 50px;
   margin: 0 .2em 1em;
+  transition: 1.5s;
 }
 
 .menu label:hover {
-  background: red;
+  background: #FF8474;
 }
 
 .slide {
@@ -115,6 +114,7 @@
 }
 
 [id^="slide"]:checked + .slide {
+  color: #FF8474;
   left: 0;
   z-index: 100;
   transition: left .65s ease-out;
@@ -123,6 +123,7 @@
 .pictureContainer--slidershow{
   height: 100%;
   width: 100%;
+
 }
 
 .pictureContainer--slidershow img{
@@ -171,7 +172,7 @@
 
 .card--articleMod{
   width: 65rem;
-  height: 22rem;
+  height: 25rem;
   text-align: center;
 }
 
