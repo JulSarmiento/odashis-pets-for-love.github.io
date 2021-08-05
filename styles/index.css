@@ -17,6 +17,7 @@
 
 .main--grid{
   grid-area: main;
+
 }
 
 .main--grid .main__title--grid {
@@ -57,7 +58,7 @@
 .adoptionAndContact{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
 }
@@ -129,33 +130,30 @@
 .pictureContainer--slidershow img{
   height: 45rem;
   width: 90rem;
-  /* Revisar si conseguimos imagenes que encajen, rectangulares */
-  /* object-fit: contain; */
-
 }
 
 /* CONTACT US SECTION */
 
 .card--Indexmod{
   padding-top: 2rem;
-  width: 32rem;
+  width: 33rem;
   align-items: center;
   margin-right: 10rem;
+  margin: 0 auto;
 }
 
 
-/* SMALL ADOPTED SECTION */
+/*    SMALL ADOPTED SECTION     */
 
 .homeAdoptedSection{
   display: flex;
-  align-items: center;
-  justify-self: center;
   flex-direction: column;
-  gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
-.homeAdoptedSection h2{
-  align-self: flex-start;
+.homeAdoptedSection a{
+  align-self: center;
 }
 
 .homeAdoptedSection .links--indexMod{
@@ -163,10 +161,11 @@
 }
 
 
-/* ARTICLES */
+/* Articles */
 
 .articleContainer{
   display: flex;
+  justify-content: space-between;
   gap: 3rem;
 }
 
