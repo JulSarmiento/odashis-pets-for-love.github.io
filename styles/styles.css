@@ -65,6 +65,27 @@ body{
   text-decoration: underline wavy;  
 }
 
+
+.links--btn{
+  color: #ff8474 ;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #FF8474;
+  box-shadow: 0px 1px 10px -1px #ff847471;
+  width: 20rem;
+  padding: 0 1rem;
+  transition: 1s;
+  align-self: center;
+  text-align: center;
+}
+
+.links--btn:hover{
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff847493 ;
+  box-shadow: 0px 8px 18px -1px #ffffff;
+}
+
 .text, label{
   font-family: 'Lato', sans-serif;
   font-weight: 300;

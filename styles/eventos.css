@@ -54,7 +54,7 @@
 
 .card--eventsFuture{
   width: 55rem;
-  height: 75rem;
+
   align-self: center;
 }
 
@@ -71,7 +71,7 @@
   width: 90%;
   margin-bottom: 1rem;
   align-self: center;
-  height: 15rem;
+  height: 25rem;
 }
 
 .events__futureTextBox p{

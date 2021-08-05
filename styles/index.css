@@ -22,7 +22,8 @@
 
 .main--grid .main__title--grid {
   grid-area: title;
-  justify-items: flex-start;
+  margin-top: 1rem;
+
 }
 
 .main--grid .homedoptionSection--grid{
@@ -154,6 +155,7 @@
 
 .homeAdoptedSection a{
   align-self: center;
+  margin-top: 2rem;
 }
 
 .homeAdoptedSection .links--indexMod{

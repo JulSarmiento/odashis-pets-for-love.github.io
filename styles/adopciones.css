@@ -17,8 +17,9 @@
 
 .main__adoptions--grid{
   grid-area: main;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
+
 
 .footer__adoptions--grid{
   grid-area: footer;

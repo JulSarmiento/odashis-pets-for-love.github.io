@@ -32,6 +32,15 @@
   justify-content: space-between;
 }
 
+.text--textGodfathers{
+  justify-self: center;
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #583D72;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+
 .card--godfather{
   width: 40rem;
   margin: 1rem 0;
