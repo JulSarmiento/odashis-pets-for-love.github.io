@@ -58,7 +58,6 @@
   align-items: center;
   flex-flow: column wrap;
   justify-content: space-evenly;
-
 }
 
 .successAdopted__container .card--adopted p{
@@ -75,8 +74,6 @@
 .otherCases h2{
   margin-top: 2rem ;
 }
-
-
 
 .otherCases__imageBox{
   width: 125rem;

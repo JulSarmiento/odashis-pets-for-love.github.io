@@ -1,6 +1,6 @@
 /*          GODFATHERS          */
 
-/* GRID */
+/* GRID for Index, Form and Thanks messange */
 .grid--godfathers{
   grid-template-rows: 5rem 3fr 5rem;
   grid-template-areas:  "header header header header header"
