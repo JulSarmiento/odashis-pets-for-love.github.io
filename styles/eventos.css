@@ -41,11 +41,11 @@
 }
 
 .card--events{
-  width: 40rem;
+  width: 70rem;
 }
 
 .card--events p{
-  width: 80%;
+  width: 9 0%;
   align-self: center;
   text-align: justify;
 }
@@ -54,8 +54,12 @@
 
 .card--eventsFuture{
   width: 55rem;
-
   align-self: center;
+  margin-top: 4rem;
+}
+
+.card--eventsFuture h3{
+  margin-top: 1rem;
 }
 
 .pictureContainer--event{

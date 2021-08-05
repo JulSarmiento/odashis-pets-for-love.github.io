@@ -32,7 +32,21 @@ body{
   font-weight: 600;
   font-size: 3rem;
   color: #FF8474;
+  animation-duration: 2s;
+  animation-name: aparecer;
+
 }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 .title i {
   font-size: 3rem;
@@ -113,6 +127,10 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.main--Form{
+  min-height: calc(100vh - 12.5rem);
 }
 
 .form fieldset legend.subtitle--mod{
