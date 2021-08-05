@@ -47,8 +47,9 @@ body{
 
 .secction__title{
   font-family: 'Lemonada', cursive;
-  font-weight: 400;
+  font-weight: bold;
   color: #FF8474;
+  font-size: 1.7rem;
 }
 
 .links{
@@ -68,6 +69,7 @@ body{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
+  color: #583D72;
 }
 
 
@@ -137,7 +139,7 @@ input::placeholders{
   background-color: #ffffff;
   border-radius: 0.5rem;
   border: 1px solid #FF8474;
-  box-shadow: 0px 8px 18px -1px #ff847471;
+  box-shadow: 0px 1px 10px -1px #ff847471;
   height: 3rem;
   width: 13rem;
   transition: 1s;
@@ -190,7 +192,7 @@ input::placeholders{
 .pictureContainer img{
   height: 25rem;
   width: auto;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: transform 1s;
   object-fit: cover;
 }
@@ -207,6 +209,7 @@ input::placeholders{
   position: sticky;
   top: 0;
   height: 5rem;
+  box-shadow: 0px 0.5px 18px -1px #ff84744f;
   /* Debido al Zidex del slider */
   z-index: 100000000; 
 }
