@@ -26,7 +26,7 @@ body{
 
 .grid{
   display: grid;
-  grid-template-columns: 2%fr 1fr 1fr 1fr 0.39fr;
+  grid-template-columns: 5% 1fr 5%;
 }
 
 /*  FONTS */
@@ -323,12 +323,21 @@ input::placeholders{
 
   /* GENERAL */
 
-  /* Grid */
-
-  .grid{
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 2fr;
+  .title, .title i {
+    font-size: 1.8rem;
   }
+    
+  /* <a> styles */
+  
+  .links{
+    font-size: 1.2rem;
+  }
+  
+  /* <p> and general text styles */
+  
+  .text, label{
+    font-size: 1.2rem;
+  }  
 
   /* HEADER */
 
@@ -343,8 +352,7 @@ input::placeholders{
   }
 
   .header__wrapper nav ul {
-    max-width: 95%;
-    gap: 3%;
+    gap: 2%;
   }
   
 

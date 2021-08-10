@@ -4,10 +4,10 @@
 
 .grid--index{
   grid-template-rows: 5rem 54rem 41rem 0.5fr;
-  grid-template-areas:  "header header header header header"
-                        ". main main main ."
-                        ". section section section ."
-                        "footer footer footer footer footer";
+  grid-template-areas:  "header header header"
+                        ". main ."
+                        ". section ."
+                        "footer footer footer";
 
 }
 
@@ -201,7 +201,7 @@
 @media only screen and (min-width: 375px) and (max-width: 767px){
 
   .grid--index{
-    grid-template-rows: 10rem 82rem 125rem 0.5fr;
+    grid-template-rows: 10rem 82rem 127rem 0.5fr;
     grid-template-areas:  "header header header "
                           ". main ."
                           ". section ."
@@ -210,7 +210,6 @@
   }
 
   .main--grid .main__title--grid{
-    font-size: 2.1rem;
     text-align: center;
   }
 
@@ -237,7 +236,7 @@
   }
 
   .slideshow{
-    width: 100vw;
+    width: 33rem;
     height: 45rem;
     margin-bottom: 1rem;
 
@@ -253,7 +252,7 @@
   /* CONTACT US SECTION */
 
   .card--Indexmod{
-    width: 32rem;
+    width: 28rem;
 
   }
 
@@ -261,23 +260,32 @@
 
   /* Articles */
 
-  .homeAdoptedSection {
-    margin-left: 3%;
+  .homeAdoptedSection{
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homeAdoptedSection a{
+    margin-bottom: 2rem;
   }
 
   .articleContainer{
     flex-flow: column wrap;
-    margin: auto auto;
   }
 
   .card--articleMod{
-    width: 32rem;
-    height: 51rem;
+   height: 51rem;
+   width: 29.5rem;
 
   }
 
   .articleContainer article {
     flex-flow: column-reverse nowrap;
+  }
+
+  .articleContainer article div p {
+    width: 26rem;
   }
 
 }
