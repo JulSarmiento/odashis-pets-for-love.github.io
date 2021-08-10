@@ -1,6 +1,5 @@
 /*    GENERAL   */
 
-
 /* Most of the pictures are from "https://www.pexels.com/es-es/" */
 
 /*  ROOT  */
@@ -300,6 +299,7 @@ input::placeholders{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
 }
 
 .footer__list{
@@ -317,10 +317,34 @@ input::placeholders{
   gap: 1.5rem;
 }
 
+/*    MEDIA QUERIES     */
 
+@media only screen and (width: 411px) and (max-width: 767px){
 
+  /* GENERAL */
 
+  /* Grid */
 
+  .grid{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 2fr;
+  }
+
+  /* HEADER */
+
+  .header{
+    height: 10rem;
+  } 
+  
+  .header__wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+
+}
 
 
 

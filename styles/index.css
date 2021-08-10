@@ -29,19 +29,14 @@
 .main--grid .homedoptionSection--grid{
   grid-area: slideshow;
   display: flex;
-  flex-direction: row;
-}
-
-.main--grid .homeContactUs--grid{
-  grid-area: contactForm;
+  flex-flow: row wrap;
 }
 
 .homeAdoptedSection--grid {
   grid-area: section;
   display: flex;
   flex-flow: row wrap;
-
-}
+ }
 
 .footer--grid {
   grid-area: footer;
@@ -199,8 +194,89 @@
 }
 
 
+/*    MEDIA QUERIES    */
 
+/* MOBIEL */
 
+@media only screen and (min-width: 411px) and (max-width: 767px){
+
+  .grid--index{
+    grid-template-rows: 10rem 82rem 1fr 0.5fr;
+    grid-template-areas:  "header header header "
+                          ". main ."
+                          ". section ."
+                          "footer footer footer";
+  
+  }
+
+  .main--grid .main__title--grid{
+    font-size: 2.5rem;
+
+    text-align: center;
+  }
+
+  .main--grid .homedoptionSection--grid{
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .homeAdoptedSection--grid {
+    grid-area: section;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /* SLIDESHOW */
+
+  .adoptionAndContact{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .slideshow{
+    width: 100vw;
+    height: 45rem;
+    margin-bottom: 1rem;
+
+  }
+
+  /* slideshow part */
+  
+  .pictureContainer--slidershow img{
+    height: 45rem;
+    width: 100%;
+  }
+
+  /* CONTACT US SECTION */
+
+  .card--Indexmod{
+    width: 33rem;
+
+  }
+
+  /*    SMALL ADOPTED SECTION     */
+
+  /* Articles */
+
+  .articleContainer{
+    flex-flow: column wrap;
+  }
+
+  .card--articleMod{
+    width: 35rem;
+    height: 51rem;
+
+  }
+
+  .articleContainer article {
+    flex-flow: column-reverse nowrap;
+  }
+
+}
 
 
 
