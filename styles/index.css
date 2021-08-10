@@ -3,7 +3,7 @@
 /* grid section form HOME */
 
 .grid--index{
-  grid-template-rows: 5rem 54rem 41rem 0.5fr;
+  grid-template-rows: 5rem auto auto 0.5fr;
   grid-template-areas:  "header header header"
                         ". main ."
                         ". section ."
@@ -53,15 +53,15 @@
 
 .adoptionAndContact{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 2rem;
 }
 
 .slideshow{
-  width: 90rem;
-  height: 45rem;
+  width: 100rem;
+  height: 60rem;
 }
 
 /* slideshow part */
@@ -124,17 +124,19 @@
 }
 
 .pictureContainer--slidershow img{
-  height: 45rem;
-  width: 90rem;
+  height: 60rem;
+  width: 100rem;
 }
 
 /* CONTACT US SECTION */
+.homeContactUs {
+  display: flex;
+}
 
 .card--Indexmod{
   padding-top: 2rem;
-  width: 33rem;
+  width: 40rem;
   align-items: center;
-  margin-right: 10rem;
   margin: 0 auto;
 }
 
@@ -150,7 +152,7 @@
 
 .homeAdoptedSection a{
   align-self: center;
-  margin-top: 2rem;
+  margin: 3rem;
 }
 
 .homeAdoptedSection .links--indexMod{
@@ -162,13 +164,13 @@
 
 .articleContainer{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 3rem;
 }
 
 .card--articleMod{
-  width: 65rem;
-  height: 25rem;
+  width: 70rem;
+  height: 30rem;
   text-align: center;
 }
 
@@ -182,7 +184,7 @@
 }
 
 .articleContainer article img{
-  height: 22rem;
+  height: 30rem;
   border-radius: 1rem;
 }
 
@@ -192,7 +194,6 @@
   width: 30rem;
   text-align: justify;
 }
-
 
 /*    MEDIA QUERIES    */
 
@@ -290,6 +291,8 @@
 
 }
 
+/* tablet */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 
   .grid--index{
@@ -354,6 +357,10 @@
     margin-bottom: 2rem;
   }
 
+  .articleContainer{
+    justify-content: space-evenly;
+  }
+
   /* Articles */
 
   .card--articleMod{
@@ -371,6 +378,9 @@
   }
 
 }
+
+
+
 
 
 
