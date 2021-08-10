@@ -275,7 +275,7 @@
   }
 
   .card--articleMod{
-   height: 51rem;
+   height: 48rem;
    width: 29.5rem;
 
   }
@@ -286,6 +286,88 @@
 
   .articleContainer article div p {
     width: 26rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+  .grid--index{
+    grid-template-rows: 10rem auto auto 0.5fr;
+    grid-template-areas:  "header header header "
+                          ". main ."
+                          ". section ."
+                          "footer footer footer";
+  
+  }
+
+  .main--grid .main__title--grid{
+    margin-top: -1rem;
+  }
+
+  .main--grid .homedoptionSection--grid{
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .homeAdoptedSection--grid {
+    grid-area: section;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /* SLIDESHOW */
+
+  .adoptionAndContact{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .slideshow{
+    width: 68rem;
+    height: 45rem;
+    margin-bottom: 1rem;
+
+  }
+
+  /* slideshow part */
+  
+  .pictureContainer--slidershow img{
+    height: 45rem;
+    width: 100%;
+  }
+
+  /* CONTACT US SECTION */
+
+  .homeContactUs {
+    display: none;
+
+  }
+
+  /*    SMALL ADOPTED SECTION     */
+
+  .homeAdoptedSection a{
+    margin-bottom: 2rem;
+  }
+
+  /* Articles */
+
+  .card--articleMod{
+   height: 48rem;
+   width: 29.5rem;
+  
+  }
+
+  .articleContainer article {
+    flex-flow: column-reverse nowrap;
+  }
+
+  .articleContainer article div p {
+    height: auto;
   }
 
 }
