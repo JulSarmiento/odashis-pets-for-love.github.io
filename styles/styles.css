@@ -366,6 +366,10 @@ input::placeholder{
     gap: 1rem;
   }
 
+  .main--Form{
+    min-height: calc(100vh - 12.5rem);
+  }
+
   .form fieldset legend.subtitle--mod{
     font-size: 1.5rem;
     text-align: justify;
@@ -519,6 +523,31 @@ input::placeholder{
   .grid{
     display: grid;
     grid-template-columns: 10% 1fr 10%;
+  }
+
+
+  /*    THANKS MESSAGE  */
+
+  .main--mod .card--mod{
+    width: 50rem ;
+    height: 20rem;
+    margin: auto auto ;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .subtitle--mod{
+    font-size: 1.5rem;
+  }
+
+  .text--mod{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 1rem;
+  }
+
+  .links--mod{
+    font-size: 1.5rem;
   }
 
 }
