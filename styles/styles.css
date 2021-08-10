@@ -26,7 +26,7 @@ body{
 
 .grid{
   display: grid;
-  grid-template-columns: 0.39fr 1fr 1fr 1fr 0.39fr;
+  grid-template-columns: 2%fr 1fr 1fr 1fr 0.39fr;
 }
 
 /*  FONTS */
@@ -319,7 +319,7 @@ input::placeholders{
 
 /*    MEDIA QUERIES     */
 
-@media only screen and (width: 411px) and (max-width: 767px){
+@media only screen and (min-width: 375px) and (max-width: 767px){
 
   /* GENERAL */
 
@@ -340,7 +340,11 @@ input::placeholders{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
 
+  .header__wrapper nav ul {
+    max-width: 95%;
+    gap: 3%;
   }
   
 

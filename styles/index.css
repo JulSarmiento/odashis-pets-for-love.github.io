@@ -198,10 +198,10 @@
 
 /* MOBIEL */
 
-@media only screen and (min-width: 411px) and (max-width: 767px){
+@media only screen and (min-width: 375px) and (max-width: 767px){
 
   .grid--index{
-    grid-template-rows: 10rem 82rem 1fr 0.5fr;
+    grid-template-rows: 10rem 82rem 125rem 0.5fr;
     grid-template-areas:  "header header header "
                           ". main ."
                           ". section ."
@@ -210,8 +210,7 @@
   }
 
   .main--grid .main__title--grid{
-    font-size: 2.5rem;
-
+    font-size: 2.1rem;
     text-align: center;
   }
 
@@ -254,7 +253,7 @@
   /* CONTACT US SECTION */
 
   .card--Indexmod{
-    width: 33rem;
+    width: 32rem;
 
   }
 
@@ -262,12 +261,17 @@
 
   /* Articles */
 
+  .homeAdoptedSection {
+    margin-left: 3%;
+  }
+
   .articleContainer{
     flex-flow: column wrap;
+    margin: auto auto;
   }
 
   .card--articleMod{
-    width: 35rem;
+    width: 32rem;
     height: 51rem;
 
   }
