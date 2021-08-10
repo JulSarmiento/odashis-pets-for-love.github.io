@@ -4,10 +4,10 @@
 
 .grid--adoptions{
     grid-template-rows: 5rem 3fr 0.5fr;
-    grid-template-areas:  "header header header header header"
-                          ". main main main ."
-                          ". main main main ."
-                          "footer footer footer footer footer";
+    grid-template-areas:  "header header header "
+                          ". main ."
+                          ". main ."
+                          "footer footer footer";
   
 }
 
@@ -70,3 +70,35 @@ margin-top: 3rem;
   padding-right: 1rem;
 }
 
+
+/*    MEDIA QUERIES    */
+
+/* MOBILE */
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+
+  .main__adoptions--grid h1{
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .dogsSection{
+    gap: 1rem;
+  }
+
+  .dogsSection__petCard, .catsSection__petCard{
+    width: 30rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+  .dogsSection__petCard, .catsSection__petCard{
+    width: 30rem;
+    margin-bottom: 2rem;
+  }
+}

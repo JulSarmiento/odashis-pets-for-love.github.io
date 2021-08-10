@@ -169,7 +169,7 @@ body{
   padding: 0.5rem;
 }
 
-input::placeholders{
+input::placeholder{
   text-align: center;
   color: #a57acad3 ;
 }
@@ -336,7 +336,7 @@ input::placeholders{
   /* <p> and general text styles */
   
   .text, label{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }  
 
   /* HEADER */
@@ -356,6 +356,162 @@ input::placeholders{
   }
   
 
+  /*  FORMs  */
+
+  .main--mod{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .form fieldset legend.subtitle--mod{
+    font-size: 1.5rem;
+    text-align: justify;
+    
+  }
+
+  .form__inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .text--mod{
+    font-size: 1rem;
+  }
+
+  .form__radioBox{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  input::placeholder{
+    text-align: center;
+    color: #a57acad3 ;
+  }
+
+  .form__img{
+    display: none;
+
+  }
+
+  .card--adoptionsForm{
+    width: 29rem;
+  }
+
+  /*    THANKS MESSAGE  */
+
+  .main--mod .card--mod{
+    width: 30rem ;
+    height: 20rem;
+    margin: auto auto
+    ;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .subtitle--mod{
+    font-size: 1.5rem;
+  }
+
+  .text--mod{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 1rem;
+  }
+
+  .links--mod{
+    font-size: 1.5rem;
+  }
+  
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+  .title--form{
+    font-size: 2rem;
+  }
+
+  /*  FORMs  */
+
+  .main--mod{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .form fieldset legend.subtitle--mod{
+    font-size: 1.5rem;
+    text-align: justify;
+    
+  }
+
+  .form__inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .text--mod{
+    font-size: 1rem;
+  }
+
+  .form__radioBox{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  input::placeholder{
+    text-align: center;
+    color: #a57acad3 ;
+  }
+
+  .form__img{
+    display: flex;
+    height: 50rem;
+
+  }
+
+  .card--adoptionsForm{
+    width: 29rem;
+  }
+
+  /*    THANKS MESSAGE  */
+
+  .main--mod .card--mod{
+    width: 30rem ;
+    height: 20rem;
+    margin: auto auto
+    ;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .subtitle--mod{
+    font-size: 1.5rem;
+  }
+
+  .text--mod{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 1rem;
+  }
+
+  .links--mod{
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 1200px){
