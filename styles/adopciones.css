@@ -108,7 +108,12 @@ margin-top: 3rem;
 @media only screen and (min-width: 1200px){
 
   .dogsSection__petCard, .catsSection__petCard{
-    width: 30rem;
+    width: 23rem;
     margin-bottom: 2rem;
   }
+
+  .pictureContainer--adoptions,  .pictureContainer--adoptions img{
+    width: 20rem;
+  }
+
 }

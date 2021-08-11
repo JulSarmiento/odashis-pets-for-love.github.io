@@ -413,8 +413,7 @@ input::placeholder{
   .main--mod .card--mod{
     width: 30rem ;
     height: 20rem;
-    margin: auto auto
-    ;
+    margin: auto auto;
     justify-self: center;
     align-self: center;
   }
@@ -485,7 +484,6 @@ input::placeholder{
   .form__img{
     display: flex;
     height: 50rem;
-
   }
 
   .card--adoptionsForm{
@@ -520,11 +518,44 @@ input::placeholder{
 
 @media only screen and (min-width: 1200px){
 
+  /* GENERAL */
+
+  .title, .title i {
+    font-size: 1.8rem;
+  }
+    
+  /* <a> styles */
+  
+  .links{
+    font-size: 1.2rem;
+  }
+  
+  /* <p> and general text styles */
+  
+  .text, label{
+    font-size: 1.2rem;
+  }  
+
   .grid{
     display: grid;
     grid-template-columns: 10% 1fr 10%;
   }
 
+
+  /*    FORM     */
+
+  .title--form, .title--form i{
+    font-size: 2.5rem;
+  }
+
+  .card--adoptionsForm{
+    width: 36rem;
+  }
+
+  .form__img{
+    display: flex;
+    height: 55rem;
+  }
 
   /*    THANKS MESSAGE  */
 
