@@ -49,10 +49,6 @@
 
 /*    MAIN     */
 
-.homedoptionSection{
-  width: 60%;
-  height: 40%;
-}
 
 /* SLIDESHOW */
 
@@ -188,10 +184,6 @@
 
 .articleContainer article div{
   text-align: center;
-}
-
-.articleContainer article div{
-  text-align: center;
   width: 50%;
 }
 
@@ -211,7 +203,7 @@
 
 /* MOBIEL */
 
-@media only screen and (min-width: 375px) and (max-width: 767px){
+@media only screen and (min-width: 320px) and (max-width: 767px){
 
   .grid--index{
     grid-template-rows: 10rem 82rem 127rem 0.5fr;
@@ -290,11 +282,15 @@
   .card--articleMod{
    height: 48rem;
    width: 29.5rem;
-
   }
 
   .articleContainer article {
     flex-flow: column-reverse nowrap;
+  }
+
+  .articleContainer article div{
+    text-align: center;
+    width: 25rem;
   }
 
   .articleContainer article div p {
@@ -329,6 +325,10 @@
     grid-area: section;
     display: flex;
     flex-flow: column wrap;
+  }
+
+  .homedoptionSection {
+    height: 40%;
   }
 
   /* SLIDESHOW */
@@ -385,11 +385,25 @@
     flex-flow: column-reverse nowrap;
   }
 
+  .articleContainer article div{
+    text-align: center;
+    width: 30rem;
+  }
+
   .articleContainer article div p {
     height: auto;
   }
 
 }
+
+@media only screen and (min-width: 1200px){
+  .homedoptionSection{
+    width: 60%;
+    height: 40%;
+  }
+}
+
+
 
 
 

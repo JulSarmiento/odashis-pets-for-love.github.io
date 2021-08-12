@@ -94,7 +94,7 @@
 
 /* MOBIEL */
 
-@media only screen and (min-width: 375px) and (max-width: 767px){
+@media only screen and (min-width: 320px) and (max-width: 767px){
 
   .grid--adopted{
     grid-template-rows: 10rem auto auto 5rem;
@@ -113,15 +113,19 @@
     margin: 0 auto;
   }
   
-    .successAdopted__container .card img {
-    height: 40rem;
+  .successAdopted__container .card img {
+    height: 30rem;
     width: 100%;
     border-radius: 1rem;
     margin-bottom: 1rem;
   }
 
   .successAdopted__container .card .pictureContainer{
-    width: 40rem;
+    width: 28rem;
+  }
+
+  .successAdopted__container .card--adopted{
+    width: 30rem;
   }
   
   /* Other cases Section */
@@ -136,7 +140,7 @@
   .pictureContainer--otherCases{
     margin: 0 auto;
     height: auto;
-    width: 100vw;
+    width: 80vw;
 
   }
 
