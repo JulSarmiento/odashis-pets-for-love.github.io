@@ -20,22 +20,25 @@
   margin: 1rem 0;
 }
 
-
 .footer__adoptions--grid{
   grid-area: footer;
 }
 
 /* MAIN SECTION ADOPTIONS PAGE */
 
-.dogsSection h2, .catSection h2{
+.catSection h2{
   margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .dogsSection__container, .catSection__container{
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.dogsSection__petCard, .catsSection__petCard{
+  max-width: 30%;
 }
 
 /* Table section Adoptions page */
@@ -70,7 +73,6 @@ margin-top: 3rem;
   padding-right: 1rem;
 }
 
-
 /*    MEDIA QUERIES    */
 
 /* MOBILE */
@@ -103,17 +105,3 @@ margin-top: 3rem;
   }
 }
 
-/* DESKTOP */
-
-@media only screen and (min-width: 1200px){
-
-  .dogsSection__petCard, .catsSection__petCard{
-    width: 23rem;
-    margin-bottom: 2rem;
-  }
-
-  .pictureContainer--adoptions,  .pictureContainer--adoptions img{
-    width: 20rem;
-  }
-
-}
