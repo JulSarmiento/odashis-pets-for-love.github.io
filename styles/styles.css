@@ -521,19 +521,19 @@ input::placeholder{
   /* GENERAL */
 
   .title, .title i {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
     
   /* <a> styles */
   
   .links{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   
   /* <p> and general text styles */
   
   .text, label{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }  
 
   .grid{
