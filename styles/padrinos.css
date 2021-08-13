@@ -3,10 +3,10 @@
 /* GRID for Index, Form and Thanks messange */
 .grid--godfathers{
   grid-template-rows: 5rem 3fr 5rem;
-  grid-template-areas:  "header header header header header"
-                        ". main main main ."
-                        ". main main main ."
-                        "footer footer footer footer footer";
+  grid-template-areas:  "header header header"
+                        ". main ."
+                        ". main."
+                        "footer footer footer";
 
 }
 
@@ -28,8 +28,9 @@
 
 .main__godfatherGridBox{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  gap: 3rem;
+  margin: 0;
 }
 
 .text--textGodfathers{
@@ -42,7 +43,7 @@
 }
 
 .card--godfather{
-  width: 40rem;
+  width: 30rem;
   margin: 1rem 0;
   display: flex;
   justify-content: center;
@@ -57,15 +58,15 @@
 }
 
 .pictureContainer--godfather{
-  height: 35rem;
-  width: 37rem;
+  height: 28rem;
+  width: 28rem;
 }
 
 .pictureContainer--godfather img {
   margin: 0;
   padding: 0;
-  height: 35rem;
-  width: 35rem;
+  height: 28rem;
+  width: 100%;
 }
 
 .godfatherTexBox .planRequirements{
@@ -95,4 +96,103 @@
 .planBonus li{
   line-height: 2rem;
   margin: 0.5rem;
+}
+
+/*    MEDIA QUERIES    */
+
+/* MOBILE */
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  /* GRID for Index, Form and Thanks messange */
+  .grid--godfathers{
+    grid-template-rows: 10rem 3fr 5rem;
+  }
+
+  /* MAIN */
+
+  .main__godfatherGridBox{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .text--textGodfathers{
+    width: 80%;
+    margin: auto auto;
+  }
+
+  .card--godfather{
+    width: 29rem;
+    margin: 1rem 0;
+  }
+
+  .pictureContainer--godfather{
+    height: 30rem;
+    width: 29rem;
+  }
+
+  .pictureContainer--godfather img {
+    margin: 0;
+    padding: 0;
+    height: 30rem;
+    width: 29rem;
+  }
+
+}
+
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  /* MAIN */
+
+  .main__godfatherGridBox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .text--textGodfathers{
+    width: 90%;
+    margin: auto auto;
+  }
+
+  .card--godfather{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 64rem;
+    margin: 1rem 0;
+  }
+
+  .pictureContainer--godfather{
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .pictureContainer--godfather img {
+    margin: 0;
+    padding: 0;
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .godfatherTexBox{
+    width: 30rem;
+  }
+
+  .godfatherTexBox .planRequirements{
+    line-height: 1rem;
+  }
+
+}
+
+@media only screen and (min-width:1400px) {
+
+  .main__godfatherGridBox{
+    justify-content: space-around;
+
+  }
+
 }

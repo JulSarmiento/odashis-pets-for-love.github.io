@@ -125,7 +125,7 @@
   }
 
   .successAdopted__container .card--adopted{
-    width: 30rem;
+    width: 29rem;
   }
   
   /* Other cases Section */
@@ -140,7 +140,7 @@
   .pictureContainer--otherCases{
     margin: 0 auto;
     height: auto;
-    width: 80vw;
+    width: 78vw;
 
   }
 

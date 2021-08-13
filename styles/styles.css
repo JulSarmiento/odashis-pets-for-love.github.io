@@ -490,6 +490,10 @@ input::placeholder{
     width: 29rem;
   }
 
+  .title--form, .title--form i{
+    font-size: 2rem;
+  }
+
   /*    THANKS MESSAGE  */
 
   .main--mod .card--mod{

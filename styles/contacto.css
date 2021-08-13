@@ -3,11 +3,11 @@
 /* GRID for CONTTACT US and THANKS MESSANGE */
 
 .grid--contact{
-  grid-template-rows: 5rem 2fr 5rem;
-  grid-template-areas:  "header header header header header"
-                        ". main main main ."
-                        ". main main main."
-                        "footer footer footer footer footer";
+  grid-template-rows: 5rem 3fr 5rem;
+  grid-template-areas:  "header header header"
+                        ". main ."
+                        ". main ."
+                        "footer footer footer";
 }
 
 .header__contact--grid{
@@ -37,4 +37,14 @@
 .main__form--contact{
   margin-top: -20rem;
   width: 45rem;
+}
+
+/*    MEDIA QUERIES    */
+
+/* MOBILE */
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .grid--contact{
+    grid-template-rows: 10rem 3fr 5rem;
+  }
 }

@@ -3,11 +3,11 @@
 /* GRID for EVENTS, EVENT'S FORM and THANKS MESSANGE */
 
 .grid--events{
-  grid-template-rows: 5rem 2fr 5rem;
-  grid-template-areas:  "header header header header header"
-                        ". main main main ."
-                        ". main main main."
-                        "footer footer footer footer footer";
+  grid-template-rows: 5rem 3fr 5rem;
+  grid-template-areas:  "header header header"
+                        ". main ."
+                        ". main ."
+                        "footer footer footer";
 }
 
 .header__event--grid{
@@ -29,7 +29,7 @@
 
 .events{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
 }
 
@@ -41,11 +41,11 @@
 }
 
 .card--events{
-  width: 70rem;
+  width: 35rem;
 }
 
 .card--events p{
-  width: 9 0%;
+  width: 90%;
   align-self: center;
   text-align: justify;
 }
@@ -53,7 +53,7 @@
 /*  Future Eventes Section */
 
 .card--eventsFuture{
-  width: 55rem;
+  width: 40rem;
   align-self: center;
   margin-top: 4rem;
 }
@@ -63,12 +63,12 @@
 }
 
 .pictureContainer--event{
-  height: 50rem;
-  width: 50rem;
+  height: 40rem;
+  width: 40rem;
 }
 
 .pictureContainer--event img{
-  height: 50rem;
+  height: 40rem;
 }
 
 .events__futureTextBox{
@@ -96,4 +96,112 @@
 
 .main__form--event{
   margin-top: -20rem;
+}
+
+/*    MEDIA QUERIES    */
+
+/* MOBILE */
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+  /* GRID for EVENTS, EVENT'S FORM and THANKS MESSANGE */
+
+.grid--events{
+  grid-template-rows: 10rem 3fr 5rem;
+}
+
+/* MAIN INDEX EVENTOS */
+
+/* Past Events Section */
+
+.events{
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--events{
+  width: 29rem;
+}
+
+/*  Future Eventes Section */
+
+.card--eventsFuture{
+  width: 29rem;
+  align-self: center;
+  margin-top: 4rem;
+}
+
+.pictureContainer--event{
+  height: 27rem;
+  width: 27rem;
+}
+
+.pictureContainer--event img{
+  height: 29rem;
+  width: 100%;
+}
+
+.events__futureTextBox{
+  width: 29rem;
+  height: 30rem;
+}
+
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  /* GRID for EVENTS, EVENT'S FORM and THANKS MESSANGE */
+
+  .grid--events{
+    grid-template-rows: 10rem 3fr 5rem;
+  }
+  
+  /* MAIN INDEX EVENTOS */
+  
+  /* Past Events Section */
+  
+  .events{
+    flex-flow: column nowrap;
+  }
+
+  .events .event__past{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  .card--events p{
+    height: 25rem;
+  }
+  
+  .card--events{
+    width: 29rem;
+  }
+  
+  /*  Future Eventes Section */
+  
+  .card--eventsFuture{
+    width: 60rem;
+    align-self: center;
+    margin-top: 4rem;
+  }
+  
+  .pictureContainer--event{
+    height: 50rem;
+    width: 50rem;
+  }
+  
+  .pictureContainer--event img{
+    height: 50rem;
+    width: 100%;
+  }
+  
+  .events__futureTextBox{
+    width: 90%;
+    height: 20rem;
+  }
+
 }
