@@ -15,6 +15,7 @@ html{
 
 body{
   background: linear-gradient(180deg, rgba(255,255,255,0.6783088235294117) 3%, rgba(255,132,116,0.15730042016806722) 100%);
+  overflow-x: hidden;
 }
 
 .wrapper{
@@ -192,7 +193,7 @@ input::placeholder{
 
 }
 
-.btn{
+.btn--mod{
   background-color: #ffffff;
   border-radius: 0.5rem;
   border: 1px solid #FF8474;
@@ -342,18 +343,8 @@ input::placeholder{
   /* HEADER */
 
   .header{
-    height: 10rem;
+    height:auto;
   } 
-  
-  .header__wrapper{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header__wrapper nav ul {
-    gap: 2%;
-  }
   
 
   /*  FORMs  */

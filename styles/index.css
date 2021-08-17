@@ -58,76 +58,9 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.slideshow{
-  height: 40rem;
-}
-
-/* slideshow part */
-
-.slider-container{
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden; 
-  text-align: center;
-  padding: 0;
-}
-
-.menu {
-  position: absolute;
-  left: 0;
-  z-index: 900;
-  width: 100%;
-  bottom: 0;
-}
-
-.menu label {
-  cursor: pointer;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: #fff;
-  border-radius: 50px;
-  margin: 0 .2em 1em;
-  transition: 1.5s;
-}
-
-.menu label:hover {
-  background: #FF8474;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 10;
-  background-size: cover;
-  background-position: 50% 50%;
-  transition: left 0s 1s;
-}
-
-[id^="slide"]:checked + .slide {
-  color: #FF8474;
-  left: 0;
-  z-index: 100;
-  transition: left .65s ease-out;
-}
-
-.pictureContainer--slidershow{
-  height: 100%;
-  width: 100%;
 
 }
 
-.pictureContainer--slidershow img{
-  height: 45rem;
-  width: 100%;
-}
 
 /* CONTACT US SECTION */
 .homeContactUs {
@@ -206,7 +139,7 @@
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
   .grid--index{
-    grid-template-rows: 10rem 82rem 127rem 0.5fr;
+    grid-template-rows: auto auto 127rem 0.5fr;
     grid-template-areas:  "header header header "
                           ". main ."
                           ". section ."
@@ -242,22 +175,16 @@
 
   .slideshow{
     width: 33rem;
-    height: 45rem;
+    height: auto;
     margin-bottom: 1rem;
 
   }
 
-  /* slideshow part */
-  
-  .pictureContainer--slidershow img{
-    height: 45rem;
-    width: 100%;
-  }
 
   /* CONTACT US SECTION */
 
   .card--Indexmod{
-    width: 28rem;
+    width: 30rem;
 
   }
 
@@ -266,14 +193,11 @@
   /* Articles */
 
   .homeAdoptedSection{
-    margin-top: 2rem;
+
     justify-content: center;
     align-items: center;
   }
 
-  .homeAdoptedSection a{
-    margin-bottom: 2rem;
-  }
 
   .articleContainer{
     flex-flow: column wrap;
@@ -301,7 +225,7 @@
 
 /* tablet */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1199px){
 
   .grid--index{
     grid-template-rows: 10rem auto auto 0.5fr;
@@ -377,7 +301,7 @@
 
   .card--articleMod{
    height: 48rem;
-   width: 29.5rem;
+   width: 33rem;
   
   }
 

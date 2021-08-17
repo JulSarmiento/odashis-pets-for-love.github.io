@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lemonada:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- bootstrap -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- This is the CSS File    -->
@@ -32,40 +32,24 @@
   <!-- 
     GRID CONTANER
    -->
-  <div class="m-0 grid grid--index">
+  <div class="grid grid--index">
     <!-- 
       HEADER SECTION
       Header block, with the logo and the nav bar  
     -->
-    <header class="container-fluid m-0 row header header--grid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a style="height: 2.5rem;" class="navbar-brand" href="#"><img style="height: 2.5rem;" class="header__logo" loading="lazy" src="./assets/img/ODASHI-LOGO.png" alt="Logo version icono de la fundacion."></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link links" href="./index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link links" href="./adopciones/index.html">ADOPTA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link links" href="./adoptados/index.html" >ADOPTADOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link links" href="./padrinos/index.html" >PADRINOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link links" href="./eventos/index.html" >EVENTOS</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
+    <header class="header header--grid ">
+      <div class="header__wrapper wrapper">
+        <a href="../index.html"><img class="header__logo" loading="lazy" src="./assets/img/ODASHI-LOGO.png" alt="Logo version icono de la fundacion."></a>
+        <nav>
+          <ul class="list">
+            <li ><a class="links" href="./index.html">HOME</a></li> 
+            <li ><a class="links" href="./adopciones/index.html">ADOPTA</a></li>
+            <li ><a class="links" href="./adoptados/index.html">ADOPTADOS</a></li>
+            <li ><a class="links" href="./padrinos/index.html">PADRINOS</a></li>
+            <li ><a class="links" href="./eventos/index.html">EVENTOS</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
 
@@ -73,7 +57,7 @@
       MAIN SECTION
       This block contains the slideshow pictures and a small contact form.
     -->
-    <main class="container  main--grid">
+    <main class="main--grid">
       <!-- This is the titlte of the page. -->
       <h1 class="title main__title--grid ">ODASHI'S PETS FOR LOVE <i class="fas fa-paw"></i></h1>
 
@@ -81,70 +65,95 @@
         ADOPTCION SECTION 
         This section contains the principal information of the page. The title with a <h1> will help the SEO to find the place. 
       -->      
-      <div class="row flex-row flex-lg-wrap adoptionAndContact">
+      <div class="adoptionAndContact">
 
         <!-- 
-        SLIDESHOW SECTION  
+          SLIDESHOW SECTION  
         -->  
-        <div class="col-lg-7 col-sm-12 slideshow ">
+        <div class="homedoptionSection">
 
-          <div id="carouselExampleCaptions" class="carousel slide col-sm-12" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div class="slideshow">
+
+            <div class="slider-container">
+        
+              <input id="slide-dot-1" type="radio" name="slides" checked>
+                <div class="slide slide-1">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <a href="./adopciones/index.html"><img src="./assets/indexImg/dog-slideshow-1.jpeg" alt="This is the photo of a happy cat"></a>
+                  </div>
+                </div>
+              
+              <input id="slide-dot-2" type="radio" name="slides">
+                <div class="slide slide-2">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <a href="./adopciones/index.html"><img src="./assets/indexImg/cat-slideshow-1.jpeg" alt="This is the photo of a happy dog"></a>
+                  </div>
+                </div>
+              
+              <input id="slide-dot-3" type="radio" name="slides">
+                <div class="slide slide-3">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <a href="./adopciones/index.html"><img src="./assets/indexImg/cat-slideshow-2.jpeg" alt="This is the photo of a happy cat"></a>
+                  </div>
+                </div>
+
+              <input id="slide-dot-4" type="radio" name="slides">
+                <div class="slide slide-4">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <a href="./adopciones/index.html"><img src="./assets/indexImg/dog-slideshow-2-min.jpeg" alt="This is the photo of a happy dog"></a>
+                  </div>
+                </div>
+
+              <input id="slide-dot-5" type="radio" name="slides">
+                <div class="slide slide-5">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <a href="./adopciones/index.html"><img src="./assets/indexImg/cat-slideshow-3.jpeg" alt="This is the photo of a happy cat"></a>
+                  </div>
+                </div>
+
+              <input id="slide-dot-6" type="radio" name="slides">
+                <div class="slide slide-6">
+                  <div class="pictureContainer pictureContainer--slidershow">
+                    <a href="./adopciones/index.html"><img src="./assets/indexImg/dog-slideshow-3-min.jpeg" alt="This is the photo of a happy dog"></a>
+                  </div>
+                </div>
+
+                <div class="menu">
+                  <label for="slide-dot-1"></label>
+                  <label for="slide-dot-2"></label>
+                  <label for="slide-dot-3"></label>
+                  <label for="slide-dot-4"></label>
+                  <label for="slide-dot-5"></label>
+                  <label for="slide-dot-6"></label>
+                </div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/indexImg/cat-slideshow-1.jpeg" alt="This is the photo of a happy dog" class="d-block w-100" >
-                <div class="carousel-caption d-md-block card--Opacity">
-                  <p>Los gatos no son toda tu vida, pero hacen tu vida completa.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/indexImg/dog-slideshow-1.jpeg" alt="This is the photo of a happy dog" class="d-block w-100" >
-                <div class="carousel-caption d-md-block card--Opacity">
-                  <p>Tú no tienes un perro, el perro te tiene a ti.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/indexImg/cat-slideshow-2.jpeg" alt="This is the photo of a happy cat" class="d-block w-100 " >
-                <div class="carousel-caption  d-md-block card--Opacity">
-                  <p>Un maullido es un masaje al corazón.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  
           </div>
+  
         </div>
-
-        <!-- colocar el width con css para el mobiel -->
-        <section class=" card col-lg-5  col-sm-12 w-auto  justify-content-center      homeContactUs homeContactUs--grid  card--Indexmod ">
+  
+        <!-- 
+          SMALL CONTACT US SECTION 
+         -->  
+        <section class="homeContactUs homeContactUs--grid card card--Indexmod ">
           <h2 class="subtitle">Te contactamos <i class="fas fa-heart"></i></h2>
   
           <!-- This is the form for the Foundation contact the users.-->
           <form class="formHomeContactUs form " action="./contacto/gracias.html">
-
+  
             <div class="form__inputBox">
               <label  class="labelDecoration" for="user-name">Nombre Completo: </label>
-              <input class="form-control text" type="text" name="user-name" id="user-name" placeholder="Mario Alberto Rojas Perez">
+              <input type="text" name="user-name" id="user-name" placeholder="Mario Alberto Rojas Perez">
             </div>
   
             <div class="form__inputBox">
               <label for="phone">Teléfono: </label>
-              <input class="form-control text"  type="number" name="phone" id="phone" placeholder="3502215598">
+              <input type="number" name="phone" id="phone" placeholder="3502215598">
             </div>
   
             <div class="form__inputBox">
               <label for="email">Correo Electrónico:</label>
-              <input class="form-control text"  type="email" name="email" id="email" placeholder="mariorojas@gmail.com">
+              <input type="email" name="email" id="email" placeholder="mariorojas@gmail.com">
             </div>
             
             <div class="form__radioBox form__radioBox--mod">
@@ -159,38 +168,16 @@
                 <label for="cats">Gatito</label>
               </div>
             </div>
-
-            <div class="container">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn--mod text" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
-              <button type="reset" class="btn--mod text">Limpiar</button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog  modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Odashi's Pets For Love</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p class="text text--mod">Muchas gracias por comunicarte con nosotros, nos comunicaremos contigo lo mas pronto posible.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn--mod text" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             
-
+            <div class="form__btnBox">
+              <button class="btn" type="submit">Enviar</button>
+              <button class="btn" type="reset">Limpiar</button>
+            </div>
+  
           </form>
         </section>
       </div>
-        
-  
+      
     </main>
 
     <!-- 
@@ -215,7 +202,7 @@
             </p> 
          </div>
          <div class="pictureContainer pictureContainer--arcicle">
-          <img style="height: 20rem;" loading="lazy" src="./assets/indexImg/dog-happyFamily.jpeg" alt="Foto del perro felizmente adoptado.">
+          <img loading="lazy" src="./assets/indexImg/dog-happyFamily.jpeg" alt="Foto del perro felizmente adoptado.">
          </div>
           
         </article>
@@ -231,7 +218,7 @@
             </p> 
          </div>
           <div class="pictureContainer pictureContainer--arcicle">
-            <img style="height: 20rem;" loading="lazy" src="./assets/indexImg/cat-happyFamily.jpeg" alt="Foto del gato felizmente adoptado.">
+            <img loading="lazy" src="./assets/indexImg/cat-happyFamily.jpeg" alt="Foto del gato felizmente adoptado.">
           </div>
                     
         </article>
@@ -263,10 +250,9 @@
     </footer>
  
   </div>
-
+  <!-- script bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <script src="./scripts/scripts.js"></script>
 </body>
 
 </html>
