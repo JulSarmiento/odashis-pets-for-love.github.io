@@ -203,8 +203,9 @@ input::placeholder{
   transition: 1s;
 }
 
-.btn:hover{
+.btn--mod:hover{
   background-color: #ff847493;
+  color: white;
   box-shadow: 0px 8px 18px -1px #ffffff;
 }
 
@@ -294,23 +295,25 @@ input::placeholder{
 .footer{
   background-color: white;
   border-bottom: 0.5rem solid #FF8474;
+  height: auto;
 }
 
 .footer__wrapper{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  padding: 1rem;
+  height: 5rem;
 }
 
 .footer__list{
   list-style-type: none;
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
 }
 
 .footer__list li a{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .footer__links{
@@ -512,6 +515,8 @@ input::placeholder{
 }
 
 @media only screen and (min-width: 1200px){
+
+
 
   /* GENERAL */
 

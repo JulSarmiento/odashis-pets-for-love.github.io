@@ -82,7 +82,8 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
+
 }
 
 .homeAdoptedSection a{
@@ -112,6 +113,7 @@
   display: flex;
   align-items: center;
   flex-flow: row nowrap;
+  height: auto;
 
 }
 
@@ -139,7 +141,7 @@
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
   .grid--index{
-    grid-template-rows: auto auto 127rem 0.5fr;
+    grid-template-rows: auto auto 125rem 0.5fr;
     grid-template-areas:  "header header header "
                           ". main ."
                           ". section ."
@@ -209,10 +211,12 @@
   }
 
   .articleContainer article {
+    height: auto;
     flex-flow: column-reverse nowrap;
   }
 
   .articleContainer article div{
+    height: auto;
     text-align: center;
     width: 25rem;
   }
@@ -268,7 +272,7 @@
 
   .slideshow{
     width: 68rem;
-    height: 45rem;
+    height: auto;
     margin-bottom: 1rem;
 
   }
@@ -322,6 +326,7 @@
 
 @media only screen and (min-width: 1200px){
   .homedoptionSection{
+    padding-top: 1rem;
     width: 60%;
     height: 40%;
   }
