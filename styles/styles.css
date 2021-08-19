@@ -274,7 +274,7 @@ input::placeholder{
 }
 
 .header__logo, i{
-  height: 4rem;
+  height: 3rem;
   transition: transform 2s ease-in-out;
 }
 
