@@ -57,7 +57,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 
   .dogsSection__petCard, .catsSection__petCard{
-    width: 30rem;
+    width: 29rem;
     margin-bottom: 2rem;
     max-width: 90%;
   }

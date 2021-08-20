@@ -218,7 +218,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1199px){
 
   .grid--index{
-    grid-template-rows: 10rem auto auto 0.5fr;
+    grid-template-rows: auto auto auto 0.5fr;
     grid-template-areas:  "header header header "
                           ". main ."
                           ". section ."
