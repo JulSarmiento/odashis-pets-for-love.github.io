@@ -68,7 +68,7 @@ body{
 
 /* <h3> styles */
 
-.secction__title{
+.section__title{
   font-family: 'Lemonada', cursive;
   font-weight: bold;
   color: #FF8474;
@@ -89,7 +89,6 @@ body{
   color: #FF8474;
   text-decoration: underline wavy;  
 }
-
 
 .links--btn{
   color: #ff8474 ;
@@ -119,7 +118,6 @@ body{
   font-size: 1.5rem;
   color: #583D72;
 }
-
 
 /*  CARDS  */
 
@@ -190,7 +188,6 @@ input::placeholder{
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
-
 }
 
 .btn--mod{

@@ -58,9 +58,7 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 2rem;
-
 }
-
 
 /* CONTACT US SECTION */
 .homeContactUs {
@@ -69,10 +67,7 @@
 }
 
 .card--Indexmod{
-  padding-top: 2rem;
   width: 30%;
-  align-items: center;
-  margin: 0 auto;
 }
 
 
@@ -132,8 +127,6 @@
   text-align: justify;
 }
 
-.pictureContainer--arcicle{}
-
 /*    MEDIA QUERIES    */
 
 /* MOBIEL */
@@ -182,13 +175,6 @@
 
   }
 
-
-  /* CONTACT US SECTION */
-
-  .card--Indexmod{
-    width: 30rem;
-
-  }
 
   /*    SMALL ADOPTED SECTION     */
 

@@ -32,47 +32,11 @@
 
 .dogsSection__container, .catSection__container{
   display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  gap: 1rem;
+  justify-content: center;
 }
 
 .dogsSection__petCard, .catsSection__petCard{
   max-width: 30%;
-}
-
-
-
-/* Table section Adoptions page */
-
-.table {
-  text-align: center;
-}
-
-.table tbody{
-  color: #9F5F80;
-}
-
-.table tbody tr td{
-  border: 1px solid #ff847400;
-  border-radius: 0.5rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 0.5rem;
-  background: #fce6e3;
-}
-
-.table tbody tr td a{
-margin-top: 3rem;
-}
-
-.table tbody tr th{
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  text-align: justify;
-  padding-right: 1rem;
 }
 
 /*    MEDIA QUERIES    */
@@ -81,19 +45,9 @@ margin-top: 3rem;
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
-  .main__adoptions--grid h1{
-    margin-top: 5rem;
-    text-align: center;
-  }
-
-  .dogsSection{
-    gap: 1rem;
-  }
-
    .dogsSection__petCard, .catsSection__petCard{
-    width: 29rem;
+    /* width: 30rem; */
     max-width: 90%;
-    margin-bottom: 2rem;
   }
 
 }
@@ -103,9 +57,10 @@ margin-top: 3rem;
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 
   .dogsSection__petCard, .catsSection__petCard{
-    width: 29rem;
+    width: 30rem;
     margin-bottom: 2rem;
     max-width: 90%;
   }
+
 }
 
