@@ -211,7 +211,7 @@ input::placeholder{
 .pictureContainer{
   margin:auto auto;
   overflow: hidden;
-  width: 25rem;
+  width: 100%;
   border-radius: 1rem;
 }
 

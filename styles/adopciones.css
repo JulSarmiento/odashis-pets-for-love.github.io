@@ -1,39 +1,6 @@
 /*          ADOPTIONS          */
 
-/* GRID for ADOPTIONS, ADOPTIONS'S FORM and THANKS ADOPTION'S FORM */
-
-.grid--adoptions{
-    grid-template-rows: 5rem 3fr 0.5fr;
-    grid-template-areas:  "header header header "
-                          ". main ."
-                          ". main ."
-                          "footer footer footer";
-  
-}
-
-.header__adoptions--grid{
-  grid-area: header;
-}
-
-.main__adoptions--grid{
-  grid-area: main;
-  margin: 1rem 0;
-}
-
-.footer__adoptions--grid{
-  grid-area: footer;
-}
-
 /* MAIN SECTION ADOPTIONS PAGE */
-
-.catSection h2{
-  margin-top: 3rem;
-}
-
-.dogsSection__container, .catSection__container{
-  display: flex;
-  justify-content: center;
-}
 
 .dogsSection__petCard, .catsSection__petCard{
   max-width: 30%;
@@ -45,9 +12,9 @@
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
+
    .dogsSection__petCard, .catsSection__petCard{
-    /* width: 30rem; */
-    max-width: 90%;
+    max-width: 100%;
   }
 
 }
@@ -59,7 +26,7 @@
   .dogsSection__petCard, .catsSection__petCard{
     width: 29rem;
     margin-bottom: 2rem;
-    max-width: 90%;
+    max-width: 100%;
   }
 
 }
