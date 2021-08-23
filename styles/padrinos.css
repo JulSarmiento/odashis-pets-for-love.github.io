@@ -20,7 +20,6 @@
 
 .card--godfather{
   width: 30%;
-
 }
 
 .godfatherTexBox{
@@ -35,6 +34,7 @@
 .pictureContainer--godfather img {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .godfatherTexBox .planRequirements{
@@ -94,8 +94,9 @@
 
 /* TABLET */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1023px){
   /* MAIN */
+
 
 
   .text--textGodfathers{
@@ -105,7 +106,7 @@
 
   .card--godfather{
     width: 100%;
-    margin: 1rem 0;
+
   }
 
   .pictureContainer--godfather{
@@ -124,10 +125,17 @@
 
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1024px) {
 
   .main__godfatherGridBox{
     justify-content: space-around;
+
+  }
+  
+  .card--godfather{
+    height: 80rem;
+    width: 30%;
+
 
   }
 
