@@ -1,68 +1,17 @@
 /*          ADOPTED          */
 
-/* GRID for ADOPTED */
-
-.grid--adopted{
-  grid-template-rows: 5rem 56rem 1fr 5rem;
-  grid-template-areas:  "header header header"
-                        ". main  ."
-                        ". section  ."
-                        "footer footer footer";
-
-}
-
-.header__adopted--grid{
-  grid-area: header;
-}
-
-.main__adopted--grid{
-  grid-area: main;
-  margin: 1rem 0;
-}
-
-.section__adopted--grid{
-  grid-area: section;
-  margin: 1rem 0;
-}
-
-.footer__adopted--grid{
-  grid-area: footer;
-}
-
 /* SUCCES ADOPTED SECTION  */
-
-.successAdopted{
-  display: flex;
-  flex-direction: column;
-}
 
 .successAdopted h2{
   margin-bottom: 1rem;
 }
 
-.successAdopted__container{
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-}
-
-.successAdopted__container .card img {
-  height: 30rem;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-}
-
 .successAdopted__container .card--adopted{
-  width: 35rem;
-  display: flex;
-  align-items: center;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
+  width: 30%;
 }
 
 .successAdopted__container .card--adopted p{
   text-align: justify;
-
 }
 
 /* Other cases Section */
@@ -75,84 +24,52 @@
   margin-top: 2rem ;
 }
 
-.otherCases__imageBox{
-  width: 125rem;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 30rem 30rem;
-  margin: 0;
-  margin: 0 auto;
-}
-
 .otherCases__imageBox .pictureContainer img{
   height: 25rem;
 
 }
-
 
 /*    MEDIA QUERIES    */
 
 /* MOBIEL */
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
-
-  .grid--adopted{
-    grid-template-rows: 10rem auto auto 5rem;
-    grid-template-areas:  "header header header"
-                          ". main  ."
-                          ". section  ."
-                          "footer footer footer";
-  
-  }
   
   /* SUCCES ADOPTED SECTION  */
-  
-  .successAdopted__container{
-    flex-flow: column nowrap;
-    gap: 1rem;
-    margin: 0 auto;
+
+  .successAdopted__container .card--adopted{
+    width: 100%;
   }
-  
+
   .successAdopted__container .card img {
-    height: 30rem;
+    height: 25rem;
     width: 100%;
     border-radius: 1rem;
     margin-bottom: 1rem;
   }
 
   .successAdopted__container .card .pictureContainer{
-    width: 28rem;
+    width: 100%;
+    object-fit: scale-down;
   }
 
-  .successAdopted__container .card--adopted{
-    width: 29rem;
-  }
-  
+
   /* Other cases Section */
-    
-  .otherCases__imageBox{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    gap: 1rem;
-  }
   
   .pictureContainer--otherCases{
     margin: 0 auto;
     height: auto;
-    width: 78vw;
+    width: auto;
 
   }
 
   .otherCases__imageBox .pictureContainer img{
     height: auto;
-  
-  }
-  .pictureContainer--otherCases img{
     width: 100%;
     height: 100%;
-
+  
   }
+
 }
 
 /*    TABLET     */
@@ -161,23 +78,10 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 
-  .grid--adopted{
-    grid-template-rows: 10rem auto auto 5rem;
-    grid-template-areas:  "header header header"
-                          ". main  ."
-                          ". section  ."
-                          "footer footer footer";
-  
-  }
+
     
   /* SUCCES ADOPTED SECTION  */
     
-  .successAdopted__container{
-    flex-flow: row wrap;
-    gap: 1rem;
-    margin: 0 auto;
-  }
-
   .successAdopted__container .card--adopted{
     width: 30rem;
   }
@@ -194,28 +98,16 @@
   }
 
   /* Other cases Section */
-    
-  .otherCases__imageBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
-    gap: 1rem;
-  }
 
   .pictureContainer--otherCases{
     margin: 0 auto;
     height: auto;
-    width: 40vw;
-  }
-
-  .otherCases__imageBox .pictureContainer img{
-    height: auto;
 
   }
+
   .pictureContainer--otherCases img{
     width: 100%;
-    height: 100%;
+    height: auto;
 
   }
 

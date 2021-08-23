@@ -16,6 +16,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lemonada:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <!-- This is the CSS File    -->
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="../styles/adoptados.css">
@@ -25,23 +31,41 @@
 </head>
 <body>
 
-  <div class="grid grid--adopted">
+  <div class="">
     <!-- 
       HEADER SECTION
       Header block, with the logo and the nav bar  
     -->
-    <header class="header header__adopted--grid">
-      <div class="header__wrapper wrapper">
-        <a href="../index.html"><img class="header__logo" loading="lazy" src="../assets/img/ODASHI-LOGO.png" alt="Logo version icono de la fundacion."></a>
-        <nav>
-          <ul class="list">
-            <li ><a class="links" href="../index.html">HOME</a></li> 
-            <li ><a class="links" href="../adopciones/index.html">ADOPTA</a></li>
-            <li ><a class="links" href="../adoptados/index.html">ADOPTADOS</a></li>
-            <li ><a class="links" href="../padrinos/index.html">PADRINOS</a></li>
-            <li ><a class="links" href="../eventos/index.html">EVENTOS</a></li>
-          </ul>
-        </nav>
+    <header class="container-fluid row header ">
+      <div class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+          <!-- logo area -->
+          <a style="height: 2.5rem;" class="navbar-brand mb-2" href="../index.html"><img class="header__logo" loading="lazy" src="../assets/img/ODASHI-LOGO.png" alt="Logo version icono de la fundacion."></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar -->
+          <nav class="collapse navbar-collapse mt-1" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link links" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="../adopciones/index.html">ADOPTA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="../adoptados/index.html" >ADOPTADOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="../padrinos/index.html" >PADRINOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="../eventos/index.html" >EVENTOS</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -49,24 +73,28 @@
       MAIM SECTION
       This section contains successfull adoption's cases. 
     -->
-    <main class="main--adopted main__adopted--grid">
-      <h1 class="title">¡ADOPTADOS! <i class="fas fa-paw"></i></h1>
+    <main class="row m-5 justify-content-center main--adopted ">
+      <h1 class="m-3 title">¡ADOPTADOS! <i class="fas fa-paw"></i></h1>
       
       <!-- This is dog's section -->
-      <section class="successAdopted">
+      <section class="container row successAdopted">
         <h2 class="subtitle">¡Casos de Éxito! <i class="fas fa-paw"></i></h2>
 
-        <div class="successAdopted__container">
+        <!-- succesd Adopted Container -->
+        <div class="container row d-flex flex-row flex-wrap justify-content-center gap-3 successAdopted__container">
 
-          <div class="card card--adopted">
+          <!-- adopted card -->
+          <div class="col-lg-4 col-md-6 col-sm-12 card card--adopted">
             <div class="pictureContainer">
-              <img  loading="lazy" src="./img/odashi.jpeg" alt="Foto de un perrito llamado Odashi." title="Odashi el Divo">
+              <img class="w-100"  loading="lazy" src="./img/odashi.jpeg" alt="Foto de un perrito llamado Odashi." title="Odashi el Divo">
             </div>            
             <h3 class= "section__title section__title--adopted">Odashi</h3>
             <p class= "text text--adopted">Nos contaron que Odashi fue encontrado en desnutrido y abandonado. Antes Jojo, hoy Odashi el Divo. Su proceso tomo 3 meses pero estamos bastasnte felices con el.</p>
           </div>
     
-          <div class="card card--adopted">
+          
+          <!-- adopted card -->
+          <div class="col-lg-4 col-md-6 col-sm-12 card card--adopted">
             <div class="pictureContainer">
               <img loading="lazy" src="./img/mazu.jpeg" alt="Foto de un gatito llamado Mazuzoe" title="Mazuzoe">
             </div>
@@ -74,7 +102,9 @@
             <p class= "text">A Mazu lo dejaron dentro de una caja en la puerta de la fundación. Lo adoptamos con 1 año y resulto ser el gato más amoroso y educado del mundo, aparte de ser divino.</p>
           </div>
     
-          <div class="card card--adopted">
+          
+          <!-- adopted card -->
+          <div class="col-lg-4 col-md-6 col-sm-12 card card--adopted">
             <div class="pictureContainer">
               <img loading="lazy" src="./img/vader.jpeg" alt="Foto de un gatito llamado Vader." title="Vader">
             </div>
@@ -91,61 +121,70 @@
       OTHER CASES SECTION
       This section contains other successfull adoption's cases. 
     -->
-    <section class="otherCases section__adopted--grid">
+    <section class="container mx-auto row otherCases ">
       <h2  class="subtitle">Más Casos de Éxito <i class="fas fa-paw"></i></h2>
-      <div class="otherCases__imageBox card">
 
-        <div>
+      <!-- images container -->
+      <div class="row d-flex flex-row flex-wrap mx-auto otherCases__imageBox card">
+
+        <!-- element -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <div class="pictureContainer pictureContainer--otherCases">
             <img loading="lazy" src="./img/dog-adopted-1.jpeg" alt="Foto de un perrito adoptado." title="Jack">
           </div>
           <h3 class="section__title">Jack</h3>
         </div>
 
-        <div>
+        <!-- element -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <div class="pictureContainer pictureContainer--otherCases">
             <img loading="lazy" src="./img/cat-adopted-1.jpeg" alt="Foto de un gatito adoptado." title="Frida">
           </div>
           <h3 class="section__title">Frida</h3>
         </div>
 
-        <div>
+        <!-- element -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <div class="pictureContainer pictureContainer--otherCases">
             <img loading="lazy" src="./img/dog-adopted-2.jpeg" alt="Foto de un perrito adoptado." title="Nina">
           </div>
           <h3 class="section__title">Nina</h3>
         </div>
 
-        <div>
+        <!-- element -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <div class="pictureContainer pictureContainer--otherCases">
             <img loading="lazy" src="./img/cat-adopted-2.jpeg" alt="Foto de un gatito adoptado." title="Zafiro">
           </div>
           <h3 class="section__title">Zafiro</h3>
         </div>
 
-        <div>
+        <!-- element -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <div class="pictureContainer pictureContainer--otherCases ">
             <img loading="lazy" src="./img/dog-adopted-3.jpeg" alt="Foto de un perrtio adoptado." title="Fiona">
           </div>
           <h3 class="section__title">Fiona</h3>
         </div>
 
-        <div>
+        <!-- element -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <div class="pictureContainer pictureContainer--otherCases">
             <img loading="lazy" src="./img/cat-adopted-3.jpeg" alt="Foto de un gatito adoptado." title="Elvis">
           </div>
           <h3 class="section__title">Elvis</h3>
         </div>
 
-        <div>
+        <!-- element -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <div class="pictureContainer pictureContainer--otherCases">
             <img loading="lazy" src="./img/dog-adopted-4.jpeg" alt="Foto de un perrito adoptado." title="Rocky">
           </div>
           <h3 class="section__title">Rocky</h3>
         </div>
 
-
-        <div>
+        <!-- element -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <div class="pictureContainer pictureContainer--otherCases">
             <img loading="lazy" src="./img/cat-adopted-4.jpeg" alt="Foto de un gatito adoptado." title="Zoe">
           </div>
@@ -160,22 +199,25 @@
       FOOTER SECTION
       This block is the footer, with the links to social media and contact links.
     -->
-    <footer class="footer footer__adopted--grid">
-      <div class="footer__wrapper wrapper">
-        <ul class="footer__list">
+    <footer class="row w-100 footer ">
+      <div class="container d-flex justify-content-around align-items-center align-content-center">
+        <ul class="list-group list-unstyled d-flex flex-row align-content-center gap-4 footer__links">
           <li><a class= "links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
           <li><a class= "links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
           <li><a class= "links" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
           <li><a class= "links" href="https://www.paypal.com/" target="_blank"><i class="fab fa-paypal"></i></a></li>
         </ul>
     
-        <div class="footer__links">
+        <div class="list-group list-unstyled d-flex flex-row align-content-center gap-5 footer__links">
           <a class= "links" href="../contacto/index.html"><small>CONTÁCTANOS</small></a>
           <a class= "links" href="https://www.google.com/maps/place/Central+Park/@11.0192697,-74.8247305,19.5z/data=!4m13!1m7!3m6!1s0x8ef42d44d12ae605:0x2633844581b917b2!2sBarranquilla,+Atl%C3%A1ntico!3b1!8m2!3d11.0041072!4d-74.8069813!3m4!1s0x8ef42db4ee16d1f7:0x351e0ba0b20c4562!8m2!3d11.019519!4d-74.8251848?hl=es" target="_blank"><small>VISITÁNOS</small></a>
         </div>
       </div>
     </footer>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
  
 </body>
 </html>
