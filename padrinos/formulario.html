@@ -16,6 +16,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lemonada:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <!-- This is the CSS File    -->
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="../styles/padrinos.css">
@@ -25,23 +31,41 @@
 </head>
 <body>
 
-  <div class="grid grid--godfathers">
+  <div class="container-fluid w-100 p-0 m-0">
     <!-- 
       HEADER SECTION
       Header block, with the logo and the nav bar  
     -->
-    <header class="header header__godfather--grid">
-      <div class="header__wrapper wrapper">
-        <a href="../index.html"><img class="header__logo" loading="lazy" src="../assets/img/ODASHI-LOGO.png" alt="Logo version icono de la fundacion."></a>
-        <nav>
-          <ul class="list">
-            <li ><a class="links" href="../index.html">HOME</a></li> 
-            <li ><a class="links" href="../adopciones/index.html">ADOPTA</a></li>
-            <li ><a class="links" href="../adoptados/index.html">ADOPTADOS</a></li>
-            <li ><a class="links" href="../padrinos/index.html">PADRINOS</a></li>
-            <li ><a class="links" href="../eventos/index.html">EVENTOS</a></li>
-          </ul>
-        </nav>
+    <header class="container-fluid m-0 p-0 row header ">
+      <div class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+          <!-- logo area -->
+          <a style="height: 2.5rem;" class="navbar-brand mb-2" href="../index.html"><img class="header__logo" loading="lazy" src="../assets/img/ODASHI-LOGO.png" alt="Logo version icono de la fundacion."></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar -->
+          <nav class="collapse navbar-collapse mt-1" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link links" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="../adopciones/index.html">ADOPTA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="../adoptados/index.html" >ADOPTADOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="../padrinos/index.html" >PADRINOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="../eventos/index.html" >EVENTOS</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -49,48 +73,49 @@
       MAIN SECTION
       Header block, with the logo and the nav bar  
     -->
-    <main class="main__godfather--grid main--mod main--Form">
+    <main class="container row d-flex  justify-content-md-evenly justify-content-sm-center mx-1 p-5">
 
-      <section class="main__form">
+      <section class="col-xxl-6 col-xl-6 col-lg-6 col-md-9 col-sm-12">
         <h1 class="title title--form">FORMULARIO PARA PADRINOS <i class="fas fa-paw"></i></h1>
 
-        <form action="./gracias.html" class="form card">
+        <form action="./gracias.html" class="card">
 
           <fieldset>
             <legend class="subtitle subtitle--mod">Datos Personales</legend>
             
             <div class="form__inputBox">
-              <label for="name">Nombre completo:</label>
-              <input type="text" name="name" id="name" placeholder="Mario Alberto Rojas Perez">
+              <label class="labelDecoration"  for="name">Nombre completo:</label>
+              <input class="form-control text"  type="text" name="name" id="name" placeholder="Mario Alberto Rojas Perez">
             </div>
 
             <div class="form__inputBox">
-              <label for="age">Edad:</label>
-              <input type="number" name="age" id="age" placeholder="56">
+              <label class="labelDecoration"  for="age">Edad:</label>
+              <input class="form-control text"  type="number" name="age" id="age" placeholder="56">
             </div>
 
             <div class="form__inputBox">
-              <label for="phone">Teléfono:</label>
-              <input type="number" name="phone" id="phone"  placeholder="3502215598">
+              <label class="labelDecoration"  for="phone">Teléfono:</label>
+              <input class="form-control text"  type="number" name="phone" id="phone"  placeholder="3502215598">
             </div>
 
             <div class="form__inputBox">
-              <label for="email">Correo Electrónico:</label>
-              <input type="email" name="email" id="email"  placeholder="mariorojas@gmail.com">
+              <label class="labelDecoration"  for="email">Correo Electrónico:</label>
+              <input class="form-control text"  type="email" name="email" id="email"  placeholder="mariorojas@gmail.com">
+            </div>
+
+            <div class="input-group form__inputBox mb-2 ">
+              <label class="labelDecoration" for="cc-type">Tipo de documento:</label>
+              <select class="text" name="cc-type" id="cc-type">
+                <option class="text" selected>Seleccione</option>
+                <option class="text" value="c-c">Cédula de Ciudadania.</option>
+                <option class="text" value="c-e">Cédula de extranjeria</option>
+                <option class="text" value="passport">Pasaporte</option>
+              </select>              
             </div>
 
             <div class="form__inputBox">
-              <label for="cc-type">Tipo de documento:</label>
-              <select name="cc-type" id="cc-type">
-                <option value="c-c">Cédula de Ciudadania.</option>
-                <option value="c-e">Cédula de extranjeria.</option>
-                <option value="passport">Pasaporte.</option>
-              </select>
-            </div>
-
-            <div class="form__inputBox">
-              <label for="dni">Número de documento:</label>
-              <input type="number" name="dni" id="dni" >
+              <label class="labelDecoration"  for="dni">Número de documento:</label>
+              <input class="form-control text"  type="number" name="dni" id="dni" >
             </div>
           </fieldset>
 
@@ -98,8 +123,8 @@
             <legend class="subtitle subtitle--mod">Pets For Love</legend>
 
             <div class="form__inputBox">
-              <label for="pet-to-support">Estas interesado en:</label>
-              <input type="text" name="pet-to-support" id="pet-to-support" placeholder="Nombre de la mascota.">
+              <label class="labelDecoration"  for="pet-to-support">Estas interesado en:</label>
+              <input class="form-control text"  type="text" name="pet-to-support" id="pet-to-support" placeholder="Nombre de la mascota.">
             </div>
 
           </fieldset>
@@ -107,31 +132,49 @@
           <fieldset>
             <legend class="subtitle subtitle--mod">Plan Padrino</legend>
 
-            <div class="form__inputBox">
-              <label for="subscription">Plan Padrino:</label>
+            <div class="input-group mb-2 form__inputBox ">
+              <label class="labelDecoration"   for="subscription">Plan Padrino:</label>
 
-              <select name="subscription" id="subscription">
-                <option disabled selected>Seleccione</option>
-                <option value="extravagant">Plan Extravagant.</option>
-                <option value="elegant">Plan Elegant.</option>
-                <option value="fancy">Plan Fancy.</option>
+              <select class="text" name="subscription" id="subscription">
+                <option class="text" disabled selected>Seleccione</option>
+                <option class="text" value="extravagant">Plan Extravagant.</option>
+                <option class="text" value="elegant">Plan Elegant.</option>
+                <option class="text" value="fancy">Plan Fancy.</option>
               </select>
 
             </div>
 
           </fieldset>
 
-          <div class="form__btnBox">
-            <!-- Submit buttom redirect to a thanks message page -->
-            <button class="btn" type="submit">Enviar</button>
-            <button class="btn" type="reset">Limpiar</button>
+          <div class="container">
+            <!-- Button trigger modal -->
+            <button class="btn--mod text" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+            <button class="btn--mod text" type="reset">Limpiar</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Odashi's Pets For Love</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text text--mod">Muchas gracias por querer cambiar la vida a uno de nuestras Fancy Pets.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn--mod text" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </form>
 
       </section>
       
-      <img class="form__img form__img--form" loading="lazy" src="../assets/img/imagen-formularios-mensaje.jpg" alt="Imagen de perro y gato.">
+      <img class="col-xxl-6 col-xl-6 col-lg-6 col-md-5 col-sm-12 d-lg-flex d-md-none d-sm-none align-self-center form__img--form" loading="lazy" src="../assets/img/imagen-formularios-mensaje.jpg" alt="Imagen de perro y gato.">
     </main>
 
 
@@ -139,23 +182,25 @@
       HEADER 
       Header block, with the logo and the nav bar  
     -->
-    <footer class="footer footer__godfather--grid">
-      <div class="footer__wrapper wrapper">
-        <ul class="footer__list">
+    <footer class="row w-100 m-0 p-0 footer ">
+      <div class="container d-flex justify-content-around align-items-center align-content-center">
+        <ul class="list-group list-unstyled d-flex flex-row align-content-center gap-4 footer__links">
           <li><a class= "links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
           <li><a class= "links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
           <li><a class= "links" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
           <li><a class= "links" href="https://www.paypal.com/" target="_blank"><i class="fab fa-paypal"></i></a></li>
         </ul>
     
-        <div class="footer__links">
+        <div class="list-group list-unstyled d-flex flex-row align-content-center gap-5 footer__links">
           <a class= "links" href="../contacto/index.html"><small>CONTÁCTANOS</small></a>
           <a class= "links" href="https://www.google.com/maps/place/Central+Park/@11.0192697,-74.8247305,19.5z/data=!4m13!1m7!3m6!1s0x8ef42d44d12ae605:0x2633844581b917b2!2sBarranquilla,+Atl%C3%A1ntico!3b1!8m2!3d11.0041072!4d-74.8069813!3m4!1s0x8ef42db4ee16d1f7:0x351e0ba0b20c4562!8m2!3d11.019519!4d-74.8251848?hl=es" target="_blank"><small>VISITÁNOS</small></a>
         </div>
       </div>
     </footer>
   </div>
- 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
