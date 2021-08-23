@@ -67,7 +67,7 @@
     align-items: center;
     margin-top: 2rem;
     gap: 1rem;
-  }
+  } 
 
   /*    SMALL ADOPTED SECTION     */
 
@@ -125,8 +125,6 @@
 
   .slideshow{
     width: auto;
-
-
   }
 
   /* slideshow part */

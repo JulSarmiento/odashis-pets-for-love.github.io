@@ -83,7 +83,7 @@
   /* SUCCES ADOPTED SECTION  */
     
   .successAdopted__container .card--adopted{
-    width: 40%;
+    min-width: 45%;
   }
 
   .successAdopted__container .card img {
@@ -93,10 +93,7 @@
     margin-bottom: 1rem;
   }
 
-  .successAdopted__container .card .pictureContainer{
-    width: 24rem;
-  }
-
+  
   /* Other cases Section */
 
   .pictureContainer--otherCases{
