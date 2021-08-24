@@ -51,19 +51,6 @@
 
 /*  EVENT'S FORM SECTION */
 
-/*  form section */
-
-.mainEventForm{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.main__form--event{
-  margin-top: -20rem;
-}
-
 /*    MEDIA QUERIES    */
 
 /* MOBILE */
