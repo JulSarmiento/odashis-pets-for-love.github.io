@@ -1,0 +1,31 @@
+{
+  "name": "odashis-project",
+  "version": "1.0.0",
+  "description": "coder house web development project by julsarmiento",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --includes-path styles/sass styles/sass/styles.sass styles/css/styles.css",
+    "watch-css": "nodemon -e sass -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulSarmiento/pets-fundation.git"
+  },
+  "keywords": [
+    "coder",
+    "house",
+    "web",
+    "development"
+  ],
+  "author": "JulSarmiento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulSarmiento/pets-fundation/issues"
+  },
+  "homepage": "https://github.com/JulSarmiento/pets-fundation#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
