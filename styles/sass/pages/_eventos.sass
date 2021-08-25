@@ -1,0 +1,121 @@
+//Modules, mixis, functions, variables
+@import "../variablees"
+@import "../generals"
+
+//globals
+@import "../global/cards";
+@import "../global/form";
+@import "../global/picture-container";
+@import "../global/buttons";
+
+
+// Partials
+@import "../components/header";
+@import "../components/footer";
+
+/*          EVENTOS        */
+
+/* MAIN INDEX EVENTOS */
+
+/* Past Events Section */
+
+.card--events
+  width: auto
+
+  p
+    align-self: center
+    text-align: justify
+  
+
+/*  Future Eventes Section */
+
+.card--eventsFuture
+  width: 50%
+  align-self: center
+  margin-top: 4rem
+
+  h3
+    margin-top: 1rem
+
+  .pictureContainer--event
+    height: 40rem
+    width: 40rem
+
+    img
+      height: 40rem
+
+  .events__futureTextBox
+    width: 90%
+    margin-bottom: 1rem
+    align-self: center
+    height: 25rem
+
+    p
+      text-align: justify
+      margin-top: 1rem
+
+
+/*    MEDIA QUERIES    */
+
+/* MOBILE */
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+
+  /* Past Events Section */
+
+  .card--events
+    width: auto
+    margin-bottom: 1rem
+
+  /*  Future Eventes Section */
+
+  .card--eventsFuture
+    width: auto
+    align-self: center
+    margin-top: 4rem
+
+    .pictureContainer--event
+      height: 30rem
+      width: 100%
+    
+      img
+        height: auto
+        width: 100%
+        object-fit: contain
+      
+    .events__futureTextBox
+      width: auto
+      height: auto
+    
+  /* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+ 
+  /* Past Events Section */
+  
+  .card--events 
+    width: auto;
+    height: fit-content;
+    margin-bottom: 1rem;
+
+    p
+      height: 30rem
+    
+  /*  Future Eventes Section */
+  
+  .card--eventsFuture
+    width: auto
+    align-self: center
+    margin-top: 4rem
+    
+    .pictureContainer--event
+      height: 50rem
+      width: 50rem
+      
+      img
+        height: 50rem
+        width: 100%
+        
+    .events__futureTextBox
+      width: 90%
+      height: 20rem

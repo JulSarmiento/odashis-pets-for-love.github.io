@@ -1,0 +1,107 @@
+//Modules, mixis, functions, variables
+@import "../variablees"
+@import "../generals"
+
+//globals
+@import "../global/cards";
+@import "../global/form";
+@import "../global/picture-container";
+@import "../global/buttons";
+
+// Partials
+@import "../components/header";
+@import "../components/footer";
+
+/* MAIN */
+
+.card--godfather
+  width: 30%
+
+  .godfatherTexBox
+    margin: 0 auto
+
+    a
+      margin-top: 7rem
+
+    .planRequirements
+      margin-bottom: 2rem 
+      list-style-position: outside
+
+      li
+        margin: 1rem 0
+        height: auto
+        text-align: justify
+            
+  .pictureContainer--godfather
+    width: 100%
+  
+    img 
+      height: 100%
+      width: 100%
+      object-fit: contai
+   
+  .planBonus 
+    list-style-type: "\1F43E"
+    list-style-position:outside
+    height: 26rem
+    text-align:start
+
+    li 
+      line-height: 2rem
+      margin: 1rem 0
+      height: auto
+      text-align: justify
+
+/*    MEDIA QUERIES    */
+
+/* MOBILE */
+@media only screen and (min-width: 320px) and (max-width: 767px)
+  /* MAIN */
+
+  .text--textGodfathers
+    width: 90%
+
+  .card--godfather
+    width: 100%
+    height: 80rem
+    margin: 1rem 0
+  
+    .pictureContainer--godfather
+      height: auto
+      width: 100%
+      border-bottom: 1rem
+    
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+  /* MAIN */
+
+  .text--textGodfathers
+    width: 90%
+    margin: auto auto
+  
+
+  .card--godfather
+    width: 100%
+  
+    .pictureContainer--godfather
+      height: 30rem
+      width: 30rem
+    
+      img 
+        margin: 0
+        padding: 0
+        
+    .godfatherTexBox
+      width: auto
+      height: 48rem 
+
+  
+/* LARGE TABLET */
+@media only screen and (min-width:1024px) 
+
+  .card--godfather
+    height: 80rem
+    width: 30%
+

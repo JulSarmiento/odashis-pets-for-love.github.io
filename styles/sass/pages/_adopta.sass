@@ -1,0 +1,50 @@
+//Modules, mixis, functions, variables
+@import "../variablees"
+@import "../generals"
+
+//globals
+@import "../global/cards";
+@import "../global/form";
+@import "../global/picture-container";
+@import "../global/buttons";
+
+
+// Partials
+@import "../components/header";
+@import "../components/footer";
+
+.dogsSection__petCard 
+   max-width: 30%
+
+.catsSection__petCard
+  @extend .dogsSection__petCard 
+
+
+// /*    MEDIA QUERIES    */
+
+// /* MOBILE */
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+
+  .dogsSection__petCard,
+    max-width: 100%
+
+  .catsSection__petCard
+    max-width: 100%
+  
+// /* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+
+  .dogsSection__petCard,
+    width: 29rem
+    margin-bottom: 2rem
+    max-width: 100%
+    
+  .catsSection__petCard
+    width: 29rem
+    margin-bottom: 2rem
+    max-width: 100%
+  
+
+

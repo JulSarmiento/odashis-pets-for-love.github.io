@@ -1,0 +1,164 @@
+//Modules, mixis, functions, variables
+@import "../variablees"
+@import "../generals"
+
+//globals
+@import "../global/cards";
+@import "../global/form";
+@import "../global/picture-container";
+@import "../global/buttons";
+
+
+// Partials
+@import "../components/header";
+@import "../components/footer";
+
+// MAIN  
+
+// CONTACT US SECTION 
+
+.homeContactUs 
+  display: flex
+  width: 30%
+
+.card--Indexmod
+  width: 30%
+
+// Articles 
+
+.articleContainer
+  display: flex
+  justify-content: space-evenly
+  gap: 3rem
+
+  .card--articleMod
+    width: 50%
+    text-align: center
+
+  article
+    display: flex;
+    align-items: center
+    flex-flow: row nowrap
+    height: auto
+
+    div
+      text-align: center
+      width: 50%
+      height: 30rem
+
+      img
+        height: 20rem
+        border-radius: 1rem
+
+      p
+        margin-top: 1rem
+        text-align: justify
+
+// /*    MEDIA QUERIES    */
+
+// /* MOBIEL */
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+
+  //  /* SLIDESHOW */
+      
+  .adoptionAndContact
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-items: center
+    margin-top: 2rem
+    gap: 1rem
+  
+
+  // /* Articles */
+
+  .articleContainer
+    flex-flow: column wrap
+    justify-content: center
+    margin: 0 auto
+  
+    .card--articleMod
+      height: 58rem
+      width: 100%
+
+
+    article
+      height: auto
+      flex-flow: column-reverse nowrap
+  
+      div
+        text-align: center
+        width: 25rem
+    
+        p 
+          width: 26rem
+    
+// /* tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1199px)
+
+  // /* SLIDESHOW */
+
+  .adoptionAndContact
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-items: center
+    margin-top: 2rem
+    gap: 1rem
+  
+
+    .slideshow
+      width: auto
+    
+      .pictureContainer--slidershow 
+        
+        img
+          height: 45rem
+          width: 100%
+    
+    .homeContactUs 
+      display: none
+      width: auto
+
+  // /*    SMALL ADOPTED SECTION     */
+
+  .articleContainer
+    justify-content: space-evenly
+  
+    .card--articleMod
+      height: 55rem
+      width: 33rem
+
+    article
+      flex-flow: column-reverse nowrap
+
+      div
+        text-align: center
+        width: 30rem
+  
+        p 
+          height: auto
+            
+
+@media only screen and (min-width: 1200px)
+
+  .homedoptionSection
+    width: auto
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

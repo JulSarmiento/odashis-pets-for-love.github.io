@@ -1,0 +1,21 @@
+@import "../variablees"
+@import "../generals"
+
+
+// PICTURE'S CONTAINERS FORM ZOOM TRANSITION 
+
+.pictureContainer
+  margin: auto auto
+  overflow: hidden
+  width: 100%
+  border-radius: 1rem
+
+  img
+    height: 25rem
+    width: auto
+    border-radius: 0.5rem
+    transition: transform 1s
+    object-fit: cover
+
+    &:hover
+      transform: scale(1.2)

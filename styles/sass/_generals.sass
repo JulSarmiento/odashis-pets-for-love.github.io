@@ -1,0 +1,110 @@
+@import "./variablees"
+
+//    FONTS
+
+i
+  transition: transform 2s ease-in-out;
+
+  &:hover
+    transform: rotate(360deg)
+
+// <h1> styles
+
+.title
+  font-family: 'Lemonada', cursive
+  font-weight: 600
+  font-size: 3rem
+  color: #FF8474
+  animation-duration: 2s
+  animation-name: aparecer
+
+  @keyframes aparecer 
+    0% 
+      opacity: 0
+    
+    100% 
+      opacity: 1
+
+// <h2> styles
+    
+.subtitle
+  font-family: 'Lemonada', cursive
+  font-weight: 400
+  color: #9F5F80
+
+// <h3> styles 
+
+.section__title
+  font-family: 'Lemonada', cursive
+  font-weight: bold
+  color: #FF8474
+  font-size: 1.7rem
+
+// <a> styles
+
+.links
+  font-size: 1.3rem
+  text-decoration: none
+  color: #583D72
+  font-family: 'Lemonada', cursive
+  transition: 1s
+
+  &:hover
+    color: #FF8474
+    text-decoration: underline wavy
+  
+
+.links--btn
+  color: #ff8474 
+  background-color: #ffffff
+  border-radius: 0.5rem
+  border: 1px solid #FF8474
+  box-shadow: 0px 1px 10px -1px #ff847471
+  width: 20rem
+  padding: 0 1rem
+  transition: 1s
+  align-self: center
+  text-align: center
+
+  &:hover
+    color: #ffffff
+    text-decoration: none
+    background-color: #ff847493 
+    box-shadow: 0px 8px 18px -1px #ffffff
+
+
+// <p> and general text styles
+  
+.text
+  font-family: 'Lato', sans-serif
+  font-weight: 300
+  font-size: 1.5rem
+  color: #583D72
+
+label
+  @extend .text
+
+@media only screen and (min-width: 375px) and (max-width: 767px)
+
+  .title 
+    font-size: 1.8rem
+
+    i 
+      font-size: 1.8rem
+      
+    
+  // <a> styles 
+  
+  .links
+    font-size: 1.5rem
+  
+  
+  // <p> and general text styles
+  
+  .text
+    font-size: 1.5rem
+
+  label
+    font-size: 1.5rem
+
+   
