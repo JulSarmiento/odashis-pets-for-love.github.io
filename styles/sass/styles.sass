@@ -1,17 +1,18 @@
 //Modules, mixis, functions, variables
 @import "./variablees"
 @import "./generals"
+@import "./mixins"
 
 //globals
-@import "./global/cards";
-@import "./global/form";
-@import "./global/picture-container";
-@import "./global/buttons";
+@import "./global/cards"
+@import "./global/form"
+@import "./global/picture-container"
+@import "./global/buttons"
 
 
 // Partials
-@import "./components/header";
-@import "./components/footer";
+@import "./components/header"
+@import "./components/footer"
 
 // Pages 
 
@@ -19,7 +20,7 @@
 @import "./pages/adopta"
 @import "./pages/adoptados"
 @import "./pages/padrinos"
-@import "./pages/eventos"; 
+@import "./pages/eventos";
 
   
 // Thhird Party
@@ -28,12 +29,11 @@
   margin: 0
   padding: 0
 
-
 html
   font-size: 62.5%
 
   body
-    background: linear-gradient(180deg, rgba(255,255,255,0.6783088235294117) 3%, rgba(255,132,116,0.15730042016806722) 100%)
+    background: $pink-gradient
     overflow-x: hidden
 
 .wrapper

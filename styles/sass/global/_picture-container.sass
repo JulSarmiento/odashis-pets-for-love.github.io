@@ -1,5 +1,6 @@
 @import "../variablees"
 @import "../generals"
+@import "../mixins"
 
 
 // PICTURE'S CONTAINERS FORM ZOOM TRANSITION 
@@ -11,8 +12,7 @@
   border-radius: 1rem
 
   img
-    height: 25rem
-    width: auto
+    @include containerMod(25rem, auto)
     border-radius: 0.5rem
     transition: transform 1s
     object-fit: cover

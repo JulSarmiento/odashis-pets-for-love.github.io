@@ -1,6 +1,7 @@
 //Modules, mixis, functions, variables
 @import "../variablees"
 @import "../generals"
+@import "../mixins"
 
 //globals
 @import "../global/cards";
@@ -38,17 +39,15 @@
     margin-top: 1rem
 
   .pictureContainer--event
-    height: 40rem
-    width: 40rem
+    @include containerMod(40rem, 40rem)
 
     img
       height: 40rem
 
   .events__futureTextBox
-    width: 90%
+    @include containerMod(25rem, 90%)
     margin-bottom: 1rem
     align-self: center
-    height: 25rem
 
     p
       text-align: justify
@@ -75,15 +74,14 @@
     margin-top: 4rem
 
     .pictureContainer--event
-      height: 30rem
-      width: 100%
+      @include containerMod(30rem, 100%)
     
       img
-        height: auto
-        width: 100%
+        @include containerMod(auto, 100%)
         object-fit: contain
       
     .events__futureTextBox
+      @include containerMod(auto, auto)
       width: auto
       height: auto
     
@@ -94,8 +92,7 @@
   /* Past Events Section */
   
   .card--events 
-    width: auto;
-    height: fit-content;
+    @include containerMod(fit-content, auto)
     margin-bottom: 1rem;
 
     p
@@ -109,13 +106,11 @@
     margin-top: 4rem
     
     .pictureContainer--event
-      height: 50rem
-      width: 50rem
+      @include containerMod(50rem, 50rem)
       
       img
-        height: 50rem
-        width: 100%
+        @include containerMod(50rem, 100%)
         
     .events__futureTextBox
-      width: 90%
-      height: 20rem
+      @include containerMod(20rem, 90%)
+

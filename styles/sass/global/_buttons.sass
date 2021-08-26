@@ -1,18 +1,19 @@
 @import "../variablees"
 @import "../generals"
+@import "../mixins"
 
 // BUTTONS
 
 .btn--mod
-  background-color: #ffffff
+  background-color: $card-n-btn-background
   border-radius: 0.5rem
-  border: 1px solid #FF8474
-  box-shadow: 0px 1px 10px -1px #ff847471
+  border: $btn-border
+  box-shadow: $card-shadow
   height: 3rem
   width: 10rem
   transition: 1s
 
   &:hover
-    background-color: #ff847493
-    color: white
-    box-shadow: 0px 8px 18px -1px #ffffff
+    background-color: $dark-coral
+    color: $card-n-btn-background
+    box-shadow: $hover-shadow

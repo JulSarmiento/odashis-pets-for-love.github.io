@@ -1,13 +1,13 @@
 //Modules, mixis, functions, variables
 @import "../variablees"
 @import "../generals"
+@import "../mixins"
 
 //globals
 @import "../global/cards";
 @import "../global/form";
 @import "../global/picture-container";
 @import "../global/buttons";
-
 
 // Partials
 @import "../components/header";
@@ -43,8 +43,7 @@
 
     div
       text-align: center
-      width: 50%
-      height: 30rem
+      @include containerMod(30rem, 50%)
 
       img
         height: 20rem
@@ -70,7 +69,6 @@
     margin-top: 2rem
     gap: 1rem
   
-
   // /* Articles */
 
   .articleContainer
@@ -79,9 +77,7 @@
     margin: 0 auto
   
     .card--articleMod
-      height: 58rem
-      width: 100%
-
+      @include containerMod(58rem, 100%)
 
     article
       height: auto
@@ -108,15 +104,13 @@
     margin-top: 2rem
     gap: 1rem
   
-
     .slideshow
       width: auto
     
       .pictureContainer--slidershow 
         
         img
-          height: 45rem
-          width: 100%
+          @include containerMod(45rem, 100%)
     
     .homeContactUs 
       display: none
@@ -128,8 +122,7 @@
     justify-content: space-evenly
   
     .card--articleMod
-      height: 55rem
-      width: 33rem
+      @include containerMod(55rem, 33rem)
 
     article
       flex-flow: column-reverse nowrap

@@ -1,6 +1,7 @@
 //Modules, mixis, functions, variables
 @import "../variablees"
 @import "../generals"
+@import "../mixins"
 
 //globals
 @import "../global/cards";
@@ -36,8 +37,7 @@
     width: 100%
   
     img 
-      height: 100%
-      width: 100%
+      @include containerMod(100%, 100%)
       object-fit: contai
    
   .planBonus 
@@ -62,16 +62,13 @@
     width: 90%
 
   .card--godfather
-    width: 100%
-    height: 80rem
+    @include containerMod(80rem, 100%)
     margin: 1rem 0
   
     .pictureContainer--godfather
-      height: auto
-      width: 100%
+      @include containerMod(auto, 100%)
       border-bottom: 1rem
     
-
 /* TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px)
@@ -86,6 +83,7 @@
     width: 100%
   
     .pictureContainer--godfather
+      @include containerMod(30rem, 30rem)
       height: 30rem
       width: 30rem
     
@@ -94,6 +92,7 @@
         padding: 0
         
     .godfatherTexBox
+      @include containerMod(48rem, auto)
       width: auto
       height: 48rem 
 
@@ -102,6 +101,7 @@
 @media only screen and (min-width:1024px) 
 
   .card--godfather
+    @include containerMod(80rem, 30%)
     height: 80rem
     width: 30%
 
