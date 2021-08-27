@@ -1,8 +1,14 @@
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto; }
+
+/* A wrapper */
 i {
   transition: transform 2s ease-in-out; }
   i:hover {
     transform: rotate(360deg); }
 
+/* <h1> styles */
 .title {
   font-family: "Lemonada", cursive;
   color: #FF8474;
@@ -22,17 +28,20 @@ i {
       .title i {
         font-size: 1.8rem; } }
 
+/*  <h2> styles */
 .subtitle {
   font-family: "Lemonada", cursive;
   color: #9F5F80;
   font-weight: 400; }
 
+/*  <h3> styles */
 .section__title {
   font-family: "Lemonada", cursive;
   color: #FF8474;
   font-weight: bold;
   font-size: 1.7rem; }
 
+/*  <a> styles for links */
 .links {
   font-family: "Lemonada", cursive;
   color: #583D72;
@@ -63,6 +72,7 @@ i {
     background-color: var(--bs-red);
     box-shadow: 0px 8px 18px -1px #ffffff; }
 
+/*  <p> and general text styles */
 .text, label {
   font-family: "Lato", sans-serif;
   color: #583D72;
@@ -76,6 +86,7 @@ i {
   label {
     font-size: 1.5rem; } }
 
+/*  CARD  */
 .card {
   background-color: var(--bs-white);
   border-radius: 0.5rem;
@@ -85,69 +96,70 @@ i {
   display: flex;
   flex-flow: column wrap; }
 
-.form fieldset legend.subtitle--mod {
-  font-size: 1.5rem;
-  text-align: justify;
-  padding: 0 0.5rem; }
+/*  FORM  */
+.form {
+  /*  Fieldset's legend styles*/
+  /* Styles for input, radio buttons and button's containers*/ }
+  .form fieldset legend.subtitle--mod {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 0 0.5rem; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .form fieldset legend.subtitle--mod {
+        font-size: 1.5rem;
+        text-align: justify; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .form fieldset legend.subtitle--mod {
+        font-size: 1.5rem;
+        text-align: justify; } }
+  .form__inputBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    padding: 0.5rem; }
+  .form__radioBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem; }
+  .form__btnBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .form fieldset legend.subtitle--mod {
-      font-size: 1.5rem;
-      text-align: justify; } }
+    .form__inputBox {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem; }
+    .form__radioBox {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      gap: 0.5rem; }
+      .form__radioBox p.text {
+        text-align: start; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .form fieldset legend.subtitle--mod {
-      font-size: 1.5rem;
-      text-align: justify; } }
+    .form__inputBox {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem; }
+    .form__radioBox {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      gap: 0.5rem; } }
 
-.form__inputBox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: justify;
-  padding: 0.5rem; }
-
-.form__radioBox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem; }
-
-.form__btnBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem; }
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .form__inputBox {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem; }
-  .form__radioBox {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    gap: 0.5rem; }
-    .form__radioBox p.text {
-      text-align: start; } }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .form__inputBox {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem; }
-  .form__radioBox {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    gap: 0.5rem; } }
-
+/* Styles for PlaceHolders*/
 .form-control::placeholder {
   text-align: center;
   color: var(--bs-orange); }
 
+/*  Form's card container*/
 .card--adoptionsForm {
   width: 29rem; }
   @media only screen and (min-width: 1200px) {
@@ -166,6 +178,7 @@ i {
     .title--form i {
       font-size: 3rem; } }
 
+/*  Form's inmage styles*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .form__img {
     display: flex;
@@ -175,6 +188,7 @@ i {
   .form__img {
     height: 55rem; } }
 
+/*  PICTURE'S CONTAINERS FORM ZOOM TRANSITION   */
 .pictureContainer {
   margin: auto auto;
   overflow: hidden;
@@ -189,6 +203,7 @@ i {
     .pictureContainer img:hover {
       transform: scale(1.2); }
 
+/*  BUTTON  */
 .btn--mod {
   background-color: #ffffff;
   border-radius: 0.5rem;
@@ -202,6 +217,7 @@ i {
     color: var(--bs-white);
     box-shadow: 0px 8px 18px -1px #ffffff; }
 
+/*  HEADER  */
 .header {
   border-top: 0.5rem solid #FF8474;
   background-color: var(--bs-white);
@@ -211,7 +227,6 @@ i {
   width: 100%;
   margin: 0;
   box-shadow: 0px 0.5px 18px -1px #ff84744f;
-  /* Debido al Zidex del slider */
   z-index: 10; }
   .header .header__logo {
     height: 3rem;
@@ -219,6 +234,7 @@ i {
     .header .header__logo:hover {
       transform: rotate(360deg); }
 
+/*  FOOTER  */
 .footer {
   background-color: var(--bs-white);
   border-bottom: 0.5rem solid #FF8474;
@@ -230,42 +246,44 @@ i {
     .footer__list li a {
       font-size: 1.5rem; }
 
-.adoptionAndContact .homeContactUs {
-  display: flex;
-  width: 30%; }
+/*  INDEX'S PAGE*/
+/*  Slider and little form section*/
+.adoptionAndContact {
+  /*  Little form */ }
+  .adoptionAndContact .homeContactUs {
+    display: flex;
+    width: 30%; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .adoptionAndContact .homeContactUs {
+        display: none;
+        width: auto; } }
+  .adoptionAndContact .card--Indexmod {
+    width: 30%; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .adoptionAndContact {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 1rem; }
+      .adoptionAndContact .homeContactUs {
+        display: none; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .adoptionAndContact .homeContactUs {
-      display: none;
-      width: auto; } }
+    .adoptionAndContact {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 1rem; }
+      .adoptionAndContact .slideshow {
+        width: auto; }
+        .adoptionAndContact .slideshow .pictureContainer--slidershow img {
+          height: 45rem;
+          width: 100%; } }
 
-.adoptionAndContact .card--Indexmod {
-  width: 30%; }
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .adoptionAndContact {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 1rem; }
-    .adoptionAndContact .homeContactUs {
-      display: none; } }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .adoptionAndContact {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 1rem; }
-    .adoptionAndContact .slideshow {
-      width: auto; }
-      .adoptionAndContact .slideshow .pictureContainer--slidershow img {
-        height: 45rem;
-        width: 100%; } }
-
+/*  Articles section  */
 .articleContainer {
   display: flex;
   justify-content: space-evenly;
@@ -338,6 +356,8 @@ i {
           .articleContainer article div p {
             height: auto; } }
 
+/*  ADOPT PAGE  */
+/* Dog's styles */
 .dogsSection__petCard, .catsSection__petCard {
   max-width: 30%; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -349,6 +369,7 @@ i {
       margin-bottom: 2rem;
       max-width: 100%; } }
 
+/* Cat's styles */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .catsSection__petCard {
     max-width: 100%; } }
@@ -359,8 +380,8 @@ i {
     margin-bottom: 2rem;
     max-width: 100%; } }
 
-/*          ADOPTED          */
-/* SUCCES ADOPTED SECTION  */
+/* ADOPTED */
+/*  Success adoption's secction */
 .successAdopted h2 {
   margin-bottom: 1rem; }
 
@@ -417,7 +438,8 @@ i {
       margin: 0 auto;
       height: auto; } }
 
-/* MAIN */
+/*  GODFATHER'S PAGE  */
+/*  Disclaimer text's section */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .text--textGodfathers {
     width: 90%; } }
@@ -427,6 +449,7 @@ i {
     width: 90%;
     margin: auto auto; } }
 
+/*  Godfathee's plan cards */
 .card--godfather {
   width: 30%; }
   .card--godfather .godfatherTexBox {
@@ -487,8 +510,7 @@ i {
       height: 80rem;
       width: 30%; } }
 
-/*          EVENTOS        */
-/* MAIN INDEX EVENTOS */
+/* EVENTOS */
 /* Past Events Section */
 .card--events {
   width: auto; }
@@ -574,6 +596,7 @@ i {
         height: 20rem;
         width: 90%; } }
 
+/* Bootstraps colors, modified */
 :root {
   --bs-indigo: #9F5F80;
   --bs-purple: #583D72;
@@ -583,6 +606,7 @@ i {
   --bs-white: #ffffff;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.678309) 3%, rgba(255, 132, 116, 0.1573) 100%); }
 
+/* Restarted margins and paddings in everything */
 * {
   margin: 0;
   padding: 0; }
@@ -592,7 +616,3 @@ html {
   html body {
     overflow-x: hidden;
     background: var(--bs-gradient); }
-
-.wrapper {
-  max-width: 80%;
-  margin: 0 auto; }

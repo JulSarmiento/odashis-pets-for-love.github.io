@@ -1,15 +1,19 @@
 @import "./variablees"
 @import "./mixins"
 
-//    FONTS
-
+/* A wrapper */
+.wrapper
+  max-width: 80%
+  margin: 0 auto
+  
+/* A wrapper */
 i
   transition: transform 2s ease-in-out;
 
   &:hover
     transform: rotate(360deg)
 
-// <h1> styles
+/* <h1> styles */
 
 .title
   @include fontStyles($lemonada, $coral)
@@ -31,21 +35,18 @@ i
     i 
       font-size: 1.8rem
 
-// <h2> styles
-    
+/*  <h2> styles */   
 .subtitle
   @include fontStyles($lemonada, $light-purple)
   font-weight: 400
 
-// <h3> styles 
-
+/*  <h3> styles */  
 .section__title
   @include fontStyles($lemonada, $coral)
   font-weight: bold
   font-size: 1.7rem
 
-// <a> styles
-
+/*  <a> styles for links */
 .links
   @include fontStyles($lemonada, $purple)
   font-size: 1.3rem
@@ -77,8 +78,7 @@ i
     background-color: var(--bs-red)
     box-shadow: $hover-shadow
 
-// <p> and general text styles
-  
+/*  <p> and general text styles */  
 .text
   @include fontStyles($lato, $purple)
   font-weight: 300

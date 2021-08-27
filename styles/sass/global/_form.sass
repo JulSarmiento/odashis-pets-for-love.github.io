@@ -1,9 +1,9 @@
 @import "../variablees"
 @import "../mixins"
 
-// FORM
-
+/*  FORM  */
 .form 
+  /*  Fieldset's legend styles*/
   fieldset 
     legend.subtitle--mod
       font-size: 1.5rem
@@ -17,7 +17,8 @@
       @include responsive(tablet)
         font-size: 1.5rem
         text-align: justify
-          
+
+  /* Styles for input, radio buttons and button's containers*/        
   &__inputBox
     display: grid
     grid-template-columns: 1fr 1fr
@@ -68,11 +69,13 @@
       align-content: center
       align-items: center
       gap: 0.5rem
-  
+
+/* Styles for PlaceHolders*/  
 .form-control::placeholder
   text-align: center
   color: var(--bs-orange)
 
+/*  Form's card container*/  
 .card--adoptionsForm
   width: 29rem 
 
@@ -93,7 +96,9 @@
     i
       font-size: 3rem
 
+/*  Form's inmage styles*/    
 .form__img
+
   @include responsive(tablet)
     display: flex
     height: 50rem
