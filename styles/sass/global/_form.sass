@@ -10,6 +10,14 @@
       text-align: justify
       padding: 0 0.5rem
 
+      @include responsive(mobile)
+        font-size: 1.5rem
+        text-align: justify
+
+      @include responsive(tablet)
+        font-size: 1.5rem
+        text-align: justify
+          
   &__inputBox
     display: grid
     grid-template-columns: 1fr 1fr
@@ -29,82 +37,72 @@
     justify-content: center
     gap: 1rem
     margin-top: 2rem
+
+  @include responsive(mobile)
+  
+    &__inputBox
+      display: flex
+      flex-direction: column
+      gap: 0.5rem
+    
+    &__radioBox
+      display: flex
+      justify-content: space-between
+      align-content: center
+      align-items: center
+      gap: 0.5rem
+
+      p.text
+        text-align: start
+
+  @include responsive(tablet)
+
+    &__inputBox
+      display: flex
+      flex-direction: column
+      gap: 0.5rem
+    
+    &__radioBox
+      display: flex
+      justify-content: space-between
+      align-content: center
+      align-items: center
+      gap: 0.5rem
   
 .form-control::placeholder
   text-align: center
-  color: $placeholder-color 
-  
-@media only screen and (min-width: 375px) and (max-width: 767px)
+  color: var(--bs-orange)
 
-  .card--adoptionsForm
-    width: 29rem
+.card--adoptionsForm
+  width: 29rem 
 
-  .form 
-
-    fieldset 
-
-      legend.subtitle--mod
-        font-size: 1.5rem
-        text-align: justify
-     
-    &__inputBox
-      display: flex
-      flex-direction: column
-      gap: 0.5rem
-    
-    &__radioBox
-      display: flex
-      justify-content: space-between
-      align-content: center
-      align-items: center
-      gap: 0.5rem
-      
-@media only screen and (min-width: 768px) and (max-width: 1024px)
-
-  .card--adoptionsForm
-    width: 29rem
-  
-  .title--form, 
-    font-size: 2rem
-
-    i
-      font-size: 2rem
-  
-  .form 
-
-    fieldset 
-      
-      legend.subtitle--mod
-        font-size: 1.5rem
-        text-align: justify
-      
-    &__inputBox
-      display: flex
-      flex-direction: column
-      gap: 0.5rem
-    
-    &__radioBox
-      display: flex
-      justify-content: space-between
-      align-content: center
-      align-items: center
-      gap: 0.5rem
-    
-  .form__img
-    display: flex
-    height: 50rem
-  
-@media only screen and (min-width: 1200px)
-
-  .title--form
-    font-size: 2.5rem
-
-    & i
-      font-size: 2.5rem
-    
-  .card--adoptionsForm
+  @include responsive(desktop)
     width: 36rem
 
-  .form__img
-    height: 55rem
+.title--form
+
+  @include responsive(tablet)
+    font-size: 2.5rem
+
+    i
+      font-size: 2.5rem
   
+  @include responsive(desktop)
+    font-size: 3rem
+
+    i
+      font-size: 3rem
+
+.form__img
+  @include responsive(tablet)
+    display: flex
+    height: 50rem
+
+  @include responsive(desktop)
+    height: 55rem
+         
+
+
+
+  
+

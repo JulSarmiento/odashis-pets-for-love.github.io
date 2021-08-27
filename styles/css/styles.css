@@ -35,12 +35,12 @@ i {
   text-decoration: none;
   transition: 1s; }
   .links:hover {
-    color: #FF8474;
+    color: var(--bs-pink);
     text-decoration: underline wavy; }
 
 .links--btn {
-  color: #FF8474;
-  background-color: #ffffff;
+  color: var(--bs-pink);
+  background-color: var(--bs-white);
   border-radius: 0.5rem;
   border: 1px solid #FF8474;
   box-shadow: 0px 8px 18px -1px #ff847471;
@@ -50,12 +50,14 @@ i {
   align-self: center;
   text-align: center; }
   .links--btn:hover {
-    color: #ffffff;
+    color: var(--bs-white);
     text-decoration: none;
-    background-color: #ff847493;
+    background-color: var(--bs-red);
     box-shadow: 0px 8px 18px -1px #ffffff; }
 
 .text, label {
+  font-family: "Lato", sans-serif;
+  color: #583D72;
   font-weight: 300;
   font-size: 1.5rem; }
 
@@ -72,7 +74,7 @@ i {
     font-size: 1.5rem; } }
 
 .card {
-  background-color: #ffffff;
+  background-color: var(--bs-white);
   border-radius: 0.5rem;
   box-shadow: 0px 8px 18px -1px #ff847471;
   padding: 2rem;
@@ -84,6 +86,14 @@ i {
   font-size: 1.5rem;
   text-align: justify;
   padding: 0 0.5rem; }
+  @media only screen and (min-width: 375px) and (max-width: 767px) {
+    .form fieldset legend.subtitle--mod {
+      font-size: 1.5rem;
+      text-align: justify; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .form fieldset legend.subtitle--mod {
+      font-size: 1.5rem;
+      text-align: justify; } }
 
 .form__inputBox {
   display: grid;
@@ -105,16 +115,21 @@ i {
   gap: 1rem;
   margin-top: 2rem; }
 
-.form-control::placeholder {
-  text-align: center;
-  color: #a57acad3; }
-
 @media only screen and (min-width: 375px) and (max-width: 767px) {
-  .card--adoptionsForm {
-    width: 29rem; }
-  .form fieldset legend.subtitle--mod {
-    font-size: 1.5rem;
-    text-align: justify; }
+  .form__inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; }
+  .form__radioBox {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 0.5rem; }
+    .form__radioBox p.text {
+      text-align: start; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .form__inputBox {
     display: flex;
     flex-direction: column;
@@ -126,37 +141,34 @@ i {
     align-items: center;
     gap: 0.5rem; } }
 
+.form-control::placeholder {
+  text-align: center;
+  color: var(--bs-orange); }
+
+.card--adoptionsForm {
+  width: 29rem; }
+  @media only screen and (min-width: 1200px) {
+    .card--adoptionsForm {
+      width: 36rem; } }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .card--adoptionsForm {
-    width: 29rem; }
   .title--form {
-    font-size: 2rem; }
+    font-size: 2.5rem; }
     .title--form i {
-      font-size: 2rem; }
-  .form fieldset legend.subtitle--mod {
-    font-size: 1.5rem;
-    text-align: justify; }
-  .form__inputBox {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem; }
-  .form__radioBox {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    gap: 0.5rem; }
+      font-size: 2.5rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .title--form {
+    font-size: 3rem; }
+    .title--form i {
+      font-size: 3rem; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .form__img {
     display: flex;
     height: 50rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .title--form {
-    font-size: 2.5rem; }
-    .title--form i {
-      font-size: 2.5rem; }
-  .card--adoptionsForm {
-    width: 36rem; }
   .form__img {
     height: 55rem; } }
 
@@ -183,13 +195,13 @@ i {
   width: 10rem;
   transition: 1s; }
   .btn--mod:hover {
-    background-color: #ff847493;
-    color: #ffffff;
+    background-color: var(--bs-red);
+    color: var(--bs-white);
     box-shadow: 0px 8px 18px -1px #ffffff; }
 
 .header {
   border-top: 0.5rem solid #FF8474;
-  background-color: #ffffff;
+  background-color: var(--bs-white);
   position: sticky;
   top: 0;
   height: auto;
@@ -205,7 +217,7 @@ i {
       transform: rotate(360deg); }
 
 .footer {
-  background-color: #ffffff;
+  background-color: var(--bs-white);
   border-bottom: 0.5rem solid #FF8474;
   height: 5rem;
   margin: 0;
@@ -538,27 +550,12 @@ i {
       width: 90%; } }
 
 :root {
-  --s-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --bs-indigo: #9F5F80;
+  --bs-purple: #583D72;
+  --bs-pink: #FF8474;
+  --bs-red: #ff847493;
+  --bs-orange: #a57acad3;
+  --bs-white: #ffffff;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.678309) 3%, rgba(255, 132, 116, 0.1573) 100%); }
 
 * {

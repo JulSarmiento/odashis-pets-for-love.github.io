@@ -47,12 +47,12 @@ i
   transition: 1s
 
   &:hover
-    color: $coral
+    color: var(--bs-pink)
     text-decoration: underline wavy
   
 .links--btn
-  color: $coral
-  background-color: $card-n-btn-background
+  color: var(--bs-pink)
+  background-color: var(--bs-white)
   border-radius: 0.5rem
   border: $btn-border
   box-shadow: $card-shadow
@@ -63,15 +63,15 @@ i
   text-align: center
 
   &:hover
-    color: $card-n-btn-background
+    color: var(--bs-white)
     text-decoration: none
-    background-color: $dark-coral 
+    background-color: var(--bs-red)
     box-shadow: $hover-shadow
 
 // <p> and general text styles
   
 .text
-  @mixin fontStyles($lemonada, $purple)
+  @include fontStyles($lato, $purple)
   font-weight: 300
   font-size: 1.5rem
 
