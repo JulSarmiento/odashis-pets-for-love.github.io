@@ -24,6 +24,12 @@ i
     
     100% 
       opacity: 1
+  
+  @include responsive(mobile)
+    font-size: 1.8rem
+
+    i 
+      font-size: 1.8rem
 
 // <h2> styles
     
@@ -49,6 +55,9 @@ i
   &:hover
     color: var(--bs-pink)
     text-decoration: underline wavy
+
+  @include responsive(mobile)
+    font-size: 1.5rem
   
 .links--btn
   color: var(--bs-pink)
@@ -75,30 +84,14 @@ i
   font-weight: 300
   font-size: 1.5rem
 
+  @include responsive(mobile)
+    font-size: 1.5rem
+
 label
   @extend .text
 
-@media only screen and (min-width: 375px) and (max-width: 767px)
-
-  .title 
-    font-size: 1.8rem
-
-    i 
-      font-size: 1.8rem
-      
-    
-  // <a> styles 
-  
-  .links
-    font-size: 1.5rem
-  
-  
-  // <p> and general text styles
-  
-  .text
+  @include responsive(mobile)
     font-size: 1.5rem
 
-  label
-    font-size: 1.5rem
 
    

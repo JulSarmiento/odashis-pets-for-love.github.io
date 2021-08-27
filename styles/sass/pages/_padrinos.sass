@@ -4,6 +4,16 @@
 
 /* MAIN */
 
+.text--textGodfathers
+
+  @include responsive(mobile)
+    width: 90%
+
+  @include responsive(tablet)
+    width: 90%
+    margin: auto auto
+
+
 .card--godfather
   width: 30%
 
@@ -21,13 +31,29 @@
         margin: 1rem 0
         height: auto
         text-align: justify
+
+    @include responsive(tablet)
+      @include containerMod(48rem, auto)
+      width: auto
+      height: 48rem 
+    
             
   .pictureContainer--godfather
     width: 100%
   
     img 
-      @include containerMod(100%, 100%)
-      object-fit: contai
+      object-fit: container
+
+    @include responsive(mobile)    
+      @include containerMod(auto, 100%)
+      object-fit: container
+      border-bottom: 1rem
+
+    @include responsive(tablet)
+      @include containerMod(30rem, 30rem)
+      object-fit: container
+      height: 30rem
+      width: 30rem
    
   .planBonus 
     list-style-type: "\1F43E"
@@ -41,56 +67,21 @@
       height: auto
       text-align: justify
 
-/*    MEDIA QUERIES    */
-
-/* MOBILE */
-@media only screen and (min-width: 320px) and (max-width: 767px)
-  /* MAIN */
-
-  .text--textGodfathers
-    width: 90%
-
-  .card--godfather
+  @include responsive(mobile)
     @include containerMod(80rem, 100%)
     margin: 1rem 0
-  
-    .pictureContainer--godfather
-      @include containerMod(auto, 100%)
-      border-bottom: 1rem
+
+  @include responsive(tablet)
+    width: auto
+
+  @include responsive(largeTablet)
+    width: 32%
     
-/* TABLET */
-
-@media only screen and (min-width: 768px) and (max-width: 1023px)
-  /* MAIN */
-
-  .text--textGodfathers
-    width: 90%
-    margin: auto auto
-  
-
-  .card--godfather
-    width: 100%
-  
-    .pictureContainer--godfather
-      @include containerMod(30rem, 30rem)
-      height: 30rem
-      width: 30rem
-    
-      img 
-        margin: 0
-        padding: 0
-        
-    .godfatherTexBox
-      @include containerMod(48rem, auto)
-      width: auto
-      height: 48rem 
-
-  
-/* LARGE TABLET */
-@media only screen and (min-width:1024px) 
-
-  .card--godfather
+  @include responsive(desktop)
     @include containerMod(80rem, 30%)
-    height: 80rem
-    width: 30%
+
+
+
+
+
 

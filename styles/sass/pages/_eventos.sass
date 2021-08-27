@@ -14,6 +14,17 @@
   p
     align-self: center
     text-align: justify
+
+    @include responsive(tablet)
+      height: 30rem
+
+  @include responsive(mobile)
+    width: auto
+    margin-bottom: 1rem
+
+  @include responsive(tablet)
+    @include containerMod(fit-content, auto)
+    margin-bottom: 1rem;
   
 
 /*  Future Eventes Section */
@@ -41,22 +52,7 @@
       text-align: justify
       margin-top: 1rem
 
-
-/*    MEDIA QUERIES    */
-
-/* MOBILE */
-
-@media only screen and (min-width: 320px) and (max-width: 767px)
-
-  /* Past Events Section */
-
-  .card--events
-    width: auto
-    margin-bottom: 1rem
-
-  /*  Future Eventes Section */
-
-  .card--eventsFuture
+  @include responsive(mobile)
     width: auto
     align-self: center
     margin-top: 4rem
@@ -72,23 +68,9 @@
       @include containerMod(auto, auto)
       width: auto
       height: auto
-    
-  /* TABLET */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px)
- 
-  /* Past Events Section */
-  
-  .card--events 
-    @include containerMod(fit-content, auto)
-    margin-bottom: 1rem;
 
-    p
-      height: 30rem
-    
-  /*  Future Eventes Section */
-  
-  .card--eventsFuture
+  @include responsive(tablet)
     width: auto
     align-self: center
     margin-top: 4rem
@@ -102,3 +84,16 @@
     .events__futureTextBox
       @include containerMod(20rem, 90%)
 
+  @include responsive(largeTablet)
+    width: auto
+    align-self: center
+    margin-top: 4rem
+    
+    .pictureContainer--event
+      @include containerMod(50rem, 50rem)
+      
+      img
+        @include containerMod(50rem, 100%)
+        
+    .events__futureTextBox
+      @include containerMod(20rem, 90%)

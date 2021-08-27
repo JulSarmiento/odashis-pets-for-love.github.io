@@ -16,6 +16,11 @@ i {
     opacity: 0; }
   100% {
     opacity: 1; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .title {
+      font-size: 1.8rem; }
+      .title i {
+        font-size: 1.8rem; } }
 
 .subtitle {
   font-family: "Lemonada", cursive;
@@ -37,6 +42,9 @@ i {
   .links:hover {
     color: var(--bs-pink);
     text-decoration: underline wavy; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .links {
+      font-size: 1.5rem; } }
 
 .links--btn {
   color: var(--bs-pink);
@@ -60,16 +68,11 @@ i {
   color: #583D72;
   font-weight: 300;
   font-size: 1.5rem; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .text, label {
+      font-size: 1.5rem; } }
 
-@media only screen and (min-width: 375px) and (max-width: 767px) {
-  .title {
-    font-size: 1.8rem; }
-    .title i {
-      font-size: 1.8rem; }
-  .links {
-    font-size: 1.5rem; }
-  .text, label {
-    font-size: 1.5rem; }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   label {
     font-size: 1.5rem; } }
 
@@ -86,7 +89,7 @@ i {
   font-size: 1.5rem;
   text-align: justify;
   padding: 0 0.5rem; }
-  @media only screen and (min-width: 375px) and (max-width: 767px) {
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
     .form fieldset legend.subtitle--mod {
       font-size: 1.5rem;
       text-align: justify; } }
@@ -115,7 +118,7 @@ i {
   gap: 1rem;
   margin-top: 2rem; }
 
-@media only screen and (min-width: 375px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .form__inputBox {
     display: flex;
     flex-direction: column;
@@ -227,12 +230,41 @@ i {
     .footer__list li a {
       font-size: 1.5rem; }
 
-.homeContactUs {
+.adoptionAndContact .homeContactUs {
   display: flex;
   width: 30%; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .adoptionAndContact .homeContactUs {
+      display: none;
+      width: auto; } }
 
-.card--Indexmod {
+.adoptionAndContact .card--Indexmod {
   width: 30%; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .adoptionAndContact {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem; }
+    .adoptionAndContact .homeContactUs {
+      display: none; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .adoptionAndContact {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem; }
+    .adoptionAndContact .slideshow {
+      width: auto; }
+      .adoptionAndContact .slideshow .pictureContainer--slidershow img {
+        height: 45rem;
+        width: 100%; } }
 
 .articleContainer {
   display: flex;
@@ -256,80 +288,72 @@ i {
       .articleContainer article div p {
         margin-top: 1rem;
         text-align: justify; }
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .adoptionAndContact {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 1rem; }
-  .homeContactUs {
-    display: none; }
-  .articleContainer {
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 0 auto; }
-    .articleContainer .card--articleMod {
-      height: 58rem;
-      width: 100%; }
-    .articleContainer article {
-      height: auto;
-      flex-flow: column-reverse nowrap; }
-      .articleContainer article div {
-        text-align: center;
-        width: 25rem; }
-        .articleContainer article div p {
-          width: 26rem; } }
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .adoptionAndContact {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 1rem; }
-    .adoptionAndContact .slideshow {
-      width: auto; }
-      .adoptionAndContact .slideshow .pictureContainer--slidershow img {
-        height: 45rem;
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .articleContainer {
+      flex-flow: column wrap;
+      justify-content: center;
+      margin: 0 auto; }
+      .articleContainer .card--articleMod {
+        height: 58rem;
         width: 100%; }
-    .adoptionAndContact .homeContactUs {
-      display: none;
-      width: auto; }
-  .articleContainer {
-    justify-content: space-evenly; }
-    .articleContainer .card--articleMod {
-      height: 55rem;
-      width: 33rem; }
-    .articleContainer article {
-      flex-flow: column-reverse nowrap; }
-      .articleContainer article div {
-        text-align: center;
-        width: 30rem; }
-        .articleContainer article div p {
-          height: auto; } }
-
-@media only screen and (min-width: 1200px) {
-  .homedoptionSection {
-    width: auto; } }
+      .articleContainer article {
+        height: auto;
+        flex-flow: column-reverse nowrap; }
+        .articleContainer article div {
+          text-align: center;
+          width: 25rem; }
+          .articleContainer article div p {
+            width: 26rem; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .articleContainer {
+      justify-content: space-evenly; }
+      .articleContainer .card--articleMod {
+        height: 55rem;
+        width: auto; }
+      .articleContainer article {
+        flex-flow: column-reverse nowrap; }
+        .articleContainer article div {
+          text-align: center;
+          width: auto; }
+          .articleContainer article div p {
+            height: auto; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    .articleContainer {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 3rem; }
+      .articleContainer .card--articleMod {
+        width: 50%;
+        text-align: center; }
+      .articleContainer article {
+        display: flex;
+        align-items: center;
+        flex-flow: column-reverse nowrap;
+        height: auto; }
+        .articleContainer article div {
+          height: 22rem;
+          width: 50%;
+          text-align: center;
+          width: auto; }
+          .articleContainer article div p {
+            height: auto; } }
 
 .dogsSection__petCard, .catsSection__petCard {
   max-width: 30%; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .dogsSection__petCard, .catsSection__petCard {
+      max-width: 100%; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .dogsSection__petCard, .catsSection__petCard {
+      width: 29rem;
+      margin-bottom: 2rem;
+      max-width: 100%; } }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .dogsSection__petCard, .catsSection__petCard {
-    max-width: 100%; }
   .catsSection__petCard {
     max-width: 100%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .dogsSection__petCard, .catsSection__petCard {
-    width: 29rem;
-    margin-bottom: 2rem;
-    max-width: 100%; }
   .catsSection__petCard {
     width: 29rem;
     margin-bottom: 2rem;
@@ -344,6 +368,28 @@ i {
   width: 30%; }
   .successAdopted__container .card--adopted p {
     text-align: justify; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .successAdopted__container .card--adopted {
+      width: 100%; }
+      .successAdopted__container .card--adopted .card .pictureContainer {
+        width: 100%;
+        object-fit: scale-down; }
+        .successAdopted__container .card--adopted .card .pictureContainer img {
+          height: 25rem;
+          width: 100%;
+          border-radius: 1rem;
+          margin-bottom: 1rem; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .successAdopted__container .card--adopted {
+      width: 45%; }
+      .successAdopted__container .card--adopted .card .pictureContainer {
+        width: 100%;
+        object-fit: scale-down; }
+        .successAdopted__container .card--adopted .card .pictureContainer img {
+          height: 25rem;
+          width: 100%;
+          border-radius: 1rem;
+          margin-bottom: 1rem; } }
 
 /* Other cases Section */
 .otherCases {
@@ -352,51 +398,35 @@ i {
     margin-top: 2rem; }
   .otherCases .otherCases__imageBox .pictureContainer img {
     height: 25rem; }
-
-/*    MEDIA QUERIES    */
-/* MOBIEL */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  /* SUCCES ADOPTED SECTION  */
-  .successAdopted__container .card--adopted {
-    width: 100%; }
-  .successAdopted__container .card .pictureContainer {
-    width: 100%;
-    object-fit: scale-down; }
-    .successAdopted__container .card .pictureContainer img {
-      height: 25rem;
-      width: 100%;
-      border-radius: 1rem;
-      margin-bottom: 1rem; }
-  /* Other cases Section */
-  .otherCases__imageBox .pictureContainer img {
-    height: auto;
-    width: 100%;
-    height: 100%; }
-  .otherCases__imageBox .pictureContainer--otherCases {
-    margin: 0 auto;
-    height: auto;
-    width: auto; } }
-
-/*    TABLET     */
-/* quede por aqui, no he hecho tablet */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* SUCCES ADOPTED SECTION  */
-  .successAdopted__container .card--adopted {
-    min-width: 45%; }
-  .successAdopted__container .card img {
-    height: 25rem;
-    width: 100%;
-    border-radius: 1rem;
-    margin-bottom: 1rem; }
-  /* Other cases Section */
-  .pictureContainer--otherCases {
-    margin: 0 auto;
-    height: auto; }
-    .pictureContainer--otherCases img {
-      height: 100%;
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .otherCases .otherCases__imageBox .pictureContainer img {
+        height: auto;
+        width: 100%;
+        height: 100%; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .otherCases .otherCases__imageBox .pictureContainer img {
+        height: 30rem;
+        width: auto; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .otherCases .otherCases__imageBox .pictureContainer--otherCases {
+      margin: 0 auto;
+      height: auto;
       width: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .otherCases .otherCases__imageBox .pictureContainer--otherCases {
+      margin: 0 auto;
+      height: auto; } }
 
 /* MAIN */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .text--textGodfathers {
+    width: 90%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text--textGodfathers {
+    width: 90%;
+    margin: auto auto; } }
+
 .card--godfather {
   width: 30%; }
   .card--godfather .godfatherTexBox {
@@ -410,12 +440,29 @@ i {
         margin: 1rem 0;
         height: auto;
         text-align: justify; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .card--godfather .godfatherTexBox {
+        height: 48rem;
+        width: auto;
+        width: auto;
+        height: 48rem; } }
   .card--godfather .pictureContainer--godfather {
     width: 100%; }
     .card--godfather .pictureContainer--godfather img {
-      height: 100%;
-      width: 100%;
-      object-fit: contai; }
+      object-fit: container; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .card--godfather .pictureContainer--godfather {
+        height: auto;
+        width: 100%;
+        object-fit: container;
+        border-bottom: 1rem; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .card--godfather .pictureContainer--godfather {
+        height: 30rem;
+        width: 30rem;
+        object-fit: container;
+        height: 30rem;
+        width: 30rem; } }
   .card--godfather .planBonus {
     list-style-type: "\1F43E";
     height: 26rem; }
@@ -424,51 +471,21 @@ i {
       margin: 1rem 0;
       height: auto;
       text-align: justify; }
-
-/*    MEDIA QUERIES    */
-/* MOBILE */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  /* MAIN */
-  .text--textGodfathers {
-    width: 90%; }
-  .card--godfather {
-    height: 80rem;
-    width: 100%;
-    margin: 1rem 0; }
-    .card--godfather .pictureContainer--godfather {
-      height: auto;
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .card--godfather {
+      height: 80rem;
       width: 100%;
-      border-bottom: 1rem; } }
-
-/* TABLET */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* MAIN */
-  .text--textGodfathers {
-    width: 90%;
-    margin: auto auto; }
-  .card--godfather {
-    width: 100%; }
-    .card--godfather .pictureContainer--godfather {
-      height: 30rem;
-      width: 30rem;
-      height: 30rem;
-      width: 30rem; }
-      .card--godfather .pictureContainer--godfather img {
-        margin: 0;
-        padding: 0; }
-    .card--godfather .godfatherTexBox {
-      height: 48rem;
-      width: auto;
-      width: auto;
-      height: 48rem; } }
-
-/* LARGE TABLET */
-@media only screen and (min-width: 1024px) {
-  .card--godfather {
-    height: 80rem;
-    width: 30%;
-    height: 80rem;
-    width: 30%; } }
+      margin: 1rem 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .card--godfather {
+      width: auto; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    .card--godfather {
+      width: 32%; } }
+  @media only screen and (min-width: 1200px) {
+    .card--godfather {
+      height: 80rem;
+      width: 30%; } }
 
 /*          EVENTOS        */
 /* MAIN INDEX EVENTOS */
@@ -478,6 +495,18 @@ i {
   .card--events p {
     align-self: center;
     text-align: justify; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .card--events p {
+        height: 30rem; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .card--events {
+      width: auto;
+      margin-bottom: 1rem; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .card--events {
+      height: fit-content;
+      width: auto;
+      margin-bottom: 1rem; } }
 
 /*  Future Eventes Section */
 .card--eventsFuture {
@@ -499,55 +528,51 @@ i {
     .card--eventsFuture .events__futureTextBox p {
       text-align: justify;
       margin-top: 1rem; }
-
-/*    MEDIA QUERIES    */
-/* MOBILE */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  /* Past Events Section */
-  .card--events {
-    width: auto;
-    margin-bottom: 1rem; }
-  /*  Future Eventes Section */
-  .card--eventsFuture {
-    width: auto;
-    align-self: center;
-    margin-top: 4rem; }
-    .card--eventsFuture .pictureContainer--event {
-      height: 30rem;
-      width: 100%; }
-      .card--eventsFuture .pictureContainer--event img {
-        height: auto;
-        width: 100%;
-        object-fit: contain; }
-    .card--eventsFuture .events__futureTextBox {
-      height: auto;
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .card--eventsFuture {
       width: auto;
-      width: auto;
-      height: auto; }
-  /* TABLET */ }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Past Events Section */
-  .card--events {
-    height: fit-content;
-    width: auto;
-    margin-bottom: 1rem; }
-    .card--events p {
-      height: 30rem; }
-  /*  Future Eventes Section */
-  .card--eventsFuture {
-    width: auto;
-    align-self: center;
-    margin-top: 4rem; }
-    .card--eventsFuture .pictureContainer--event {
-      height: 50rem;
-      width: 50rem; }
-      .card--eventsFuture .pictureContainer--event img {
-        height: 50rem;
+      align-self: center;
+      margin-top: 4rem; }
+      .card--eventsFuture .pictureContainer--event {
+        height: 30rem;
         width: 100%; }
-    .card--eventsFuture .events__futureTextBox {
-      height: 20rem;
-      width: 90%; } }
+        .card--eventsFuture .pictureContainer--event img {
+          height: auto;
+          width: 100%;
+          object-fit: contain; }
+      .card--eventsFuture .events__futureTextBox {
+        height: auto;
+        width: auto;
+        width: auto;
+        height: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .card--eventsFuture {
+      width: auto;
+      align-self: center;
+      margin-top: 4rem; }
+      .card--eventsFuture .pictureContainer--event {
+        height: 50rem;
+        width: 50rem; }
+        .card--eventsFuture .pictureContainer--event img {
+          height: 50rem;
+          width: 100%; }
+      .card--eventsFuture .events__futureTextBox {
+        height: 20rem;
+        width: 90%; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    .card--eventsFuture {
+      width: auto;
+      align-self: center;
+      margin-top: 4rem; }
+      .card--eventsFuture .pictureContainer--event {
+        height: 50rem;
+        width: 50rem; }
+        .card--eventsFuture .pictureContainer--event img {
+          height: 50rem;
+          width: 100%; }
+      .card--eventsFuture .events__futureTextBox {
+        height: 20rem;
+        width: 90%; } }
 
 :root {
   --bs-indigo: #9F5F80;

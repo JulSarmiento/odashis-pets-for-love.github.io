@@ -19,6 +19,33 @@
     p
       text-align: justify
 
+    @include responsive(mobile)
+      width: 100%
+
+      .card 
+
+        .pictureContainer
+          width: 100%
+          object-fit: scale-down
+
+          img 
+            @include containerMod(25rem, 100%)
+            border-radius: 1rem
+            margin-bottom: 1rem
+
+    @include responsive(tablet)
+      width: 45%
+
+      .card 
+
+        .pictureContainer
+          width: 100%
+          object-fit: scale-down
+
+          img 
+            @include containerMod(25rem, 100%)
+            border-radius: 1rem
+            margin-bottom: 1rem
 
 /* Other cases Section */
 
@@ -35,69 +62,28 @@
       img
         height: 25rem
 
-/*    MEDIA QUERIES    */
-
-/* MOBIEL */
-
-@media only screen and (min-width: 320px) and (max-width: 767px)
-  
-  /* SUCCES ADOPTED SECTION  */
-
-  .successAdopted__container 
-  
-    .card--adopted
-      width: 100%
-
-    .card 
-
-      .pictureContainer
-        width: 100%
-        object-fit: scale-down
-
-        img 
-          @include containerMod(25rem, 100%)
-          border-radius: 1rem
-          margin-bottom: 1rem
-  
-  /* Other cases Section */
-
-  .otherCases__imageBox 
-    
-    .pictureContainer 
-      
-      img
-        @include containerMod(auto, 100%)
-        height: 100%
+        @include responsive(mobile)
+          @include containerMod(auto, 100%)
+          height: 100%
         
+        @include responsive(tablet)
+          @include containerMod(30rem, auto)
+    
     .pictureContainer--otherCases
-      margin: 0 auto
-      @include containerMod(auto, auto)
 
-/*    TABLET     */
+      @include responsive(mobile)
+        margin: 0 auto
+        @include containerMod(auto, auto)
 
-/* quede por aqui, no he hecho tablet */
+      @include responsive(tablet)
+        margin: 0 auto
+        height: auto
 
-@media only screen and (min-width: 768px) and (max-width: 1024px)
 
-  /* SUCCES ADOPTED SECTION  */
-    
-  .successAdopted__container 
 
-    .card--adopted
-      min-width: 45%
-  
-    .card 
-      img 
-        @include containerMod(25rem, 100%)
-        border-radius: 1rem
-        margin-bottom: 1rem
-    
-  /* Other cases Section */
 
-  .pictureContainer--otherCases
-    margin: 0 auto
-    height: auto
 
-    img
-      @include containerMod(100%, auto)
+
+
+
 

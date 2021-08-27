@@ -4,14 +4,47 @@
 
 // MAIN  
 
-// CONTACT US SECTION 
+.adoptionAndContact
 
-.homeContactUs 
-  display: flex
-  width: 30%
+  .homeContactUs 
+    display: flex
+    width: 30%
 
-.card--Indexmod
-  width: 30%
+    @include responsive(tablet)
+      display: none
+      width: auto
+
+  .card--Indexmod
+    width: 30%
+
+  @include responsive(mobile)
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-items: center
+    margin-top: 2rem
+    gap: 1rem  
+
+    .homeContactUs 
+      display: none
+  
+  @include responsive(tablet)
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-items: center
+    margin-top: 2rem
+    gap: 1rem
+
+    .slideshow
+      width: auto
+    
+      .pictureContainer--slidershow 
+        
+        img
+          @include containerMod(45rem, 100%)
+      
+
 
 // Articles 
 
@@ -42,28 +75,8 @@
         margin-top: 1rem
         text-align: justify
 
-// /*    MEDIA QUERIES    */
 
-// /* MOBIEL */
-
-@media only screen and (min-width: 320px) and (max-width: 767px)
-
-  //  /* SLIDESHOW */
-      
-  .adoptionAndContact
-    display: flex
-    flex-flow: column wrap
-    justify-content: center
-    align-items: center
-    margin-top: 2rem
-    gap: 1rem
-
-  .homeContactUs 
-    display: none
-  
-  // /* Articles */
-
-  .articleContainer
+  @include responsive(mobile)
     flex-flow: column wrap
     justify-content: center
     margin: 0 auto
@@ -81,56 +94,50 @@
     
         p 
           width: 26rem
-    
-// /* tablet */
 
-@media only screen and (min-width: 768px) and (max-width: 1199px)
-
-  // /* SLIDESHOW */
-
-  .adoptionAndContact
-    display: flex
-    flex-flow: column wrap
-    justify-content: center
-    align-items: center
-    margin-top: 2rem
-    gap: 1rem
-  
-    .slideshow
-      width: auto
-    
-      .pictureContainer--slidershow 
-        
-        img
-          @include containerMod(45rem, 100%)
-    
-    .homeContactUs 
-      display: none
-      width: auto
-
-  // /*    SMALL ADOPTED SECTION     */
-
-  .articleContainer
+  @include responsive(tablet)
     justify-content: space-evenly
   
     .card--articleMod
-      @include containerMod(55rem, 33rem)
+      @include containerMod(55rem, auto)
 
     article
       flex-flow: column-reverse nowrap
 
       div
         text-align: center
-        width: 30rem
+        width: auto
   
         p 
           height: auto
+
+  @include responsive(largeTablet)
+    display: flex
+    justify-content: space-evenly
+    gap: 3rem
+
+    .card--articleMod
+      width: 50%
+      text-align: center
+
+    article
+      display: flex;
+      align-items: center
+      flex-flow: column-reverse nowrap
+      height: auto
+
+      div
+        @include containerMod(22rem, 50%)
+        text-align: center
+        width: auto
+  
+        p 
+          height: auto
+
+
             
 
-@media only screen and (min-width: 1200px)
 
-  .homedoptionSection
-    width: auto
   
 
 
