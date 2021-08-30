@@ -1,32 +1,36 @@
-# Hoja de Estilos
+# ODASHIS's Pets For Love
+## _Fundacion Protectora de Animales_
+[![Build Status](	https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JulSarmiento) [![Build Status](	https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/julieth-sarmiento/) [![Build Status](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/julsarmiento) 
 
-## FUENTES
-
-### Titulos
-  font-family: 'Lemonada', cursive;
-  font-weight: 600
-  color: #FF8474;
-
-### Subtitulos, links y botones
-  font-family: 'Lemonada', cursive;
-  font-weight: 400
-
-### Texto
-  font-family: 'Lato', sans-serif;
-  font-weight: 300
+[![Build Status](https://julsarmiento.github.io/assets/indexImg/odashi-full-logo.png)](https://julsarmiento.github.io/) 
 
 
-## COLORES
 
-# background
+Odashi's Pets For Love es el proyecto final para el curso de Desarrollo Web de CODER HOUSE, desarrollado por Julieth Sarmiento, em cual se aplica todo lo visto durante el curso: 
 
-# boxes
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  box-shadow: 0px 8px 18px -1px #ff847471;
+- Diseño de Wireframes
+-  Maqueteado
+-  Estilos avanzados
+-  Manejo de Frameworks
+-  Versionado
+-  SEO
+-  Seguridad Web
 
-# header 
-  border-top: 1rem solid #FF8474;
+## Tecnologias Aplicadas
 
-# footer
-  border-bottom: 1rem solid #FF8474;
+Odashi's Pets For Love utiliza las siguientes tecnologias:
+
+- [![Build Status](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]() 
+- [![Build Status](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]() 
+- [![Build Status](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)]()
+- [![Build Status](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)]()
+- [![Build Status](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)]()
+
+## Licencia
+
+MIT
+**Free Software, Hell Yeah!**
+
+## Curso por:
+[![Build Status](https://www.greatplacetowork.com.ar/images/coderhouse-logo.png)](https://www.coderhouse.com.co/)
+
