@@ -1,3 +1,35 @@
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
+/* A wrapper */
 .wrapper {
   max-width: 80%;
   margin: 0 auto; }
@@ -86,6 +118,23 @@ i {
   label {
     font-size: 1.5rem; } }
 
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
 /*  CARD  */
 .card {
   background-color: var(--bs-white);
@@ -96,6 +145,23 @@ i {
   display: flex;
   flex-flow: column wrap; }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
 /*  FORM  */
 .form {
   /*  Fieldset's legend styles*/
@@ -188,6 +254,23 @@ i {
   .form__img {
     height: 55rem; } }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
 /*  PICTURE'S CONTAINERS FORM ZOOM TRANSITION   */
 .pictureContainer {
   margin: auto auto;
@@ -203,6 +286,20 @@ i {
     .pictureContainer img:hover {
       transform: scale(1.2); }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
 /*  BUTTON  */
 .btn--mod {
   background-color: #ffffff;
@@ -217,6 +314,23 @@ i {
     color: var(--bs-white);
     box-shadow: 0px 8px 18px -1px #ffffff; }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
 /*  HEADER  */
 .header {
   border-top: 0.5rem solid #FF8474;
@@ -234,6 +348,23 @@ i {
     .header .header__logo:hover {
       transform: rotate(360deg); }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
 /*  FOOTER  */
 .footer {
   background-color: var(--bs-white);
@@ -246,6 +377,23 @@ i {
     .footer__list li a {
       font-size: 1.5rem; }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
 /*  INDEX'S PAGE*/
 /*  Slider and little form section*/
 .adoptionAndContact {
@@ -298,10 +446,10 @@ i {
     height: auto; }
     .articleContainer article div {
       text-align: center;
-      height: 30rem;
+      height: auto;
       width: 50%; }
       .articleContainer article div img {
-        height: 20rem;
+        height: 21rem;
         border-radius: 1rem; }
       .articleContainer article div p {
         margin-top: 1rem;
@@ -320,6 +468,9 @@ i {
         .articleContainer article div {
           text-align: center;
           width: 25rem; }
+          .articleContainer article div img {
+            height: 25rem;
+            border-radius: 1rem; }
           .articleContainer article div p {
             width: 26rem; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -329,10 +480,14 @@ i {
         height: 55rem;
         width: auto; }
       .articleContainer article {
-        flex-flow: column-reverse nowrap; }
+        flex-flow: column-reverse nowrap;
+        width: 33.9rem; }
         .articleContainer article div {
           text-align: center;
           width: auto; }
+          .articleContainer article div img {
+            height: 25rem;
+            border-radius: 1rem; }
           .articleContainer article div p {
             height: auto; } }
   @media only screen and (min-width: 1025px) and (max-width: 1199px) {
@@ -353,9 +508,29 @@ i {
           width: 50%;
           text-align: center;
           width: auto; }
+          .articleContainer article div img {
+            height: 25rem;
+            border-radius: 1rem; }
           .articleContainer article div p {
             height: auto; } }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
 /*  ADOPT PAGE  */
 /* Dog's styles */
 .dogsSection__petCard, .catsSection__petCard {
@@ -380,6 +555,23 @@ i {
     margin-bottom: 2rem;
     max-width: 100%; } }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
 /* ADOPTED */
 /*  Success adoption's secction */
 .successAdopted h2 {
@@ -438,6 +630,23 @@ i {
       margin: 0 auto;
       height: auto; } }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
 /*  GODFATHER'S PAGE  */
 /*  Disclaimer text's section */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -510,6 +719,23 @@ i {
       height: 80rem;
       width: 30%; } }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+/*  Mixins for Fonts*/
+/*  Mixins for containers */
+/*  Mixin for Media Queries */
 /* EVENTOS */
 /* Past Events Section */
 .card--events {

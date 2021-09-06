@@ -4,8 +4,6 @@
 
 [![Build Status](https://julsarmiento.github.io/assets/indexImg/odashi-full-logo.png)](https://julsarmiento.github.io/) 
 
-
-
 Odashi's Pets For Love es el proyecto final para el curso de Desarrollo Web de CODER HOUSE, desarrollado por Julieth Sarmiento, em cual se aplica todo lo visto durante el curso: 
 
 - Diseño de Wireframes
@@ -26,6 +24,10 @@ Odashi's Pets For Love utiliza las siguientes tecnologias:
 - [![Build Status](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)]()
 - [![Build Status](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)]()
 
+##  Reporte de Performance
+
+
+
 ## Licencia
 
 MIT
@@ -33,4 +35,9 @@ MIT
 
 ## Curso por:
 [![Build Status](https://www.greatplacetowork.com.ar/images/coderhouse-logo.png)](https://www.coderhouse.com.co/)
+
+
+
+
+https://gtmetrix.com/reports/julsarmiento.github.io/SVXFpV46/
 
