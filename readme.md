@@ -6,7 +6,7 @@
 
 [![Build Status](	https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JulSarmiento) [![Build Status](	https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/julieth-sarmiento/) [![Build Status](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/julsarmiento) 
 
-[![Build Status](https://julsarmiento.github.io/odashis-pets-for-love.github.io/assets/indexImg/odashi-full-logo.png)](https://julsarmiento.github.io/odashis-pets-for-love.github.io/) 
+[![Build Status](https://odashis-pets-for-love.web.app/assets/indexImg/odashi-full-logo.png)](https://odashis-pets-for-love.web.app/) 
 
 Odashi's Pets For Love es el proyecto final para el curso de Desarrollo Web de CODER HOUSE, desarrollado por Julieth Sarmiento, el cual se aplica todo lo visto durante el curso: 
 
