@@ -826,6 +826,37 @@ i {
         height: 20rem;
         width: 90%; } }
 
+/*  COLORS*/
+/*  Body Background */
+/*  Border line (header and footer) */
+/*  Header shadow */
+/*  Card Styles, links--btns hover  */
+/*  Btn styles  */
+/*  Form styles   */
+/*  Title, Section Title  */
+/*  Subtitle  */
+/*  Links and text  */
+/*  links btn hover */
+/*  FONTS */
+/*  Title, Subtitle, Section Title  */
+/*  Text  */
+.missingPage .pictureContainer--missingPage {
+  height: 40rem;
+  width: 40rem;
+  margin-bottom: -3.8rem; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .missingPage .pictureContainer--missingPage {
+      height: auto;
+      margin-bottom: -0.2rem; } }
+
+.missingPage .missingPage__textBox {
+  border-top: 2px solid var(--bs-pink);
+  text-align: center;
+  width: auto; }
+  .missingPage .missingPage__textBox .text--missginPage {
+    font-weight: bold;
+    font-size: 1.6rem; }
+
 /* Bootstraps colors, modified */
 :root {
   --bs-indigo: #9F5F80;
