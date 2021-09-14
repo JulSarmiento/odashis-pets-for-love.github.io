@@ -856,6 +856,8 @@ i {
   .missingPage .missingPage__textBox .text--missginPage {
     font-weight: bold;
     font-size: 1.6rem; }
+    .missingPage .missingPage__textBox .text--missginPage span {
+      color: var(--bs-pink); }
 
 /* Bootstraps colors, modified */
 :root {
