@@ -120,27 +120,27 @@
 
             <div class="form__inputBox">
               <label class="labelDecoration" for="name">Nombre completo:</label>
-              <input class="form-control text" type="text" name="name" id="name" placeholder="Mario Alberto Rojas Perez">
+              <input class="form-control text" type="text" name="name" id="name" placeholder="Mario Alberto Rojas Perez" title="Tu nombre completo por favor." required>
             </div>
 
             <div class="form__inputBox">
               <label class="labelDecoration" for="age">Edad:</label>
-              <input class="form-control text" type="number" name="age" id="age" placeholder="56">
+              <input class="form-control text" type="number" name="age" id="age" placeholder="56" min="1" max="99" title="Por favor ingresa tu edad." required>
             </div>
 
             <div class="form__inputBox">
               <label class="labelDecoration" for="phone">Teléfono:</label>
-              <input class="form-control text" type="number" name="phone" id="phone"  placeholder="3502215598">
+              <input class="form-control text" type="number" name="phone" id="phone"  placeholder="3502215598" min="6" max="9999999999" title="Número de teléfono (cel o fijo) sin espacios" required>
             </div>
 
             <div class="form__inputBox">
               <label class="labelDecoration" for="email">Correo Electrónico:</label>
-              <input class="form-control text" type="email" name="email" id="email" placeholder="mariorojas@gmail.com">
+              <input class="form-control text" type="email" name="email" id="email" placeholder="mariorojas@gmail.com" title="Un correo existente y funcional" required>
             </div>
 
             <div class="input-group form__inputBox mb-2 ">
               <label class="labelDecoration" for="cc-type">Tipo de documento:</label>
-              <select class="text" name="cc-type" id="cc-type">
+              <select class="text" name="cc-type" id="cc-type" title="Por favor selecciona el tipo de documento de identidad." required>
                 <option class="text" selected>Seleccione</option>
                 <option class="text" value="c-c">Cédula de Ciudadania</option>
                 <option class="text" value="c-e">Cédula de extranjeria</option>
@@ -150,7 +150,7 @@
 
             <div class="form__inputBox">
               <label class="labelDecoration" for="dni">Número de documento:</label>
-              <input class="form-control text" type="number" name="dni" id="dni">
+              <input class="form-control text" type="number" name="dni" id="dni" placeholder="1150894756" title="Por favor ingrese el número de su documento de identidad."  required>
             </div>
 
           </fieldset>
