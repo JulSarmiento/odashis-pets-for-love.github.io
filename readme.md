@@ -10,7 +10,7 @@
 
 Odashi's Pets For Love es el proyecto final para el curso de Desarrollo Web de CODER HOUSE, desarrollado por Julieth Sarmiento, el cual se aplica todo lo visto durante el curso: 
 
-- Diseño de Wireframes
+-  Diseño de Wireframes
 -  Maqueteado
 -  Estilos avanzados
 -  Manejo de Frameworks
@@ -22,12 +22,25 @@ Odashi's Pets For Love es el proyecto final para el curso de Desarrollo Web de C
 
 Odashi's Pets For Love utiliza las siguientes tecnologías:
 
-- [![Build Status](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]() 
-- [![Build Status](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]() 
-- [![Build Status](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)]()
-- [![Build Status](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)]()
-- [![Build Status](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)]()
-- [![Build Status](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)]()
+- [![HTML5 bagde](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]() 
+- [![CSS3 badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]() 
+- [![SASS badge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)]()
+- [![BOOTSTRAP badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)]()
+- [![GIT badge](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)]()
+- [![FIREBASE badge](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)]()
+
+## Features
+
+Odashi's Pets For Love utiliza los siguientes features:
+
+- Manejo de etiquetas semánticas.
+- Manejo de estilos con Sass y Operaciones con Sass.
+- Componentes y layout con Framework (Bootstrap).
+- Implementación de SEO básico.
+- Implementación de usabilidad: favicons, helpers, alts, shareable tags, theme tags, titles atributes. 
+- Hoisting y Dominio con Firebase.
+- Github Actions para despliegue on push.
+- Inscripción a Google Search y validación del sitemap.xml.
 
 ##  Reporte de Performance
 
@@ -40,7 +53,7 @@ MIT
 
 ## Curso por:
 
-[![Build Status](https://www.greatplacetowork.com.ar/images/coderhouse-logo.png)](https://www.coderhouse.com.co/)
+[![Coder House logo image](https://www.greatplacetowork.com.ar/images/coderhouse-logo.png)](https://www.coderhouse.com.co/)
 
 
 
