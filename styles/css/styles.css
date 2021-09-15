@@ -258,6 +258,15 @@ i {
   .form__img {
     height: 55rem; } }
 
+/*  Form's validations  */
+input:not(:placeholder-shown):invalid {
+  border: 2px solid red;
+  color: red; }
+
+input:valid {
+  border: 2px solid green;
+  color: green; }
+
 /*  COLORS*/
 /*  Body Background */
 /*  Border line (header and footer) */

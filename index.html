@@ -161,21 +161,21 @@
           <h2 class="subtitle">Te contactamos <i class="fas fa-heart"></i></h2>
   
           <!-- This is the form for the Foundation contact the users.-->
-          <form class="formHomeContactUs " action="./contacto/gracias.html">
+          <form class="formHomeContactUs needs-validation">
 
             <div class="form__inputBox d-flex flex-column">
               <label  class="labelDecoration" for="user-name">Nombre Completo: </label>
-              <input class="form-control text" type="text" name="user-name" id="user-name" placeholder="Mario Alberto Rojas Perez">
+              <input class="form-control text" type="text" name="user-name" id="user-name" placeholder="Mario Alberto Rojas Perez" title="Tu nombre completo por favor." required>
             </div>
   
             <div class="form__inputBox d-flex flex-column">
               <label for="phone">Teléfono: </label>
-              <input class="form-control text"  type="number" name="phone" id="phone" placeholder="3502215598">
+              <input class="form-control text"  type="number" name="phone" id="phone" placeholder="3502215598" maxlength="10" title="Número de teléfono (cel o fijo) sin espacios" required>
             </div>
   
             <div class="form__inputBox d-flex flex-column">
               <label for="email">Correo Electrónico:</label>
-              <input class="form-control text"  type="email" name="email" id="email" placeholder="mariorojas@gmail.com">
+              <input class="form-control text"  type="email" name="email" id="email" placeholder="mariorojas@gmail.com"  title="Un correo existente y funcional" required>
             </div>
             
             <div class="form__radioBox form__radioBox--mod d-flex flex-column">
