@@ -38,7 +38,7 @@ Odashi's Pets For Love utiliza los siguientes features:
 - Componentes y layout con Framework (Bootstrap).
 - Implementación de SEO básico.
 - Implementación de usabilidad: favicons, helpers, alts, shareable tags, theme tags, titles atributes. 
-- Hoisting y Dominio con Firebase.
+- Hosting y Dominio con Firebase.
 - Github Actions para despliegue on push.
 - Inscripción a Google Search y validación del sitemap.xml.
 
